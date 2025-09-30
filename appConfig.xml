@@ -55,6 +55,6 @@
    </environmentVariableList>
    <messageList/>
    <resourceList/>
-   <description>version 2 of IOC coefficient: migrated from v1 (ex version 3) 30/09/2025 by Thomas</description>
+   <description>version 1 of IOC coefficient 30/09/2025 by Thomas</description>
    <createdBy>thomas.wiemann@giz.de</createdBy>
 </appDefinition>
