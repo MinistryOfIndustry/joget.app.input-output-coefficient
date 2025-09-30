@@ -1,0 +1,241 @@
+{
+    "template": {
+        "className": "",
+        "properties": {}
+    },
+    "considerFilterWhenGetTotal": "",
+    "useSession": "",
+    "responsiveMode": "",
+    "rowActions": [],
+    "columns": [
+        {
+            "filterable": true,
+            "hidden": "true",
+            "include_export": "",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "ID",
+            "sortable": "false",
+            "datalist_type": "column",
+            "name": "id",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_5",
+            "alignment": ""
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Code",
+            "sortable": "true",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "product_code",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_6",
+            "alignment": ""
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Title",
+            "sortable": "true",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "title",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_0",
+            "alignment": ""
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "org.joget.apps.datalist.lib.DefaultFormatter",
+                "properties": {
+                    "size": "",
+                    "color": "",
+                    "field": "title",
+                    "formDefId": "add_sector",
+                    "formatting": ""
+                }
+            },
+            "label": "Sector",
+            "sortable": "true",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "sector",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_1",
+            "alignment": ""
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "HSCODE",
+            "sortable": "true",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "hscode",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_2",
+            "alignment": ""
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "standard_quantity",
+            "id": "column_3",
+            "label": "Standard Quantity",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "uom",
+            "id": "column_4",
+            "label": "Unit of Measurement",
+            "sortable": "false"
+        }
+    ],
+    "draggabletable": "",
+    "cardCollapsible": "",
+    "pageSize": "0",
+    "orderBy": "createdByName",
+    "description": "",
+    "filters": [
+        {
+            "hidden": "",
+            "style-mobile-padding-right": "50px",
+            "name": "sector",
+            "id": "filter_0",
+            "label": "Filter by Sector",
+            "type": {
+                "className": "org.joget.plugin.TypeAheadMultiSelectSearch",
+                "properties": {
+                    "selectAll": "true",
+                    "controlField": "",
+                    "optionsBinder": {
+                        "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                        "properties": {
+                            "addEmptyOption": "",
+                            "groupingColumn": "",
+                            "formDefId": "add_sector",
+                            "labelColumn": "title",
+                            "extraCondition": "",
+                            "cacheInterval": "",
+                            "emptyLabel": "All sectors",
+                            "idColumn": "id"
+                        }
+                    },
+                    "defaultValue": "",
+                    "options": [],
+                    "searchFilter": "true"
+                }
+            },
+            "datalist_type": "filter",
+            "filterParamName": "d-6205457-fn_sector"
+        },
+        {
+            "style-padding-right": "100px",
+            "hidden": "",
+            "style-mobile-padding-right": "50px",
+            "name": "id",
+            "style-tablet-padding-right": "100px",
+            "id": "filter_2",
+            "label": "Filter by Title",
+            "type": {
+                "className": "org.joget.plugin.TypeAheadMultiSelectSearch",
+                "properties": {
+                    "selectAll": "true",
+                    "controlField": "",
+                    "optionsBinder": {
+                        "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                        "properties": {
+                            "addEmptyOption": "",
+                            "groupingColumn": "",
+                            "formDefId": "product",
+                            "labelColumn": "title",
+                            "extraCondition": "",
+                            "cacheInterval": "",
+                            "emptyLabel": "",
+                            "idColumn": "id"
+                        }
+                    },
+                    "defaultValue": "",
+                    "options": [],
+                    "searchFilter": "true"
+                }
+            },
+            "datalist_type": "filter",
+            "filterParamName": "d-6205457-fn_id"
+        }
+    ],
+    "showDataWhenFilterSet": "",
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "hidePageSize": "",
+    "disableResponsive": "",
+    "cardCollapseByDefault": "",
+    "name": "List - Products - View",
+    "rowActionsMode": "",
+    "showhidecolumns": "",
+    "id": "list_products_view",
+    "binder": {
+        "className": "org.joget.apps.datalist.lib.FormRowDataListBinder",
+        "properties": {
+            "formDefId": "product",
+            "extraCondition": "",
+            "cacheRowCount": ""
+        }
+    },
+    "actions": [],
+    "order": ""
+}
