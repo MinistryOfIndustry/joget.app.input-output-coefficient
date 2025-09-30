@@ -20,17 +20,23 @@
    </pluginDefaultPropertiesList>
    <environmentVariableList>
       <environmentVariable>
+         <id>currentAppUrl</id>
+         <appId>inputOutputCoefficientPoC</appId>
+         <appVersion>2</appVersion>
+         <value>#request.scheme#://#request.serverName#:#request.serverPort##request.contextPath#/web</value>
+      </environmentVariable>
+      <environmentVariable>
+         <id>loginAuth</id>
+         <appId>inputOutputCoefficientPoC</appId>
+         <appVersion>2</appVersion>
+         <value>Basic cGFja211dGFuZ2FuYUBnbWFpbC5jb206SmVzdXM3QDEyMw==</value>
+      </environmentVariable>
+      <environmentVariable>
          <id>productCounter</id>
          <appId>inputOutputCoefficientPoC</appId>
          <appVersion>2</appVersion>
          <value>63</value>
          <remarks>Used for plugin: Id Generator Field</remarks>
-      </environmentVariable>
-      <environmentVariable>
-         <id>currentAppUrl</id>
-         <appId>inputOutputCoefficientPoC</appId>
-         <appVersion>2</appVersion>
-         <value>#request.scheme#://#request.serverName#:#request.serverPort##request.contextPath#/web</value>
       </environmentVariable>
       <environmentVariable>
          <id>rwInputcounter</id>
@@ -46,15 +52,9 @@
          <value>75</value>
          <remarks>Used for plugin: Id Generator Field</remarks>
       </environmentVariable>
-      <environmentVariable>
-         <id>loginAuth</id>
-         <appId>inputOutputCoefficientPoC</appId>
-         <appVersion>2</appVersion>
-         <value>Basic cGFja211dGFuZ2FuYUBnbWFpbC5jb206SmVzdXM3QDEyMw==</value>
-      </environmentVariable>
    </environmentVariableList>
    <messageList/>
    <resourceList/>
-   <description>version 1 of IOC coefficient 30/09/2025 by Thomas</description>
+   <description>version 2 of IOC coefficient 30/09/2025 by Thomas</description>
    <createdBy>thomas.wiemann@giz.de</createdBy>
 </appDefinition>
