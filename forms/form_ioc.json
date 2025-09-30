@@ -55,12 +55,14 @@
                             }
                         },
                         "label": "Contact Number",
+                        "disableIncrementDecrementArrow": "",
                         "readonly": "",
                         "size": "",
                         "workflowVariable": "",
                         "style": "",
                         "id": "contact_number",
                         "placeholder": "",
+                        "iconIncluded": false,
                         "value": "",
                         "readonlyLabel": "",
                         "storeNumeric": ""
