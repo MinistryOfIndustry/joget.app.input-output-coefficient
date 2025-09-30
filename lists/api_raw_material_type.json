@@ -1,0 +1,101 @@
+{
+    "template": {
+        "className": "",
+        "properties": {}
+    },
+    "rowActions": [],
+    "columns": [
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "title",
+            "id": "column_0",
+            "label": "Product",
+            "sortable": "false",
+            "datalist_type": "column"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "product_code",
+            "id": "column_1",
+            "label": "Product Code",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "id",
+            "id": "column_10",
+            "label": "ID",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "title",
+            "id": "column_3",
+            "label": "Title",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "raw_material_type_code",
+            "id": "column_2",
+            "label": "Raw Material Type Code",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "quantity",
+            "id": "column_4",
+            "label": "Quantity",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "uom",
+            "id": "column_5",
+            "label": "UOM",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "waste_percentage",
+            "id": "column_6",
+            "label": "Waste Percentage (%)",
+            "sortable": "false"
+        }
+    ],
+    "pageSize": "0",
+    "orderBy": "",
+    "description": "",
+    "filters": [{
+        "name": "id",
+        "id": "filter_0",
+        "label": "ID",
+        "type": {
+            "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+            "properties": {}
+        },
+        "datalist_type": "filter",
+        "filterParamName": "d-3070928-fn_id"
+    }],
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "name": "API Exposure of Raw Material Types",
+    "id": "api_raw_material_type",
+    "binder": {
+        "className": "org.joget.apps.datalist.lib.FormRowDataListBinder",
+        "properties": {
+            "formDefId": "add_raw_material",
+            "extraCondition": "",
+            "cacheRowCount": ""
+        }
+    },
+    "actions": [],
+    "order": ""
+}
