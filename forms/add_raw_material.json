@@ -148,15 +148,26 @@
                     }
                 },
                 {
-                    "className": "org.joget.apps.form.lib.IdGeneratorField",
+                    "className": "org.joget.apps.form.lib.TextField",
                     "properties": {
-                        "hidden": "",
-                        "format": "??",
-                        "workflowVariable": "",
-                        "envVariable": "rwTypeCounter",
-                        "isDistributedGeneration": "",
+                        "requiredSanitize": "",
+                        "maxlength": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
                         "label": "Raw Material Type Code",
-                        "id": "raw_material_type_code"
+                        "disableIncrementDecrementArrow": "",
+                        "readonly": "",
+                        "size": "",
+                        "workflowVariable": "",
+                        "style": "",
+                        "id": "raw_material_type_code",
+                        "placeholder": "",
+                        "iconIncluded": false,
+                        "value": "",
+                        "readonlyLabel": "",
+                        "storeNumeric": ""
                     }
                 },
                 {
