@@ -55,6 +55,6 @@
    </environmentVariableList>
    <messageList/>
    <resourceList/>
-   <description>version 2 of IOC coefficient 30/09/2025 by Thomas</description>
+   <description>Version 3 IOC Coefficient — 01 Oct 2025, Patrick: refactored to align with the data schema for migration</description>
    <createdBy>packmutangana@gmail.com</createdBy>
 </appDefinition>
