@@ -20,17 +20,23 @@
    </pluginDefaultPropertiesList>
    <environmentVariableList>
       <environmentVariable>
+         <id>currentAppUrl</id>
+         <appId>inputOutputCoefficientPoC</appId>
+         <appVersion>3</appVersion>
+         <value>#request.scheme#://#request.serverName#:#request.serverPort##request.contextPath#/web</value>
+      </environmentVariable>
+      <environmentVariable>
+         <id>loginAuth</id>
+         <appId>inputOutputCoefficientPoC</appId>
+         <appVersion>3</appVersion>
+         <value>Basic cGFja211dGFuZ2FuYUBnbWFpbC5jb206SmVzdXM3QDEyMw==</value>
+      </environmentVariable>
+      <environmentVariable>
          <id>productCounter</id>
          <appId>inputOutputCoefficientPoC</appId>
          <appVersion>3</appVersion>
          <value>63</value>
          <remarks>Used for plugin: Id Generator Field</remarks>
-      </environmentVariable>
-      <environmentVariable>
-         <id>currentAppUrl</id>
-         <appId>inputOutputCoefficientPoC</appId>
-         <appVersion>3</appVersion>
-         <value>#request.scheme#://#request.serverName#:#request.serverPort##request.contextPath#/web</value>
       </environmentVariable>
       <environmentVariable>
          <id>rwInputcounter</id>
@@ -45,12 +51,6 @@
          <appVersion>3</appVersion>
          <value>75</value>
          <remarks>Used for plugin: Id Generator Field</remarks>
-      </environmentVariable>
-      <environmentVariable>
-         <id>loginAuth</id>
-         <appId>inputOutputCoefficientPoC</appId>
-         <appVersion>3</appVersion>
-         <value>Basic cGFja211dGFuZ2FuYUBnbWFpbC5jb206SmVzdXM3QDEyMw==</value>
       </environmentVariable>
    </environmentVariableList>
    <messageList/>
