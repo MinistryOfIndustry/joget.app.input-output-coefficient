@@ -1,0 +1,60 @@
+<appDefinition>
+   <appId>inputOutputCoefficientPoC</appId>
+   <id>inputOutputCoefficientPoC</id>
+   <version></version>
+   <name>Digital Input Output Coefficient</name>
+   <packageDefinitionList/>
+   <formDefinitionList/>
+   <userviewDefinitionList/>
+   <datalistDefinitionList/>
+   <builderDefinitionList/>
+   <pluginDefaultPropertiesList>
+      <pluginDefaultProperties>
+         <id>org.joget.marketplace.SecureApiPlugin</id>
+         <appId>inputOutputCoefficientPoC</appId>
+         <appVersion>3</appVersion>
+         <pluginName>Secure API Plugin</pluginName>
+         <pluginDescription>API plugin with path-based access control</pluginDescription>
+         <pluginProperties>{&quot;endpoints&quot;:[{&quot;datalistId&quot;:&quot;&quot;,&quot;token&quot;:&quot;12345678&quot;}],&quot;debugMode&quot;:&quot;true&quot;,&quot;endpointJSON&quot;:&quot;[{\&quot;datalistId\&quot;:\&quot;api_products\&quot;,\&quot;token\&quot;:\&quot;12345678\&quot;}, {\&quot;datalistId\&quot;:\&quot;api_sectors\&quot;,\&quot;token\&quot;:\&quot;12345678\&quot;},\n{\&quot;datalistId\&quot;: \&quot;api_raw_material_type\&quot;,\&quot;token\&quot;:\&quot;12345678\&quot;} , {\&quot;datalistId\&quot;: \&quot;api_raw_material_input\&quot;,\&quot;token\&quot;:\&quot;12345678\&quot;},\n{\&quot;datalistId\&quot;: \&quot;api_query_sector\&quot;,\&quot;token\&quot;:\&quot;12345678\&quot;}]&quot;}</pluginProperties>
+      </pluginDefaultProperties>
+   </pluginDefaultPropertiesList>
+   <environmentVariableList>
+      <environmentVariable>
+         <id>productCounter</id>
+         <appId>inputOutputCoefficientPoC</appId>
+         <appVersion>3</appVersion>
+         <value>63</value>
+         <remarks>Used for plugin: Id Generator Field</remarks>
+      </environmentVariable>
+      <environmentVariable>
+         <id>currentAppUrl</id>
+         <appId>inputOutputCoefficientPoC</appId>
+         <appVersion>3</appVersion>
+         <value>#request.scheme#://#request.serverName#:#request.serverPort##request.contextPath#/web</value>
+      </environmentVariable>
+      <environmentVariable>
+         <id>rwInputcounter</id>
+         <appId>inputOutputCoefficientPoC</appId>
+         <appVersion>3</appVersion>
+         <value>212</value>
+         <remarks>Used for plugin: Id Generator Field</remarks>
+      </environmentVariable>
+      <environmentVariable>
+         <id>rwTypeCounter</id>
+         <appId>inputOutputCoefficientPoC</appId>
+         <appVersion>3</appVersion>
+         <value>75</value>
+         <remarks>Used for plugin: Id Generator Field</remarks>
+      </environmentVariable>
+      <environmentVariable>
+         <id>loginAuth</id>
+         <appId>inputOutputCoefficientPoC</appId>
+         <appVersion>3</appVersion>
+         <value>Basic cGFja211dGFuZ2FuYUBnbWFpbC5jb206SmVzdXM3QDEyMw==</value>
+      </environmentVariable>
+   </environmentVariableList>
+   <messageList/>
+   <resourceList/>
+   <description>version 2 of IOC coefficient 30/09/2025 by Thomas</description>
+   <createdBy>packmutangana@gmail.com</createdBy>
+</appDefinition>
