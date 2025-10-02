@@ -329,7 +329,7 @@
                             "properties": {
                                 "type": "",
                                 "message": "",
-                                "mandatory": ""
+                                "mandatory": "true"
                             }
                         },
                         "label": "Input Output Coefficient",
