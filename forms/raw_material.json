@@ -334,7 +334,7 @@
                         },
                         "label": "Input Output Coefficient",
                         "disableIncrementDecrementArrow": "",
-                        "readonly": "true",
+                        "readonly": "",
                         "size": "",
                         "workflowVariable": "",
                         "style": "",
