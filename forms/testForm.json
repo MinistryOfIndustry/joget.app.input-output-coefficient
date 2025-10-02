@@ -51,7 +51,7 @@
                             "param": "",
                             "defaultValue": ""
                         }],
-                        "label": "AJAX SelectBox",
+                        "label": "Choose HSCODE",
                         "listId": "list_hs_code",
                         "allowEmpty": "true",
                         "readonly": "",
@@ -60,7 +60,7 @@
                         "lookingForMsg": "Retrieving results",
                         "displayField": "hsLabel",
                         "workflowVariable": "",
-                        "id": "hs",
+                        "id": "hscode",
                         "placeholder": "",
                         "value": "hsCode",
                         "readonlyLabel": ""
