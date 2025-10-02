@@ -23,7 +23,98 @@
             "header_label": ""
         }
     }],
-    "columns": [],
+    "columns": [
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Code",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "input_code",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_0",
+            "alignment": ""
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "title",
+            "id": "column_1",
+            "label": "Title",
+            "sortable": "false",
+            "datalist_type": "column"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "org.joget.apps.datalist.lib.DefaultFormatter",
+                "properties": {
+                    "size": "",
+                    "color": "",
+                    "field": "title",
+                    "formDefId": "add_sector",
+                    "formatting": ""
+                }
+            },
+            "label": "Sector",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "sector",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_2",
+            "alignment": ""
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "org.joget.apps.datalist.lib.DefaultFormatter",
+                "properties": {
+                    "size": "",
+                    "color": "",
+                    "field": "title",
+                    "formDefId": "product",
+                    "formatting": ""
+                }
+            },
+            "label": "Product",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "product",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_3",
+            "alignment": ""
+        }
+    ],
     "cardCollapsible": "",
     "pageSize": "50",
     "orderBy": "",
