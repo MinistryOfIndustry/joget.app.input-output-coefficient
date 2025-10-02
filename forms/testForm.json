@@ -1,72 +1,33 @@
 {
     "elements": [{
         "elements": [{
-            "elements": [
-                {
-                    "className": "org.joget.marketplace.AjaxSelectbox",
-                    "properties": {
-                        "minTermLength": "3",
-                        "idField": "hsCode",
-                        "afterTypeDelay": "300",
-                        "defaultOptions": "",
-                        "multiple": "",
-                        "validator": {
-                            "className": "",
-                            "properties": {}
-                        },
-                        "requestParams": [{
-                            "field": "field1",
-                            "param": "Test",
-                            "defaultValue": "teST"
-                        }],
-                        "label": "AJAX SelectBox",
-                        "listId": "list_hs_code",
-                        "allowEmpty": "true",
-                        "readonly": "",
-                        "keepTypingMsg": "Continue typing to search",
-                        "width": "40%",
-                        "lookingForMsg": "Retrieving results",
-                        "displayField": "hsLabel",
-                        "workflowVariable": "",
-                        "id": "hscode",
-                        "placeholder": "",
-                        "value": "hsCode",
-                        "readonlyLabel": ""
-                    }
-                },
-                {
-                    "className": "org.joget.marketplace.AjaxSelectbox",
-                    "properties": {
-                        "minTermLength": "3",
-                        "idField": "hsCode",
-                        "afterTypeDelay": "300",
-                        "defaultOptions": "",
-                        "multiple": "",
-                        "validator": {
-                            "className": "",
-                            "properties": {}
-                        },
-                        "requestParams": [{
-                            "field": "hscode",
-                            "param": "Test",
-                            "defaultValue": ""
-                        }],
-                        "label": "Choose HSCODE",
-                        "listId": "list_hs_code",
-                        "allowEmpty": "true",
-                        "readonly": "",
-                        "keepTypingMsg": "Continue typing to search",
-                        "width": "40%",
-                        "lookingForMsg": "Retrieving results",
-                        "displayField": "hsLabel",
-                        "workflowVariable": "",
-                        "id": "hscode",
-                        "placeholder": "",
-                        "value": "hsCode",
-                        "readonlyLabel": ""
-                    }
+            "elements": [{
+                "className": "org.joget.marketplace.DynamicOptionsSelectbox",
+                "properties": {
+                    "idField": "hsCode",
+                    "formDefId": "formHSCode",
+                    "multiple": "",
+                    "validator": {
+                        "className": "",
+                        "properties": {}
+                    },
+                    "requestParams": [],
+                    "label": "Dynamic Options Select Box",
+                    "buttonLabel": "Select",
+                    "listId": "list_hs_code",
+                    "readonly": "",
+                    "buttonPrimary": "",
+                    "size": "",
+                    "buttonInlineStyle": "",
+                    "width": "900",
+                    "displayField": "hsLabel",
+                    "workflowVariable": "",
+                    "id": "field1",
+                    "value": "",
+                    "readonlyLabel": "",
+                    "height": "500"
                 }
-            ],
+            }],
             "className": "org.joget.apps.form.model.Column",
             "properties": {"width": "100%"}
         }],
