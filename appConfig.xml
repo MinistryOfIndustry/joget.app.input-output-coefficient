@@ -35,14 +35,14 @@
          <id>productCounter</id>
          <appId>inputOutputCoefficientPoC</appId>
          <appVersion>3</appVersion>
-         <value>63</value>
+         <value>64</value>
          <remarks>Used for plugin: Id Generator Field</remarks>
       </environmentVariable>
       <environmentVariable>
          <id>rwInputcounter</id>
          <appId>inputOutputCoefficientPoC</appId>
          <appVersion>3</appVersion>
-         <value>212</value>
+         <value>213</value>
          <remarks>Used for plugin: Id Generator Field</remarks>
       </environmentVariable>
       <environmentVariable>
