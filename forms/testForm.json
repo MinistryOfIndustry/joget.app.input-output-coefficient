@@ -38,15 +38,32 @@
                     "className": "org.joget.marketplace.AjaxSelectbox",
                     "properties": {
                         "minTermLength": "3",
-                        "allowEmpty": "true",
+                        "idField": "hsCode",
                         "afterTypeDelay": "300",
-                        "readonly": "false",
+                        "defaultOptions": "",
+                        "multiple": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "requestParams": [{
+                            "field": "",
+                            "param": "",
+                            "defaultValue": ""
+                        }],
+                        "label": "AJAX SelectBox",
+                        "listId": "list_hs_code",
+                        "allowEmpty": "true",
+                        "readonly": "",
                         "keepTypingMsg": "Continue typing to search",
                         "width": "40%",
                         "lookingForMsg": "Retrieving results",
-                        "label": "AJAX SelectBox",
-                        "id": "field1",
-                        "readonlyLabel": "false"
+                        "displayField": "hsLabel",
+                        "workflowVariable": "",
+                        "id": "hs",
+                        "placeholder": "",
+                        "value": "hsCode",
+                        "readonlyLabel": ""
                     }
                 }
             ],
