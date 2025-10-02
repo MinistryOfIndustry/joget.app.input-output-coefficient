@@ -69,38 +69,6 @@
         {
             "filterable": true,
             "hidden": "false",
-            "name": "uom",
-            "id": "column_4",
-            "label": "UOM",
-            "sortable": "false"
-        },
-        {
-            "filterable": true,
-            "hidden": "false",
-            "name": "quantity",
-            "id": "column_6",
-            "label": "Quantity",
-            "sortable": "false"
-        },
-        {
-            "filterable": true,
-            "hidden": "false",
-            "name": "waste_percentage",
-            "id": "column_13",
-            "label": "Waste Percentage (%)",
-            "sortable": "false"
-        },
-        {
-            "filterable": true,
-            "hidden": "false",
-            "name": "input_output_coefficient",
-            "id": "column_14",
-            "label": "Input Output Coefficient",
-            "sortable": "false"
-        },
-        {
-            "filterable": true,
-            "hidden": "false",
             "renderHtml": "",
             "format": {
                 "className": "org.joget.apps.datalist.lib.DefaultFormatter",
