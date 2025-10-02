@@ -3,15 +3,30 @@
         "elements": [{
             "elements": [
                 {
-                    "className": "org.joget.apps.form.lib.IdGeneratorField",
+                    "className": "org.joget.apps.form.lib.TextField",
                     "properties": {
-                        "hidden": "",
-                        "format": "??",
+                        "requiredSanitize": "",
+                        "maxlength": "",
+                        "validator": {
+                            "className": "org.joget.apps.form.lib.DefaultValidator",
+                            "properties": {
+                                "type": "",
+                                "message": "",
+                                "mandatory": "true"
+                            }
+                        },
+                        "label": "Raw Material Code",
+                        "disableIncrementDecrementArrow": "",
+                        "readonly": "",
+                        "size": "",
                         "workflowVariable": "",
-                        "envVariable": "rwTypeCounter",
-                        "isDistributedGeneration": "",
-                        "label": "Code Category",
-                        "id": "raw_material_code"
+                        "style": "",
+                        "id": "raw_material_code",
+                        "placeholder": "",
+                        "iconIncluded": false,
+                        "value": "",
+                        "readonlyLabel": "",
+                        "storeNumeric": ""
                     }
                 },
                 {
