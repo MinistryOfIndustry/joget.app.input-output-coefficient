@@ -1,33 +1,7 @@
 {
     "elements": [{
         "elements": [{
-            "elements": [{
-                "className": "org.joget.marketplace.DynamicOptionsSelectbox",
-                "properties": {
-                    "idField": "hsCode",
-                    "formDefId": "formHSCode",
-                    "multiple": "",
-                    "validator": {
-                        "className": "",
-                        "properties": {}
-                    },
-                    "requestParams": [],
-                    "label": "Dynamic Options Select Box",
-                    "buttonLabel": "Select",
-                    "listId": "list_hs_code",
-                    "readonly": "",
-                    "buttonPrimary": "",
-                    "size": "",
-                    "buttonInlineStyle": "",
-                    "width": "900",
-                    "displayField": "hsLabel",
-                    "workflowVariable": "",
-                    "id": "field1",
-                    "value": "",
-                    "readonlyLabel": "",
-                    "height": "500"
-                }
-            }],
+            "elements": [],
             "className": "org.joget.apps.form.model.Column",
             "properties": {"width": "100%"}
         }],
