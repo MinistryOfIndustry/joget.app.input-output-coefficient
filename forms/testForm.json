@@ -47,8 +47,8 @@
                             "properties": {}
                         },
                         "requestParams": [{
-                            "field": "",
-                            "param": "",
+                            "field": "hscode",
+                            "param": "Test",
                             "defaultValue": ""
                         }],
                         "label": "Choose HSCODE",
