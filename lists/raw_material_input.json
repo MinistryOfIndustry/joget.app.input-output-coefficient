@@ -188,7 +188,132 @@
     "pageSize": "50",
     "orderBy": "",
     "description": "",
-    "filters": [],
+    "filters": [
+        {
+            "hidden": "",
+            "name": "product",
+            "id": "filter_0",
+            "label": "Filter by Product",
+            "type": {
+                "className": "org.joget.plugin.TypeAheadMultiSelectSearch",
+                "properties": {
+                    "selectAll": "",
+                    "controlField": "",
+                    "optionsBinder": {
+                        "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                        "properties": {
+                            "addEmptyOption": "true",
+                            "groupingColumn": "",
+                            "formDefId": "product",
+                            "labelColumn": "title",
+                            "extraCondition": "",
+                            "cacheInterval": "",
+                            "emptyLabel": "",
+                            "idColumn": "id"
+                        }
+                    },
+                    "defaultValue": "",
+                    "options": [],
+                    "searchFilter": ""
+                }
+            },
+            "datalist_type": "filter",
+            "filterParamName": "d-5267939-fn_product"
+        },
+        {
+            "hidden": "",
+            "name": "sector",
+            "id": "filter_1",
+            "label": "Sector",
+            "type": {
+                "className": "org.joget.plugin.TypeAheadMultiSelectSearch",
+                "properties": {
+                    "selectAll": "",
+                    "controlField": "",
+                    "optionsBinder": {
+                        "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                        "properties": {
+                            "addEmptyOption": "true",
+                            "groupingColumn": "",
+                            "formDefId": "add_sector",
+                            "labelColumn": "title",
+                            "extraCondition": "",
+                            "cacheInterval": "",
+                            "emptyLabel": "",
+                            "idColumn": "id"
+                        }
+                    },
+                    "defaultValue": "",
+                    "options": [],
+                    "searchFilter": ""
+                }
+            },
+            "datalist_type": "filter",
+            "filterParamName": "d-5267939-fn_sector"
+        },
+        {
+            "hidden": "",
+            "name": "raw_material_type",
+            "id": "filter_2",
+            "label": "Filter by Raw Material Type",
+            "type": {
+                "className": "org.joget.plugin.TypeAheadMultiSelectSearch",
+                "properties": {
+                    "selectAll": "",
+                    "controlField": "",
+                    "optionsBinder": {
+                        "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                        "properties": {
+                            "addEmptyOption": "true",
+                            "groupingColumn": "",
+                            "formDefId": "add_raw_material",
+                            "labelColumn": "title",
+                            "extraCondition": "",
+                            "cacheInterval": "",
+                            "emptyLabel": "",
+                            "idColumn": "id"
+                        }
+                    },
+                    "defaultValue": "",
+                    "options": [],
+                    "searchFilter": ""
+                }
+            },
+            "datalist_type": "filter",
+            "filterParamName": "d-5267939-fn_raw_material_type"
+        },
+        {
+            "hidden": "",
+            "name": "id",
+            "id": "filter_4",
+            "label": "Filter by Title",
+            "type": {
+                "className": "org.joget.plugin.TypeAheadMultiSelectSearch",
+                "properties": {
+                    "selectAll": "true",
+                    "controlField": "",
+                    "optionsBinder": {
+                        "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                        "properties": {
+                            "addEmptyOption": "true",
+                            "groupingColumn": "",
+                            "formDefId": "raw_material",
+                            "labelColumn": "title",
+                            "extraCondition": "",
+                            "cacheInterval": "",
+                            "emptyLabel": "",
+                            "idColumn": "id"
+                        }
+                    },
+                    "defaultValue": "",
+                    "options": [],
+                    "searchFilter": "true"
+                }
+            },
+            "datalist_type": "filter",
+            "filterParamName": "d-5267939-fn_id"
+        }
+    ],
     "showDataWhenFilterSet": "",
     "pageSizeSelectorOptions": "10,50,100",
     "hidePageSize": "",
