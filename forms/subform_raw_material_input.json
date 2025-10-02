@@ -94,6 +94,37 @@
                     }
                 },
                 {
+                    "className": "org.joget.marketplace.AutocompleteTextField",
+                    "properties": {
+                        "readonly": "",
+                        "size": "",
+                        "optionsBinder": {
+                            "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                            "properties": {
+                                "addEmptyOption": "true",
+                                "groupingColumn": "",
+                                "formDefId": "formHSCode",
+                                "labelColumn": "hsLabel",
+                                "extraCondition": "",
+                                "cacheInterval": "",
+                                "emptyLabel": "",
+                                "idColumn": "hsCode"
+                            }
+                        },
+                        "options": [],
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "selection_id": "hscode",
+                        "workflowVariable": "",
+                        "label": "HSCODE",
+                        "id": "hscode",
+                        "value": "",
+                        "readonlyLabel": ""
+                    }
+                },
+                {
                     "className": "org.joget.apps.form.lib.TextField",
                     "properties": {
                         "requiredSanitize": "",
