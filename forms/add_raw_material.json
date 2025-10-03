@@ -107,6 +107,7 @@
                         "options": [],
                         "workflowVariable": "",
                         "id": "product_hscode",
+                        "iconIncluded": false,
                         "value": "",
                         "readonlyLabel": ""
                     }
