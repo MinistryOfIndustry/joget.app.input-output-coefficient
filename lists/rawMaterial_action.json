@@ -50,6 +50,35 @@
             "id": "column_1",
             "label": "Title",
             "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "org.joget.apps.datalist.lib.DefaultFormatter",
+                "properties": {
+                    "size": "",
+                    "color": "",
+                    "field": "title",
+                    "formDefId": "add_sector",
+                    "formatting": ""
+                }
+            },
+            "label": "Sector",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "sector",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_2",
+            "alignment": ""
         }
     ],
     "pageSize": "0",
