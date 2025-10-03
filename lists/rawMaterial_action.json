@@ -142,7 +142,37 @@
     "pageSize": "0",
     "orderBy": "",
     "description": "",
-    "filters": [],
+    "filters": [{
+        "hidden": "",
+        "name": "title",
+        "id": "filter_0",
+        "label": "Title",
+        "type": {
+            "className": "org.joget.plugin.TypeAheadMultiSelectSearch",
+            "properties": {
+                "selectAll": "true",
+                "controlField": "",
+                "optionsBinder": {
+                    "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                    "properties": {
+                        "addEmptyOption": "true",
+                        "groupingColumn": "",
+                        "formDefId": "add_raw_material",
+                        "labelColumn": "title",
+                        "extraCondition": "",
+                        "cacheInterval": "",
+                        "emptyLabel": "",
+                        "idColumn": "id"
+                    }
+                },
+                "defaultValue": "",
+                "options": [],
+                "searchFilter": "true"
+            }
+        },
+        "datalist_type": "filter",
+        "filterParamName": "d-310140-fn_title"
+    }],
     "pageSizeSelectorOptions": "10,20,30,40,50,100",
     "name": "List - Raw Material Type with Action",
     "id": "rawMaterial_action",
