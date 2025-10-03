@@ -108,6 +108,35 @@
             "style": "",
             "id": "column_3",
             "alignment": ""
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "org.joget.marketplace.UserviewKeyDatalistFormatter",
+                "properties": {
+                    "backgroundColorForLink": "FFFFFF",
+                    "fontColorForLink": "#27ae60",
+                    "menuItem": "manage_raw_input",
+                    "userView": "portal",
+                    "labelForHyperlink": "Raw Material Inputs »"
+                }
+            },
+            "label": "Explore Raw Material Inputs",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "id",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_4",
+            "alignment": ""
         }
     ],
     "pageSize": "0",
