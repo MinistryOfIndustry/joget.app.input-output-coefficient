@@ -108,8 +108,8 @@
     "rowActions": [],
     "cardCollapsible": "",
     "description": "Sectors",
-    "pageSize": "0",
-    "orderBy": "",
+    "pageSize": "10",
+    "orderBy": "code",
     "showDataWhenFilterSet": "",
     "disableResponsive": "",
     "cardCollapseByDefault": "",
@@ -122,7 +122,7 @@
             "cacheRowCount": ""
         }
     },
-    "order": "",
+    "order": "2",
     "useSession": "",
     "draggabletable": "",
     "filters": [{
@@ -159,7 +159,7 @@
         "datalist_type": "filter",
         "filterParamName": "d-2060537-fn_id"
     }],
-    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "pageSizeSelectorOptions": "10,20",
     "hidePageSize": "",
     "name": "List - Sector with Action",
     "rowActionsMode": "",
