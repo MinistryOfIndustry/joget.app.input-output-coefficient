@@ -167,8 +167,8 @@
         }
     ],
     "cardCollapsible": "",
-    "pageSize": "0",
-    "orderBy": "dateCreated",
+    "pageSize": "50",
+    "orderBy": "title",
     "description": "",
     "filters": [
         {
@@ -286,5 +286,5 @@
         }
     },
     "actions": [],
-    "order": "1"
+    "order": "2"
 }
