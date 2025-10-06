@@ -153,8 +153,8 @@
     ],
     "draggabletable": "",
     "cardCollapsible": "",
-    "pageSize": "0",
-    "orderBy": "dateCreated",
+    "pageSize": "50",
+    "orderBy": "title",
     "description": "",
     "filters": [
         {
@@ -255,7 +255,7 @@
         }
     ],
     "showDataWhenFilterSet": "",
-    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "pageSizeSelectorOptions": "10,50,100",
     "hidePageSize": "",
     "disableResponsive": "",
     "cardCollapseByDefault": "",
