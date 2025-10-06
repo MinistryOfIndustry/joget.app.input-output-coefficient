@@ -3,6 +3,9 @@
         "className": "",
         "properties": {}
     },
+    "considerFilterWhenGetTotal": "",
+    "useSession": "",
+    "responsiveMode": "",
     "rowActions": [],
     "columns": [
         {
@@ -75,8 +78,10 @@
             "alignment": ""
         }
     ],
-    "pageSize": "0",
-    "orderBy": "",
+    "draggabletable": "",
+    "cardCollapsible": "",
+    "pageSize": "10",
+    "orderBy": "code",
     "description": "",
     "filters": [{
         "style-padding-right": "100px",
@@ -112,8 +117,14 @@
         "filterParamName": "d-3360883-fn_id",
         "style-mobile-padding-top": "50px"
     }],
-    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "showDataWhenFilterSet": "",
+    "pageSizeSelectorOptions": "10,20",
+    "hidePageSize": "",
+    "disableResponsive": "",
+    "cardCollapseByDefault": "",
     "name": "List - Sector - View",
+    "rowActionsMode": "",
+    "showhidecolumns": "",
     "id": "list_sector_view",
     "binder": {
         "className": "org.joget.apps.datalist.lib.FormRowDataListBinder",
@@ -124,5 +135,5 @@
         }
     },
     "actions": [],
-    "order": ""
+    "order": "2"
 }
