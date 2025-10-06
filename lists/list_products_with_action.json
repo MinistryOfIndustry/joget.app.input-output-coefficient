@@ -3,6 +3,9 @@
         "className": "",
         "properties": {}
     },
+    "considerFilterWhenGetTotal": "",
+    "useSession": "",
+    "responsiveMode": "",
     "rowActions": [{
         "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
         "id": "rowAction_0",
@@ -145,7 +148,9 @@
             "alignment": "dataListAlignCenter"
         }
     ],
-    "pageSize": "0",
+    "draggabletable": "",
+    "cardCollapsible": "",
+    "pageSize": "50",
     "orderBy": "",
     "description": "",
     "filters": [{
@@ -182,8 +187,14 @@
         "datalist_type": "filter",
         "filterParamName": "d-7185347-fn_id"
     }],
-    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "showDataWhenFilterSet": "",
+    "pageSizeSelectorOptions": "20,50,100",
+    "hidePageSize": "",
+    "disableResponsive": "",
+    "cardCollapseByDefault": "",
     "name": "List - Products with Action",
+    "rowActionsMode": "",
+    "showhidecolumns": "",
     "id": "list_products_with_action",
     "binder": {
         "className": "org.joget.apps.datalist.lib.FormRowDataListBinder",
