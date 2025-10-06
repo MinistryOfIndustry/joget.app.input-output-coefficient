@@ -164,7 +164,7 @@
     "draggabletable": "",
     "cardCollapsible": "",
     "pageSize": "50",
-    "orderBy": "",
+    "orderBy": "title",
     "description": "",
     "filters": [
         {
@@ -264,5 +264,5 @@
             "abortRelatedRunningProcesses": "true"
         }
     }],
-    "order": ""
+    "order": "2"
 }
