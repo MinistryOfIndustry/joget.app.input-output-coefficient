@@ -228,7 +228,7 @@
         }
     ],
     "cardCollapsible": "",
-    "pageSize": "0",
+    "pageSize": "50",
     "orderBy": "title",
     "description": "",
     "filters": [
