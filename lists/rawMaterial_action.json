@@ -145,7 +145,7 @@
     "draggabletable": "",
     "cardCollapsible": "",
     "pageSize": "50",
-    "orderBy": "",
+    "orderBy": "title",
     "description": "",
     "filters": [{
         "hidden": "",
@@ -196,5 +196,5 @@
         }
     },
     "actions": [],
-    "order": ""
+    "order": "2"
 }
