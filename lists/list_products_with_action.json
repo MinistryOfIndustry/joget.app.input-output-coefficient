@@ -151,7 +151,7 @@
     "draggabletable": "",
     "cardCollapsible": "",
     "pageSize": "50",
-    "orderBy": "",
+    "orderBy": "title",
     "description": "",
     "filters": [{
         "style-padding-right": "100px",
@@ -205,5 +205,5 @@
         }
     },
     "actions": [],
-    "order": ""
+    "order": "2"
 }
