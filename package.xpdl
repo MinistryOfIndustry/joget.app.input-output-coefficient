@@ -1082,14 +1082,14 @@
                     <Performer>productMovementProcess_2_process2_participant6</Performer>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="productMovementProcess_2_process2_participant6"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="260,314"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="260,320"/>
                     </ExtendedAttributes>
                 </Activity>
             </Activities>
             <ExtendedAttributes>
                 <ExtendedAttribute Name="JaWE_GRAPH_WORKFLOW_PARTICIPANT_ORDER" Value="productMovementProcess_2_process2_participant6"/>
-                <ExtendedAttribute Name="JaWE_GRAPH_START_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=productMovementProcess_2_process2_participant6,CONNECTING_ACTIVITY_ID=importSioc,X_OFFSET=80,Y_OFFSET=254,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=START_DEFAULT"/>
-                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=productMovementProcess_2_process2_participant6,CONNECTING_ACTIVITY_ID=importSioc,X_OFFSET=500,Y_OFFSET=374,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_START_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=productMovementProcess_2_process2_participant6,CONNECTING_ACTIVITY_ID=importSioc,X_OFFSET=80,Y_OFFSET=260,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=START_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=productMovementProcess_2_process2_participant6,CONNECTING_ACTIVITY_ID=importSioc,X_OFFSET=500,Y_OFFSET=380,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
             </ExtendedAttributes>
         </WorkflowProcess>
     </WorkflowProcesses>
