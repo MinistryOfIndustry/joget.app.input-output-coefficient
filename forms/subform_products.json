@@ -56,8 +56,17 @@
                         "readonly": "",
                         "size": "",
                         "optionsBinder": {
-                            "className": "",
-                            "properties": {}
+                            "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                            "properties": {
+                                "addEmptyOption": "true",
+                                "groupingColumn": "",
+                                "formDefId": "formHSCode",
+                                "labelColumn": "hsLabel",
+                                "extraCondition": "",
+                                "cacheInterval": "",
+                                "emptyLabel": "",
+                                "idColumn": "hsCode"
+                            }
                         },
                         "options": [],
                         "validator": {
