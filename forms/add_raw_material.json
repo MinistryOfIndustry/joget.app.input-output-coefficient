@@ -77,44 +77,6 @@
                 {
                     "className": "org.joget.apps.form.lib.SelectBox",
                     "properties": {
-                        "permissionHidden": "",
-                        "controlField": "product",
-                        "multiple": "",
-                        "validator": {
-                            "className": "org.joget.apps.form.lib.DefaultValidator",
-                            "properties": {
-                                "type": "",
-                                "message": "",
-                                "mandatory": "true"
-                            }
-                        },
-                        "label": "Product HSCODE",
-                        "readonly": "true",
-                        "size": "",
-                        "optionsBinder": {
-                            "className": "org.joget.apps.form.lib.FormOptionsBinder",
-                            "properties": {
-                                "addEmptyOption": "",
-                                "groupingColumn": "id",
-                                "formDefId": "product",
-                                "labelColumn": "hscode",
-                                "extraCondition": "",
-                                "cacheInterval": "",
-                                "emptyLabel": "",
-                                "idColumn": "hscode"
-                            }
-                        },
-                        "options": [],
-                        "workflowVariable": "",
-                        "id": "product_hscode",
-                        "iconIncluded": false,
-                        "value": "",
-                        "readonlyLabel": ""
-                    }
-                },
-                {
-                    "className": "org.joget.apps.form.lib.SelectBox",
-                    "properties": {
                         "controlField": "product",
                         "readonly": "",
                         "size": "",
@@ -146,6 +108,19 @@
                         "id": "product_code",
                         "value": "",
                         "readonlyLabel": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.HiddenField",
+                    "properties": {
+                        "useDefaultWhenEmpty": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "workflowVariable": "",
+                        "id": "product_hscode",
+                        "value": ""
                     }
                 },
                 {
@@ -246,7 +221,7 @@
         "postProcessor": {
             "className": "org.joget.apps.app.lib.DatabaseUpdateTool",
             "properties": {
-                "query": "UPDATE app_fd_eth_ioc_raw_mat_type\nSET c_raw_material_type_code = CONCAT(c_product_code,'-', c_raw_material_type_code)\nWHERE id = '#form.eth_ioc_raw_mat_type.id#';",
+                "query": "UPDATE app_fd_eth_ioc_raw_mat_type\nJOIN app_fd_eth_ioc_products\n  ON app_fd_eth_ioc_products.id = app_fd_eth_ioc_raw_mat_type.c_product\nSET app_fd_eth_ioc_raw_mat_type.c_product_hscode = app_fd_eth_ioc_products.c_hscode\nWHERE app_fd_eth_ioc_raw_mat_type.id = '#form.eth_ioc_raw_mat_type.id#';",
                 "jdbcDatasource": "default"
             }
         },
