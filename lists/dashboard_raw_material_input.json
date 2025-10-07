@@ -81,6 +81,14 @@
         {
             "filterable": true,
             "hidden": "false",
+            "name": "hscode",
+            "id": "column_12",
+            "label": "HSCODE",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
             "renderHtml": "",
             "format": {
                 "className": "org.joget.apps.datalist.lib.DefaultFormatter",
@@ -164,14 +172,6 @@
             "style": "",
             "id": "column_7",
             "alignment": ""
-        },
-        {
-            "filterable": true,
-            "hidden": "false",
-            "name": "hscode",
-            "id": "column_12",
-            "label": "HSCODE",
-            "sortable": "false"
         },
         {
             "filterable": true,
