@@ -145,35 +145,6 @@
                 "properties": {
                     "size": "",
                     "color": "#AAAAAA",
-                    "field": "hscode",
-                    "formDefId": "product",
-                    "formatting": ""
-                }
-            },
-            "label": "HSCODE",
-            "sortable": "true",
-            "datalist_type": "column",
-            "exclude_export": "",
-            "name": "product",
-            "width": "",
-            "headerAlignment": "",
-            "action": {
-                "className": "",
-                "properties": {}
-            },
-            "style": "",
-            "id": "column_5",
-            "alignment": ""
-        },
-        {
-            "filterable": true,
-            "hidden": "false",
-            "renderHtml": "",
-            "format": {
-                "className": "org.joget.apps.datalist.lib.DefaultFormatter",
-                "properties": {
-                    "size": "",
-                    "color": "#AAAAAA",
                     "field": "title",
                     "formDefId": "add_raw_material",
                     "formatting": ""
@@ -193,6 +164,14 @@
             "style": "",
             "id": "column_7",
             "alignment": ""
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "hscode",
+            "id": "column_12",
+            "label": "HSCODE",
+            "sortable": "false"
         },
         {
             "filterable": true,
