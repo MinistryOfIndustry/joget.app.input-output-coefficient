@@ -3,6 +3,9 @@
         "className": "",
         "properties": {}
     },
+    "considerFilterWhenGetTotal": "",
+    "useSession": "",
+    "responsiveMode": "",
     "rowActions": [],
     "columns": [
         {
@@ -121,8 +124,10 @@
             "alignment": ""
         }
     ],
-    "pageSize": "0",
-    "orderBy": "",
+    "draggabletable": "",
+    "cardCollapsible": "",
+    "pageSize": "100",
+    "orderBy": "sector_code",
     "description": "",
     "filters": [
         {
@@ -158,8 +163,14 @@
             "filterParamName": "d-4736418-fn_sector_name"
         }
     ],
-    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "showDataWhenFilterSet": "",
+    "pageSizeSelectorOptions": "20,50,100",
+    "hidePageSize": "",
+    "disableResponsive": "",
+    "cardCollapseByDefault": "",
     "name": "Report - Products with Childs",
+    "rowActionsMode": "",
+    "showhidecolumns": "",
     "id": "report_products_with_childs",
     "binder": {
         "className": "org.joget.marketplace.SqlDataListBinder",
@@ -169,5 +180,5 @@
         }
     },
     "actions": [],
-    "order": ""
+    "order": "2"
 }
