@@ -33,7 +33,7 @@
                 "properties": {}
             },
             "label": "Code",
-            "sortable": "false",
+            "sortable": "true",
             "datalist_type": "column",
             "exclude_export": "",
             "name": "input_code",
@@ -50,19 +50,48 @@
         {
             "filterable": true,
             "hidden": "false",
-            "name": "title",
-            "id": "column_1",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
             "label": "Title",
-            "sortable": "false",
-            "datalist_type": "column"
+            "sortable": "true",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "title",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_1",
+            "alignment": ""
         },
         {
             "filterable": true,
             "hidden": "false",
-            "name": "hscode",
-            "id": "column_4",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
             "label": "HSCODE",
-            "sortable": "false"
+            "sortable": "true",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "hscode",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_4",
+            "alignment": ""
         },
         {
             "filterable": true,
@@ -79,7 +108,7 @@
                 }
             },
             "label": "Sector",
-            "sortable": "false",
+            "sortable": "true",
             "datalist_type": "column",
             "exclude_export": "",
             "name": "sector",
@@ -108,7 +137,7 @@
                 }
             },
             "label": "Product",
-            "sortable": "false",
+            "sortable": "true",
             "datalist_type": "column",
             "exclude_export": "",
             "name": "product",
