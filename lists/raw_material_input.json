@@ -233,7 +233,7 @@
                     "optionsBinder": {
                         "className": "org.joget.apps.form.lib.FormOptionsBinder",
                         "properties": {
-                            "addEmptyOption": "true",
+                            "addEmptyOption": "",
                             "groupingColumn": "",
                             "formDefId": "product",
                             "labelColumn": "title",
@@ -245,7 +245,7 @@
                     },
                     "defaultValue": "",
                     "options": [],
-                    "searchFilter": ""
+                    "searchFilter": "true"
                 }
             },
             "datalist_type": "filter",
@@ -264,7 +264,7 @@
                     "optionsBinder": {
                         "className": "org.joget.apps.form.lib.FormOptionsBinder",
                         "properties": {
-                            "addEmptyOption": "true",
+                            "addEmptyOption": "",
                             "groupingColumn": "",
                             "formDefId": "add_raw_material",
                             "labelColumn": "title",
@@ -276,7 +276,7 @@
                     },
                     "defaultValue": "",
                     "options": [],
-                    "searchFilter": ""
+                    "searchFilter": "true"
                 }
             },
             "datalist_type": "filter",
@@ -290,12 +290,12 @@
             "type": {
                 "className": "org.joget.plugin.TypeAheadMultiSelectSearch",
                 "properties": {
-                    "selectAll": "true",
+                    "selectAll": "",
                     "controlField": "",
                     "optionsBinder": {
                         "className": "org.joget.apps.form.lib.FormOptionsBinder",
                         "properties": {
-                            "addEmptyOption": "true",
+                            "addEmptyOption": "",
                             "groupingColumn": "",
                             "formDefId": "raw_material",
                             "labelColumn": "title",
