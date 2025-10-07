@@ -82,10 +82,33 @@
             "hidden": "false",
             "renderHtml": "",
             "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "HSCODE",
+            "sortable": "true",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "hscode",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_2",
+            "alignment": ""
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
                 "className": "org.joget.apps.datalist.lib.DefaultFormatter",
                 "properties": {
                     "size": "",
-                    "color": "",
+                    "color": "#AAAAAA",
                     "field": "title",
                     "formDefId": "add_sector",
                     "formatting": ""
@@ -104,29 +127,6 @@
             },
             "style": "",
             "id": "column_1",
-            "alignment": ""
-        },
-        {
-            "filterable": true,
-            "hidden": "false",
-            "renderHtml": "",
-            "format": {
-                "className": "",
-                "properties": {}
-            },
-            "label": "HSCODE",
-            "sortable": "true",
-            "datalist_type": "column",
-            "exclude_export": "",
-            "name": "hscode",
-            "width": "",
-            "headerAlignment": "",
-            "action": {
-                "className": "",
-                "properties": {}
-            },
-            "style": "",
-            "id": "column_2",
             "alignment": ""
         },
         {
