@@ -116,10 +116,10 @@
                             "className": "",
                             "properties": {}
                         },
-                        "selection_id": "hscode",
+                        "selection_id": "allHsCode",
                         "workflowVariable": "",
-                        "label": "HSCODE",
-                        "id": "hscode",
+                        "label": "Select HSCODE",
+                        "id": "allHsCode",
                         "value": "",
                         "readonlyLabel": ""
                     }
