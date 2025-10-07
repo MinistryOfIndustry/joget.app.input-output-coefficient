@@ -163,6 +163,38 @@
             "style": "",
             "id": "column_7",
             "alignment": ""
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "uom",
+            "id": "column_5",
+            "label": "UOM",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "quantity",
+            "id": "column_6",
+            "label": "Quantity",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "waste_percentage",
+            "id": "column_8",
+            "label": "Waste Percentage (%)",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "input_output_coefficient",
+            "id": "column_9",
+            "label": "Input Output Coefficient",
+            "sortable": "false"
         }
     ],
     "draggabletable": "",
