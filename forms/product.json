@@ -125,12 +125,8 @@
                         },
                         "options": [],
                         "validator": {
-                            "className": "org.joget.apps.form.lib.DefaultValidator",
-                            "properties": {
-                                "type": "",
-                                "message": "HS Code is required",
-                                "mandatory": "true"
-                            }
+                            "className": "",
+                            "properties": {}
                         },
                         "selection_id": "allHsCode",
                         "workflowVariable": "",
