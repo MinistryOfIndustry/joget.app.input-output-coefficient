@@ -59,12 +59,20 @@
         {
             "filterable": true,
             "hidden": "false",
+            "name": "hscode",
+            "id": "column_4",
+            "label": "HSCODE",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
             "renderHtml": "",
             "format": {
                 "className": "org.joget.apps.datalist.lib.DefaultFormatter",
                 "properties": {
                     "size": "",
-                    "color": "",
+                    "color": "#AAAAAA",
                     "field": "title",
                     "formDefId": "add_sector",
                     "formatting": ""
@@ -93,7 +101,7 @@
                 "className": "org.joget.apps.datalist.lib.DefaultFormatter",
                 "properties": {
                     "size": "",
-                    "color": "",
+                    "color": "#AAAAAA",
                     "field": "title",
                     "formDefId": "product",
                     "formatting": ""
@@ -117,20 +125,12 @@
         {
             "filterable": true,
             "hidden": "false",
-            "name": "hscode",
-            "id": "column_4",
-            "label": "HSCODE",
-            "sortable": "false"
-        },
-        {
-            "filterable": true,
-            "hidden": "false",
             "renderHtml": "",
             "format": {
                 "className": "org.joget.apps.datalist.lib.DefaultFormatter",
                 "properties": {
                     "size": "",
-                    "color": "",
+                    "color": "#AAAAAA",
                     "field": "title",
                     "formDefId": "add_raw_material",
                     "formatting": ""
