@@ -62,7 +62,7 @@
                 "className": "org.joget.apps.datalist.lib.DefaultFormatter",
                 "properties": {
                     "size": "",
-                    "color": "",
+                    "color": "#AAAAAA",
                     "field": "title",
                     "formDefId": "add_sector",
                     "formatting": ""
@@ -91,7 +91,7 @@
                 "className": "org.joget.apps.datalist.lib.DefaultFormatter",
                 "properties": {
                     "size": "",
-                    "color": "",
+                    "color": "#AAAAAA",
                     "field": "title",
                     "formDefId": "product",
                     "formatting": ""
