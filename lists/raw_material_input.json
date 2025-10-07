@@ -191,6 +191,37 @@
     "filters": [
         {
             "hidden": "",
+            "name": "sector",
+            "id": "filter_1",
+            "label": "Filter By Sector",
+            "type": {
+                "className": "org.joget.plugin.TypeAheadMultiSelectSearch",
+                "properties": {
+                    "selectAll": "",
+                    "controlField": "",
+                    "optionsBinder": {
+                        "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                        "properties": {
+                            "addEmptyOption": "",
+                            "groupingColumn": "",
+                            "formDefId": "add_sector",
+                            "labelColumn": "title",
+                            "extraCondition": "",
+                            "cacheInterval": "",
+                            "emptyLabel": "",
+                            "idColumn": "id"
+                        }
+                    },
+                    "defaultValue": "",
+                    "options": [],
+                    "searchFilter": "true"
+                }
+            },
+            "datalist_type": "filter",
+            "filterParamName": "d-5267939-fn_sector"
+        },
+        {
+            "hidden": "",
             "name": "product",
             "id": "filter_0",
             "label": "Filter by Product",
@@ -219,37 +250,6 @@
             },
             "datalist_type": "filter",
             "filterParamName": "d-5267939-fn_product"
-        },
-        {
-            "hidden": "",
-            "name": "sector",
-            "id": "filter_1",
-            "label": "Sector",
-            "type": {
-                "className": "org.joget.plugin.TypeAheadMultiSelectSearch",
-                "properties": {
-                    "selectAll": "",
-                    "controlField": "",
-                    "optionsBinder": {
-                        "className": "org.joget.apps.form.lib.FormOptionsBinder",
-                        "properties": {
-                            "addEmptyOption": "true",
-                            "groupingColumn": "",
-                            "formDefId": "add_sector",
-                            "labelColumn": "title",
-                            "extraCondition": "",
-                            "cacheInterval": "",
-                            "emptyLabel": "",
-                            "idColumn": "id"
-                        }
-                    },
-                    "defaultValue": "",
-                    "options": [],
-                    "searchFilter": ""
-                }
-            },
-            "datalist_type": "filter",
-            "filterParamName": "d-5267939-fn_sector"
         },
         {
             "hidden": "",
