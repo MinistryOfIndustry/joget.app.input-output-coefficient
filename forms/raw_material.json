@@ -426,11 +426,8 @@
         },
         "id": "raw_material",
         "postProcessor": {
-            "className": "org.joget.apps.app.lib.DatabaseUpdateTool",
-            "properties": {
-                "query": "UPDATE app_fd_eth_ioc_raw_mat_item\nSET c_input_code = CONCAT(c_raw_material_type_code, '-' , c_input_code)\nWHERE id = '#form.eth_ioc_raw_mat_item.id#';",
-                "jdbcDatasource": "default"
-            }
+            "className": "",
+            "properties": {}
         },
         "storeBinder": {
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
