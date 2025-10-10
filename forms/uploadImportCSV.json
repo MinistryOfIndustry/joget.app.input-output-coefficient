@@ -43,7 +43,7 @@
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
             "properties": {}
         },
-        "name": "Upload SIOC import CSV file",
+        "name": "Configuration->Upload SIOC import CSV file",
         "description": "",
         "postProcessorRunOn": "create",
         "permission": {
