@@ -283,7 +283,7 @@
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
             "properties": {}
         },
-        "name": "Subform - Products",
+        "name": "IOC Request: Subform - Products",
         "description": "",
         "postProcessorRunOn": "create",
         "permission": {
