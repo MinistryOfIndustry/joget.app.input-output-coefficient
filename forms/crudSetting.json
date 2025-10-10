@@ -121,7 +121,7 @@
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
             "properties": {}
         },
-        "name": "CRUD Setting",
+        "name": "Configuration->CRUD Setting",
         "description": "",
         "postProcessorRunOn": "create",
         "permission": {
