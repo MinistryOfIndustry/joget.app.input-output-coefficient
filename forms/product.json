@@ -327,7 +327,7 @@
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
             "properties": {}
         },
-        "name": "Form - Products",
+        "name": "IOC Administration->Form - Products",
         "description": "",
         "postProcessorRunOn": "create",
         "permission": {
