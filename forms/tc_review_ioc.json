@@ -450,7 +450,7 @@
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
             "properties": {}
         },
-        "name": "4. IOC (TC Review)",
+        "name": "Request New Product Process->TC Review",
         "description": "",
         "postProcessorRunOn": "create",
         "permission": {
