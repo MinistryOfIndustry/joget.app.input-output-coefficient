@@ -283,7 +283,7 @@
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
             "properties": {}
         },
-        "name": "IOC Request->TC Review->Subform - Products",
+        "name": "Request New Product Process->TC Review->Subform - Products",
         "description": "",
         "postProcessorRunOn": "create",
         "permission": {
