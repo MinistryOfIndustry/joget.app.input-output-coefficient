@@ -252,7 +252,7 @@
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
             "properties": {}
         },
-        "name": "Request New Product Process->Start process form",
+        "name": "Request New Product Process->Manufacturer request",
         "description": "",
         "postProcessorRunOn": "create",
         "permission": {
