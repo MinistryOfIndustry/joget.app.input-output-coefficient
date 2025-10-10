@@ -280,7 +280,7 @@
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
             "properties": {}
         },
-        "name": "Subform - Raw Material Input",
+        "name": "IOC Request: Subform - Raw Material Input",
         "description": "",
         "postProcessorRunOn": "create",
         "permission": {
