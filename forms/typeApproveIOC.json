@@ -402,7 +402,7 @@
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
             "properties": {}
         },
-        "name": "4. Type IOC (Center Approve)",
+        "name": "Request New Type for Existing Product Process->Center Approval",
         "description": "",
         "postProcessorRunOn": "create",
         "permission": {
