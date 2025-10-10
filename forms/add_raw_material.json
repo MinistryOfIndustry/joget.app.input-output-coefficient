@@ -210,7 +210,7 @@
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
             "properties": {}
         },
-        "name": "Form - Raw Material Type",
+        "name": "IOC Administration->Form - Raw Material Type",
         "description": "",
         "postProcessorRunOn": "both",
         "permission": {
