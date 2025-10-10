@@ -63,7 +63,7 @@
         <Application Id="default_application"/>
     </Applications>
     <WorkflowProcesses>
-        <WorkflowProcess Id="sioc_process" Name="SIOC Process">
+        <WorkflowProcess Id="sioc_process" Name="Request New Product Process">
             <ProcessHeader DurationUnit="h"/>
             <DataFields>
                 <DataField Id="status" IsArray="FALSE">
