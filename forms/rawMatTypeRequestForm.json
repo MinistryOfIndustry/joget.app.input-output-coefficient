@@ -254,7 +254,7 @@
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
             "properties": {}
         },
-        "name": "Form - New Raw Material Type",
+        "name": "Request new ITEM to existing TYPE Process->Manufacturer request",
         "description": "",
         "postProcessorRunOn": "create",
         "permission": {
