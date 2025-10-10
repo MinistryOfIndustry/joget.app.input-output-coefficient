@@ -39,7 +39,7 @@
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
             "properties": {}
         },
-        "name": "Form - Manage Product",
+        "name": "To Be Reviewed: Form - Manage Product",
         "description": "",
         "postProcessorRunOn": "create",
         "permission": {
