@@ -48,7 +48,7 @@
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
             "properties": {}
         },
-        "name": "Form - Alert Message",
+        "name": "To Be Reviewed: Form - Alert Message",
         "description": "",
         "postProcessorRunOn": "create",
         "permission": {
