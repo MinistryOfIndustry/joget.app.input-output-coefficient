@@ -570,7 +570,7 @@
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
             "properties": {}
         },
-        "name": "6. IOC (NC Approve)",
+        "name": "Request new PRODUCT Process->NC Approve",
         "description": "",
         "postProcessorRunOn": "create",
         "permission": {
