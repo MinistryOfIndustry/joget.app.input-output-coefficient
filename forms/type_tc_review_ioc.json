@@ -365,7 +365,7 @@
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
             "properties": {}
         },
-        "name": "Request New Type for Existing Product Process->TC Review",
+        "name": "Request new TYPE to existing PRODUCT Process->TC Review",
         "description": "",
         "postProcessorRunOn": "create",
         "permission": {
