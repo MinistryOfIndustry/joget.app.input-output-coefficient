@@ -320,7 +320,7 @@
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
             "properties": {}
         },
-        "name": "3. IOC (Center Review)",
+        "name": "Request SIOC Process->Center Review",
         "description": "",
         "postProcessorRunOn": "create",
         "permission": {
