@@ -401,7 +401,7 @@
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
             "properties": {}
         },
-        "name": "2.Item IOC (Center Review)",
+        "name": "New Raw Material Item to Existing Type Process->Center Review",
         "description": "",
         "postProcessorRunOn": "create",
         "permission": {
