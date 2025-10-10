@@ -352,7 +352,7 @@
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
             "properties": {}
         },
-        "name": "Item IOC (TC Rework)",
+        "name": "Request new ITEM to existing TYPE Process->TC Rework",
         "description": "",
         "postProcessorRunOn": "create",
         "permission": {
