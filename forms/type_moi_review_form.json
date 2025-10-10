@@ -298,7 +298,7 @@
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
             "properties": {}
         },
-        "name": "Request New Type for Existing Product Process->MOI Review",
+        "name": "Request new TYPE to existing PRODUCT Process->MOI Review",
         "description": "",
         "postProcessorRunOn": "create",
         "permission": {
