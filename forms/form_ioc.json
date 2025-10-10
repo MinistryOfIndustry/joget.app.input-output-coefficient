@@ -252,7 +252,7 @@
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
             "properties": {}
         },
-        "name": "1. IOC",
+        "name": "Request SIOC Process->Start process form",
         "description": "",
         "postProcessorRunOn": "create",
         "permission": {
