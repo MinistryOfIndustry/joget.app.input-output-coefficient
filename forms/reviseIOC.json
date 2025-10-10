@@ -427,7 +427,7 @@
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
             "properties": {}
         },
-        "name": "IOC (TC Rework)",
+        "name": "Request new PRODUCT Process->TC Rework",
         "description": "",
         "postProcessorRunOn": "create",
         "permission": {
