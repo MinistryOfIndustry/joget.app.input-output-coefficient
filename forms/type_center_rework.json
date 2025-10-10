@@ -419,7 +419,7 @@
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
             "properties": {}
         },
-        "name": "Type IOC (Center Rework)",
+        "name": "Request new TYPE for existing PRODUCT Process->Center Rework",
         "description": "",
         "postProcessorRunOn": "create",
         "permission": {
