@@ -417,7 +417,7 @@
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
             "properties": {}
         },
-        "name": "Form - Raw Material Input",
+        "name": "IOC Administration->Form - Raw Material Input",
         "description": "",
         "postProcessorRunOn": "both",
         "permission": {
