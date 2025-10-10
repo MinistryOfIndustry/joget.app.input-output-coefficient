@@ -325,7 +325,7 @@
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
             "properties": {}
         },
-        "name": "2. IOC (MOI Review)",
+        "name": "Request New Product Process->MOI Review",
         "description": "",
         "postProcessorRunOn": "create",
         "permission": {
