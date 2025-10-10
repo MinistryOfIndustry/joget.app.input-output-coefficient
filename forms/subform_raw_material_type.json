@@ -129,7 +129,7 @@
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
             "properties": {}
         },
-        "name": "IOC Request->TC Review->Subform - Raw Material Type",
+        "name": "Request New Product Process->TC Review->Subform - Raw Material Type",
         "description": "",
         "postProcessorRunOn": "create",
         "permission": {
