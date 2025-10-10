@@ -254,7 +254,7 @@
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
             "properties": {}
         },
-        "name": "Request new ITEM to existing TYPE Process->Manufacturer request",
+        "name": "Request new TYPE for existing PRODUCT Process->Manufacturer request",
         "description": "",
         "postProcessorRunOn": "create",
         "permission": {
