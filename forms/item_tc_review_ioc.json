@@ -401,7 +401,7 @@
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
             "properties": {}
         },
-        "name": "New Raw Material Item to Existing Type Process->TC Review",
+        "name": "New Item to Existing Type Process->TC Review",
         "description": "",
         "postProcessorRunOn": "create",
         "permission": {
