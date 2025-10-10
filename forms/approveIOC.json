@@ -538,7 +538,7 @@
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
             "properties": {}
         },
-        "name": "Request New Product Process->Center Approve",
+        "name": "Request New Product Process->Center Approval",
         "description": "",
         "postProcessorRunOn": "create",
         "permission": {
