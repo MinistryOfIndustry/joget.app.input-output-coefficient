@@ -350,7 +350,7 @@
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
             "properties": {}
         },
-        "name": "New Raw Material Type To Existing Process->Center Review",
+        "name": "New Raw Material Type To Existing Product Process->Center Review",
         "description": "",
         "postProcessorRunOn": "create",
         "permission": {
