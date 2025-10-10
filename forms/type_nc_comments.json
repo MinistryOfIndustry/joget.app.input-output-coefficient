@@ -455,7 +455,7 @@
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
             "properties": {}
         },
-        "name": "5. Type IOC (NC Approve)",
+        "name": "Request new TYPE for existing PRODUCT Process->NC Approve",
         "description": "",
         "postProcessorRunOn": "create",
         "permission": {
