@@ -438,7 +438,7 @@
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
             "properties": {}
         },
-        "name": "New Item to Existing Type Process->Center Approval",
+        "name": "Request new ITEM to existing TYPE Process->Center Approval",
         "description": "",
         "postProcessorRunOn": "create",
         "permission": {
