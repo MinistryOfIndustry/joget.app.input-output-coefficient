@@ -402,7 +402,7 @@
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
             "properties": {}
         },
-        "name": "Request New Type for Existing Product Process->Center Approval",
+        "name": "Request new TYPE to existing PRODUCT Process-->Center Approval",
         "description": "",
         "postProcessorRunOn": "create",
         "permission": {
@@ -415,7 +415,7 @@
             "properties": {}
         },
         "storeBinder": {
-            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "className": null,
             "properties": {}
         },
         "tableName": "eth_ioc_type_request"
