@@ -80,7 +80,7 @@
                     <Performer>moi</Performer>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="moi"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="120,54"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="120,60"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="center_review" Name="Center Review">
@@ -90,7 +90,7 @@
                     <Performer>center</Performer>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="center"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="100,270"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="100,276"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="tc_review_add_rm_inputs" Name="TC Review and Add RM Inputs">
@@ -100,7 +100,7 @@
                     <Performer>technical_committee</Performer>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="technical_committee"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="100,506"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="100,512"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="center_approval" Name="Center Approval">
@@ -115,7 +115,7 @@
                     </TransitionRestrictions>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="center"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="480,270"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="480,276"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="decision" Name="Decision">
@@ -133,7 +133,7 @@
                     </TransitionRestrictions>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="center"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="660,270"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="660,276"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="tc_rework" Name="TC Rework">
@@ -143,7 +143,7 @@
                     <Performer>technical_committee</Performer>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="technical_committee"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="540,486"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="540,492"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="nc_approval" Name="NC Approval">
@@ -158,7 +158,7 @@
                     </TransitionRestrictions>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="national_committee"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="780,714"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="780,720"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="nc_decision" Name="NC Decision">
@@ -176,7 +176,7 @@
                     </TransitionRestrictions>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="national_committee"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="960,714"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="960,720"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="center_rework" Name="Center Rework">
@@ -186,7 +186,7 @@
                     <Performer>center</Performer>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="center"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="860,270"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="860,276"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="confirmation_email" Name="Confirmation Email">
@@ -196,7 +196,7 @@
                     <Performer>national_committee</Performer>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="national_committee"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1320,714"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1320,720"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="route2">
@@ -214,7 +214,7 @@
                     </TransitionRestrictions>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="moi"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="300,54"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="300,60"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="rejectionEmail" Name="Rejection Email">
@@ -224,7 +224,7 @@
                     <Performer>moi</Performer>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="moi"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="560,54"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="560,60"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="save" Name="Save to database">
@@ -234,7 +234,7 @@
                     <Performer>national_committee</Performer>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="national_committee"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1140,714"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1140,720"/>
                     </ExtendedAttributes>
                 </Activity>
             </Activities>
@@ -328,9 +328,9 @@
             </Transitions>
             <ExtendedAttributes>
                 <ExtendedAttribute Name="JaWE_GRAPH_WORKFLOW_PARTICIPANT_ORDER" Value="manufacturer;moi;center;technical_committee;national_committee"/>
-                <ExtendedAttribute Name="JaWE_GRAPH_START_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=manufacturer,CONNECTING_ACTIVITY_ID=moi_review,X_OFFSET=180,Y_OFFSET=-184,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=START_DEFAULT"/>
-                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=moi,CONNECTING_ACTIVITY_ID=rejectionEmail,X_OFFSET=840,Y_OFFSET=74,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
-                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=national_committee,CONNECTING_ACTIVITY_ID=confirmation_email,X_OFFSET=1500,Y_OFFSET=734,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_START_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=manufacturer,CONNECTING_ACTIVITY_ID=moi_review,X_OFFSET=180,Y_OFFSET=-178,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=START_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=moi,CONNECTING_ACTIVITY_ID=rejectionEmail,X_OFFSET=840,Y_OFFSET=80,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=national_committee,CONNECTING_ACTIVITY_ID=confirmation_email,X_OFFSET=1500,Y_OFFSET=740,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
             </ExtendedAttributes>
         </WorkflowProcess>
         <WorkflowProcess Id="productMovementProcess" Name="Product Movement Process">
@@ -360,7 +360,7 @@
                 <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=process2_participant6,CONNECTING_ACTIVITY_ID=movingRequestedProduct,X_OFFSET=500,Y_OFFSET=374,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
             </ExtendedAttributes>
         </WorkflowProcess>
-        <WorkflowProcess Id="newRawMatItemToExistingProductProcess" Name="New Raw Material Item to Existing Type Process">
+        <WorkflowProcess Id="newRawMatItemToExistingProductProcess" Name="New Item to Existing Type Process">
             <ProcessHeader DurationUnit="h"/>
             <DataFields>
                 <DataField Id="status" IsArray="FALSE">
