@@ -708,13 +708,6 @@
          <filesize>2346</filesize>
          <permissionProperties>{&quot;hashvariable&quot;:&quot;#appResource.gslogo.png#&quot;,&quot;permission&quot;:{&quot;className&quot;:&quot;&quot;,&quot;properties&quot;:{}}}</permissionProperties>
       </appResource>
-      <appResource>
-         <id>moi_logo_0.png</id>
-         <appId>inputOutputCoefficientPoC</appId>
-         <appVersion>3</appVersion>
-         <filesize>45887</filesize>
-         <permissionProperties>{&quot;permission&quot;: { &quot;className&quot;: &quot;&quot;, &quot;properties&quot;: {}}}</permissionProperties>
-      </appResource>
    </resourceList>
    <description>Version 3 IOC Coefficient — 01 Oct 2025, Patrick: refactored to align with the data schema for migration</description>
    <createdBy>packmutangana@gmail.com</createdBy>
