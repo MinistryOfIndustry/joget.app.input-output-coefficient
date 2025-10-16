@@ -3,15 +3,26 @@
         "elements": [{
             "elements": [
                 {
-                    "className": "org.joget.apps.form.lib.IdGeneratorField",
+                    "className": "org.joget.apps.form.lib.TextField",
                     "properties": {
-                        "hidden": "",
-                        "format": "??",
-                        "workflowVariable": "",
-                        "envVariable": "productCounter",
-                        "isDistributedGeneration": "",
+                        "requiredSanitize": "",
+                        "maxlength": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
                         "label": "Product Code",
-                        "id": "product_code"
+                        "disableIncrementDecrementArrow": "",
+                        "readonly": "",
+                        "size": "",
+                        "workflowVariable": "",
+                        "style": "",
+                        "id": "product_code",
+                        "placeholder": "",
+                        "iconIncluded": false,
+                        "value": "",
+                        "readonlyLabel": "",
+                        "storeNumeric": ""
                     }
                 },
                 {
