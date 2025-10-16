@@ -155,12 +155,12 @@
         "type": {
             "className": "org.joget.plugin.TypeAheadMultiSelectSearch",
             "properties": {
-                "selectAll": "true",
+                "selectAll": "",
                 "controlField": "",
                 "optionsBinder": {
                     "className": "org.joget.apps.form.lib.FormOptionsBinder",
                     "properties": {
-                        "addEmptyOption": "true",
+                        "addEmptyOption": "",
                         "groupingColumn": "",
                         "formDefId": "add_raw_material",
                         "labelColumn": "title",
