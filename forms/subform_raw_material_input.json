@@ -249,7 +249,7 @@
                         "autoPopulate": "",
                         "label": "",
                         "id": "field6",
-                        "value": "<script>\n  $(document).ready(function() {\n\t\n\t$(\"[id$='_quantity'], [id$='_waste_percentage']\").off('change').change(function() {\n\t\tparentElement = $(this).closest('.subform-column');\n\t\tquantity = parentElement.find($(\"[id$='_quantity']\").val();\n\t\twaste = parentElement.find($(\"[id$='_waste_percentage']\").val();\n\t\tioc = Math.max(0, quantity * (1 + waste / 100));\n\t\tparentElement.find($(\"[id$='_input_output_coefficient']\")).val(ioc.toFixed(2)).prop('readonly', true);\n\t});\n  });\n<\/script>\n"
+                        "value": "<script>\n  $(document).ready(function() {\n\t\n\t$(\"[id$='_quantity'], [id$='_waste_percentage']\").off('change').change(function() {\n\t\tparentElement = $(this).closest('.subform-column');\n\t\tquantity = parentElement.find($(\"[id$='_quantity']\")).val();\n\t\twaste = parentElement.find($(\"[id$='_waste_percentage']\")).val();\n\t\tioc = Math.max(0, quantity * (1 + waste / 100));\n\t\tparentElement.find($(\"[id$='_input_output_coefficient']\")).val(ioc.toFixed(2)).prop('readonly', true);\n\t});\n  });\n<\/script>\n"
                     }
                 }
             ],
