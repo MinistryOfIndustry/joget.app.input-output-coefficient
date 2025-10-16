@@ -115,7 +115,7 @@
                         "autoPopulate": "",
                         "label": "",
                         "id": "field11",
-                        "value": "$(document).ready(function() {\n     $(\"id$='_allHsCode']\").on('autocompleteselect',function(event, element) {\n\t\tconsole.log(element);\n    });\n});"
+                        "value": "<script>\n$(document).ready(function() {\n    $(\"id$='_allHsCode']\").on('autocompleteselect',function(event, element) {\n\t\tconsole.log(element);\n    });\n});\n<\/script>"
                     }
                 },
                 {
