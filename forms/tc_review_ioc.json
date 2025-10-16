@@ -55,32 +55,6 @@
                         }
                     },
                     {
-                        "className": "org.joget.apps.form.lib.FileUpload",
-                        "properties": {
-                            "resizeMethod": "",
-                            "permissionType": "",
-                            "padding": "",
-                            "maxSizeMsg": "File size limit exceeded",
-                            "resizeWidth": "",
-                            "multiple": "",
-                            "validator": {
-                                "className": "",
-                                "properties": {}
-                            },
-                            "maxSize": "",
-                            "label": "Supporting Documents",
-                            "resizeQuality": "0.8",
-                            "removeFile": "",
-                            "readonly": "",
-                            "attachment": "true",
-                            "size": "",
-                            "fileTypeMsg": "Invalid file type",
-                            "id": "supporting_documents",
-                            "resizeHeight": "",
-                            "fileType": ""
-                        }
-                    },
-                    {
                         "className": "org.joget.apps.form.lib.SelectBox",
                         "properties": {
                             "controlField": "",
