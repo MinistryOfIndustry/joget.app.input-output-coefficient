@@ -10,13 +10,13 @@
         <Participant Id="manufacturer" Name="Manufacturer">
             <ParticipantType Type="ROLE"/>
         </Participant>
-        <Participant Id="moi" Name="MOI">
+        <Participant Id="moi" Name="MOI Reviewer">
             <ParticipantType Type="ROLE"/>
         </Participant>
-        <Participant Id="center" Name="Center">
+        <Participant Id="center" Name="Center HOD">
             <ParticipantType Type="ROLE"/>
         </Participant>
-        <Participant Id="technical_committee" Name="Technical Committee">
+        <Participant Id="technical_committee" Name="Center Technical Committee">
             <ParticipantType Type="ROLE"/>
         </Participant>
         <Participant Id="national_committee" Name="National Committee">
