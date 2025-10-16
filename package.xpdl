@@ -892,7 +892,7 @@
                         <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="960,400"/>
                     </ExtendedAttributes>
                 </Activity>
-                <Activity Id="typeTCRewarkP" Name="TC Rewark">
+                <Activity Id="typeTCRewarkP" Name="TC Rework">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -930,7 +930,7 @@
                         <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1280,916"/>
                     </ExtendedAttributes>
                 </Activity>
-                <Activity Id="center_rewark_pro" Name="Center Rewark">
+                <Activity Id="center_rewark_pro" Name="Center Rework">
                     <Implementation>
                         <No/>
                     </Implementation>
