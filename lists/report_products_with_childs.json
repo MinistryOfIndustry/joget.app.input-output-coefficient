@@ -150,7 +150,7 @@
             "hidden": "",
             "name": "sector_name",
             "id": "filter_6",
-            "label": "Search by sector",
+            "label": "Search by Sector",
             "type": {
                 "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
                 "properties": {
