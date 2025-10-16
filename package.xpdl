@@ -28,13 +28,13 @@
         <Participant Id="requestor" Name="Participant">
             <ParticipantType Type="ROLE"/>
         </Participant>
-        <Participant Id="newRawMatItemToExistingProductProcess_participant2" Name="MOI">
+        <Participant Id="newRawMatItemToExistingProductProcess_participant2" Name="MOI Reviewr">
             <ParticipantType Type="ROLE"/>
         </Participant>
-        <Participant Id="newRawMatItemToExistingProductProcess_participant3" Name="Center">
+        <Participant Id="newRawMatItemToExistingProductProcess_participant3" Name="Center HOD">
             <ParticipantType Type="ROLE"/>
         </Participant>
-        <Participant Id="newRawMatItemToExistingProductProcess_participant4" Name="Technical Committee">
+        <Participant Id="newRawMatItemToExistingProductProcess_participant4" Name="Center Technical Committee">
             <ParticipantType Type="ROLE"/>
         </Participant>
         <Participant Id="newRawMatItemToExistingProductProcess_participant5" Name="National Committee">
@@ -43,13 +43,13 @@
         <Participant Id="newRawMatItemToExistingProductProcess_2_requestor" Name="Participant">
             <ParticipantType Type="ROLE"/>
         </Participant>
-        <Participant Id="newRawMatItemToExistingProductProcess_2_participant2" Name="MOI">
+        <Participant Id="newRawMatItemToExistingProductProcess_2_participant2" Name="MOI Reviewr">
             <ParticipantType Type="ROLE"/>
         </Participant>
-        <Participant Id="newRawMatItemToExistingProductProcess_2_participant3" Name="Center">
+        <Participant Id="newRawMatItemToExistingProductProcess_2_participant3" Name="Center HOD">
             <ParticipantType Type="ROLE"/>
         </Participant>
-        <Participant Id="newRawMatItemToExistingProductProcess_2_participant4" Name="Technical Committee">
+        <Participant Id="newRawMatItemToExistingProductProcess_2_participant4" Name="Center Technical Committee">
             <ParticipantType Type="ROLE"/>
         </Participant>
         <Participant Id="newRawMatItemToExistingProductProcess_2_participant5" Name="National Committee">
@@ -536,7 +536,7 @@
                         <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="960,400"/>
                     </ExtendedAttributes>
                 </Activity>
-                <Activity Id="itemTCRewark" Name="TC Rewark">
+                <Activity Id="itemTCRewark" Name="TC Rework">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -574,7 +574,7 @@
                         <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1280,916"/>
                     </ExtendedAttributes>
                 </Activity>
-                <Activity Id="center_rewark" Name="Center Rewark">
+                <Activity Id="center_rewark" Name="Center Rework">
                     <Implementation>
                         <No/>
                     </Implementation>
