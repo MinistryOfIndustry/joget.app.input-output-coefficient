@@ -26,6 +26,13 @@
          <value>#request.scheme#://#request.serverName#:#request.serverPort##request.contextPath#/web</value>
       </environmentVariable>
       <environmentVariable>
+         <id>DEFAULT_DEPARTMENT</id>
+         <appId>inputOutputCoefficientPoC</appId>
+         <appVersion>3</appVersion>
+         <value>moi_ioc_center_leather</value>
+         <remarks>Default department if not sector code can be mapped for IOC request Process</remarks>
+      </environmentVariable>
+      <environmentVariable>
          <id>loginAuth</id>
          <appId>inputOutputCoefficientPoC</appId>
          <appVersion>3</appVersion>
