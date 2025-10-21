@@ -59,6 +59,13 @@
          <value>75</value>
          <remarks>Used for plugin: Id Generator Field</remarks>
       </environmentVariable>
+      <environmentVariable>
+         <id>SECTOR_TO_DEPARTMENT_MAPPING</id>
+         <appId>inputOutputCoefficientPoC</appId>
+         <appVersion>3</appVersion>
+         <value>{&quot;A&quot;:&quot;moi_ioc_center_leather&quot;,&quot;B&quot;:&quot;moi_ioc_center_textile&quot;,&quot;C&quot;:&quot;moi_ioc_center_food_beverage&quot;,&quot;D&quot;:&quot;moi_ioc_center_metal&quot;,&quot;E&quot;:&quot;moi_ioc_center_metal&quot;}</value>
+         <remarks></remarks>
+      </environmentVariable>
    </environmentVariableList>
    <messageList/>
    <resourceList/>
