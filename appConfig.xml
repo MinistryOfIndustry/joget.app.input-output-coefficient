@@ -53,13 +53,6 @@
          <remarks>Used for plugin: Id Generator Field</remarks>
       </environmentVariable>
       <environmentVariable>
-         <id>SECTOR_DEFAULT_DEPARTMENT</id>
-         <appId>inputOutputCoefficientPoC</appId>
-         <appVersion>3</appVersion>
-         <value>moi_ioc_center_leather</value>
-         <remarks>If no sector can be mapped at IOC request, the Center activities are assigned to this default department </remarks>
-      </environmentVariable>
-      <environmentVariable>
          <id>SECTOR_TO_DEPARTMENT_MAPPING</id>
          <appId>inputOutputCoefficientPoC</appId>
          <appVersion>3</appVersion>
