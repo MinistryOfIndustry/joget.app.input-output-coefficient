@@ -43,7 +43,7 @@
          <appId>inputOutputCoefficientPoC</appId>
          <appVersion>3</appVersion>
          <value>app_ioc_developer</value>
-         <remarks></remarks>
+         <remarks>If no sector can be mapped at IOC request, the Center activities are assigned to this default group</remarks>
       </environmentVariable>
       <environmentVariable>
          <id>SECTOR_TO_DEPARTMENT_MAPPING</id>
