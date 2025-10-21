@@ -26,13 +26,6 @@
          <value>#request.scheme#://#request.serverName#:#request.serverPort##request.contextPath#/web</value>
       </environmentVariable>
       <environmentVariable>
-         <id>DEFAULT_DEPARTMENT</id>
-         <appId>inputOutputCoefficientPoC</appId>
-         <appVersion>3</appVersion>
-         <value>moi_ioc_center_leather</value>
-         <remarks>Default department if not sector code can be mapped for IOC request Process</remarks>
-      </environmentVariable>
-      <environmentVariable>
          <id>loginAuth</id>
          <appId>inputOutputCoefficientPoC</appId>
          <appVersion>3</appVersion>
@@ -71,7 +64,7 @@
          <appId>inputOutputCoefficientPoC</appId>
          <appVersion>3</appVersion>
          <value>{&quot;A&quot;:&quot;moi_ioc_center_leather&quot;,&quot;B&quot;:&quot;moi_ioc_center_textile&quot;,&quot;C&quot;:&quot;moi_ioc_center_food_beverage&quot;,&quot;D&quot;:&quot;moi_ioc_center_metal&quot;,&quot;E&quot;:&quot;moi_ioc_center_metal&quot;}</value>
-         <remarks></remarks>
+         <remarks>Mapping of departments (Centers) for each Sector </remarks>
       </environmentVariable>
    </environmentVariableList>
    <messageList/>
