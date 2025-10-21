@@ -1272,6 +1272,7 @@
     },
     "setting": {"properties": {
         "__": "",
+        "tempDisablePermissionChecking": "",
         "userviewDescription": "",
         "noPermissionMessage": "",
         "userviewId": "portal",
@@ -1292,7 +1293,7 @@
         "theme": {
             "className": "org.joget.marketplace.EssenceTheme",
             "properties": {
-                "css": ".runProcess-body-header {\n  display: none !important;\n}\n\n#content main h1{\ndisplay:none !important;\n}\n\n#content{\n  max-width: 100% !important;\n}\n\n\n\n/* Style the reset link */\n.login-extra { margin-top: 12px; text-align: right; }\n.login-extra a { font-size: 14px; text-decoration: none; }\n.login-extra a:hover { text-decoration: underline; }\n\n",
+                "css": ".runProcess-body-header {\n  display: none !important;\n}\n\n#content main h1{\ndisplay:none !important;\n}\n\n#content{\n  max-width: 100% !important;\n}\n\n\n\n/* Style the reset link */\n.login-extra { margin-top: 12px; text-align: right; }\n.login-extra a { font-size: 14px; text-decoration: none; }\n.login-extra a:hover { text-decoration: underline; }\n\n#manage_products #add_sector, #manage_raw_material_type #product, #manage_raw_input #add_raw_material  {display:none;}\n#list_products_with_action .select_checkbox, #list_sector_view .select_checkbox, #list_sector_with_action .select_checkbox, #rawMaterial_action .select_checkbox, #list_raw_material_view .select_checkbox, #raw_material_input_withAction .select_checkbox, #dashboard_raw_material_input  .select_checkbox, #report_products_with_childs .select_checkbox {display:none;}\n\n.typeAheadMultiSelect .form-check .form-check-input {float:none;padding:0 20px;}\n.typeAheadMultiSelect .form-check .form-check-label {display:inline;}\n.typeAheadMultiSelect .form-check {margin-bottom:10px;}\n.typeAheadMultiSelect {min-width:250px;}\n\n\n",
                 "dx8-light-sidebar-navActiveIconColor": "#FFFFFF",
                 "dx8-dark-header-headerFontColor": "#37517E",
                 "dx8-dark-header-navActiveLinkColor": "#FADD12",
