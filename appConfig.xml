@@ -32,25 +32,11 @@
          <value>Basic cGFja211dGFuZ2FuYUBnbWFpbC5jb206SmVzdXM3QDEyMw==</value>
       </environmentVariable>
       <environmentVariable>
-         <id>productCounter</id>
+         <id>SECTOR_DEFAULT_DEPARTMENT</id>
          <appId>inputOutputCoefficientPoC</appId>
          <appVersion>3</appVersion>
-         <value>64</value>
-         <remarks>Used for plugin: Id Generator Field</remarks>
-      </environmentVariable>
-      <environmentVariable>
-         <id>rwInputcounter</id>
-         <appId>inputOutputCoefficientPoC</appId>
-         <appVersion>3</appVersion>
-         <value>213</value>
-         <remarks>Used for plugin: Id Generator Field</remarks>
-      </environmentVariable>
-      <environmentVariable>
-         <id>rwTypeCounter</id>
-         <appId>inputOutputCoefficientPoC</appId>
-         <appVersion>3</appVersion>
-         <value>75</value>
-         <remarks>Used for plugin: Id Generator Field</remarks>
+         <value>moi_ioc_center_leather</value>
+         <remarks>If no sector can be mapped at IOC request, the Center activities are assigned to this default department </remarks>
       </environmentVariable>
       <environmentVariable>
          <id>SECTOR_TO_DEPARTMENT_MAPPING</id>
