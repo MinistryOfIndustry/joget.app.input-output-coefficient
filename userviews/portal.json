@@ -851,12 +851,16 @@
                 "hide": "",
                 "permission_rules": {"7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}},
                 "permission": {
-                    "className": "",
-                    "properties": {}
+                    "className": "org.joget.apps.userview.lib.DepartmentPermission",
+                    "properties": {
+                        "orgId": "ministry_of_industry",
+                        "allowedDeptIds": "moi_ioc_application_support"
+                    }
                 },
                 "comment": "",
                 "label": "<i class=\"zmdi zmdi-settings\"><\/i> Configuration",
-                "id": "category-E99584774F2D4D5FC75847A0D29262DB"
+                "id": "category-E99584774F2D4D5FC75847A0D29262DB",
+                "iconIncluded": true
             }
         },
         {
