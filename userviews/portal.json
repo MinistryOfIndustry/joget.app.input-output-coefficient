@@ -190,12 +190,16 @@
                     "permissionDeny": ""
                 }},
                 "permission": {
-                    "className": "",
-                    "properties": {}
+                    "className": "org.joget.apps.userview.lib.DepartmentPermission",
+                    "properties": {
+                        "orgId": "ministry_of_industry",
+                        "allowedDeptIds": "moi_ioc_application_support;moi_ioc_center_chemical;moi_ioc_center_food_beverage;moi_ioc_center_leather;moi_ioc_center_metal;moi_ioc_center_textile;moi_ioc_national_committee;moi_ioc_reviewer"
+                    }
                 },
                 "comment": "",
                 "label": "New Category",
-                "id": "category-5E6B00C41E014608DF9D36EE46593EF2"
+                "id": "category-5E6B00C41E014608DF9D36EE46593EF2",
+                "iconIncluded": false
             }
         },
         {
