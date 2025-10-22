@@ -598,13 +598,17 @@
                     "permissionDeny": ""
                 }},
                 "permission": {
-                    "className": "",
-                    "properties": {}
+                    "className": "org.joget.apps.userview.lib.DepartmentPermission",
+                    "properties": {
+                        "orgId": "ministry_of_industry",
+                        "allowedDeptIds": "moi_ioc_application_support"
+                    }
                 },
                 "comment": "",
                 "label": "<i class=\"fas fa-cubes\"><\/i> IOC Administration",
                 "id": "category-8C90BC1AFA0042C55DBE25FFD4FFDCE5",
-                "permissionDeny": ""
+                "permissionDeny": "",
+                "iconIncluded": true
             }
         },
         {
