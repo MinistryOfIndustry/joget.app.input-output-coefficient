@@ -98,6 +98,16 @@
                     "className": "org.joget.apps.form.lib.SelectBox",
                     "properties": {
                         "controlField": "",
+                        "multiple": "",
+                        "validator": {
+                            "className": "org.joget.apps.form.lib.DefaultValidator",
+                            "properties": {
+                                "type": "",
+                                "message": "",
+                                "mandatory": "true"
+                            }
+                        },
+                        "label": "Sector",
                         "readonly": "",
                         "size": "",
                         "optionsBinder": {
@@ -113,19 +123,10 @@
                                 "idColumn": "id"
                             }
                         },
-                        "multiple": "",
                         "options": [],
-                        "validator": {
-                            "className": "org.joget.apps.form.lib.DefaultValidator",
-                            "properties": {
-                                "type": "",
-                                "message": "",
-                                "mandatory": "true"
-                            }
-                        },
-                        "workflowVariable": "",
-                        "label": "Sector",
+                        "workflowVariable": "requested_sector",
                         "id": "requested_sector",
+                        "iconIncluded": false,
                         "value": "",
                         "readonlyLabel": ""
                     }
