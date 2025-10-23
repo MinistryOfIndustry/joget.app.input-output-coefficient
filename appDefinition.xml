@@ -585,7 +585,7 @@
                   <processDefId>newRawMatTypeToExistingProductProcess</processDefId>
                   <participantId>newRawMatItemToExistingProductProcess_2_requestor</participantId>
                   <type>group</type>
-                  <value>app_accountCreation_Approver;app_ioc_developer;appNmdmGovernmentAdmin;appNmdmGovernmentOperator;app_ra_admin;app_ra_editor</value>
+                  <value>app_ioc_developer;app_ioc_moi</value>
                </packageParticipant>
             </entry>
             <entry>
@@ -594,7 +594,7 @@
                   <processDefId>newRawMatItemToExistingProductProcess</processDefId>
                   <participantId>requestor</participantId>
                   <type>group</type>
-                  <value>app_accountCreation_Approver;app_ioc_developer;appNmdmGovernmentAdmin;appNmdmGovernmentOperator;app_ra_admin;app_ra_editor</value>
+                  <value>app_ioc_developer;app_ioc_moi</value>
                </packageParticipant>
             </entry>
             <entry>
