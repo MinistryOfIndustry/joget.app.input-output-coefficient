@@ -9,10 +9,13 @@
                     "properties": {
                         "userviewCacheDuration": "20",
                         "userviewCacheScope": "",
-                        "permission_rules": {"7a3c5477-7fd8-ba19-a937-f79e8695ee85": {
-                            "permissionHidden": "",
-                            "permissionDeny": ""
-                        }},
+                        "permission_rules": {
+                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                            "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {
+                                "permissionHidden": "",
+                                "permissionDeny": ""
+                            }
+                        },
                         "label": "<i class=\"fas fa-home\"><\/i> Home",
                         "id": "007F5CB8D525457D6548C6D4E81DDBB0",
                         "enableOffline": "",
@@ -26,7 +29,13 @@
                     "properties": {
                         "runProcessDirectly": "",
                         "fieldPassoverMethod": "append",
-                        "permission_rules": {"7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}},
+                        "permission_rules": {
+                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {
+                                "permissionHidden": "",
+                                "permissionDeny": "true"
+                            },
+                            "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}
+                        },
                         "keyName": "",
                         "label": "<i class=\"fas fa-book\"><\/i> Request New IOC",
                         "redirectTarget": "",
@@ -50,10 +59,13 @@
                     "properties": {
                         "cacheAllLinks": "",
                         "customHeader": "<head> \n    <style> \n    \n    .info-note { \n        display: flex; \n        align-items: flex-start; \n        background-color: #f0f4f8; \n        border-left: 5px solid #1d72b8; \n        padding: 16px 20px; \n        border-radius: 8px; \n        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); \n        font-family: 'Inter', sans-serif; \n        font-size: 14px; color: #333; \n        max-width: 540px; margin: 20px auto; \n    }\n    \n    .info-note-icon {\n        flex-shrink: 0;\n        margin-right: 12px;\n        margin-top: 2px;\n        color: #1d72b8;\n    }\n\n    .info-note-text {\n        line-height: 1.6;\n    }\n\n    .info-note-text strong {\n        font-weight: 600;\n        margin-right: 4px;\n    }\n\n    .info-note svg {\n        width: 18px;\n        height: 18px;\n    }\n    \n    <\/style> \n<\/head> \n<body> \n    <div class=\"info-note\"> \n        <span class=\"info-note-icon\"> \n        <svg fill=\"currentColor\" viewBox=\"0 0 16 16\"> \n        <path d=\"M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z\"/> \n        <path d=\"M6.5 12a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zM6.5 1a5.5 5.5 0 1 0 0 11A5.5 5.5 0 0 0 6.5 1z\"/> \n        <\/svg> <\/span> \n        <div class=\"info-note-text\"> \n        <strong>Note:<\/strong> \n        Type Manufacturer Name to filter the list! \n        <\/div> \n    <\/div> \n<\/body>\n",
-                        "permission_rules": {"7a3c5477-7fd8-ba19-a937-f79e8695ee85": {
-                            "permissionHidden": "",
-                            "permissionDeny": ""
-                        }},
+                        "permission_rules": {
+                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                            "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {
+                                "permissionHidden": "",
+                                "permissionDeny": ""
+                            }
+                        },
                         "keyName": "",
                         "customFooter": "",
                         "label": "<i class=\"fas fa-list\"><\/i> My Team's IOC Requests",
@@ -75,7 +87,10 @@
                     "properties": {
                         "cacheAllLinks": "",
                         "customHeader": "",
-                        "permission_rules": {"7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}},
+                        "permission_rules": {
+                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                            "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}
+                        },
                         "keyName": "",
                         "customFooter": "",
                         "label": "<i class=\"fas fa-list\"><\/i> My IOC Requests",
@@ -97,10 +112,13 @@
                     "properties": {
                         "cacheAllLinks": "",
                         "customHeader": "",
-                        "permission_rules": {"7a3c5477-7fd8-ba19-a937-f79e8695ee85": {
-                            "permissionHidden": "",
-                            "permissionDeny": ""
-                        }},
+                        "permission_rules": {
+                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                            "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {
+                                "permissionHidden": "",
+                                "permissionDeny": ""
+                            }
+                        },
                         "keyName": "",
                         "customFooter": "",
                         "label": "<i class=\"fas fa-list-ul\"><\/i> My IOC Raw Material Item Request",
@@ -123,10 +141,13 @@
                         "permissionHidden": "true",
                         "runProcessDirectly": "Yes",
                         "fieldPassoverMethod": "append",
-                        "permission_rules": {"7a3c5477-7fd8-ba19-a937-f79e8695ee85": {
-                            "permissionHidden": "true",
-                            "permissionDeny": ""
-                        }},
+                        "permission_rules": {
+                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                            "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {
+                                "permissionHidden": "true",
+                                "permissionDeny": ""
+                            }
+                        },
                         "keyName": "",
                         "label": "<i class=\"fas fa-book\"><\/i> Request New Raw Material Input",
                         "redirectTarget": "",
@@ -149,7 +170,10 @@
             ],
             "properties": {
                 "hide": "",
-                "permission_rules": {"7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}},
+                "permission_rules": {
+                    "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                    "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}
+                },
                 "permission": {
                     "className": "",
                     "properties": {}
@@ -168,7 +192,10 @@
                     "list-customFooter": "",
                     "cacheAllLinks": "",
                     "assignment-customHeader": "",
-                    "permission_rules": {"7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}},
+                    "permission_rules": {
+                        "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                        "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}
+                    },
                     "assignment-customFooter": "",
                     "label": "<i class=\"fas fa-hourglass-start\"><\/i> Action Needed",
                     "enableOffline": "",
@@ -185,10 +212,13 @@
             }],
             "properties": {
                 "hide": "",
-                "permission_rules": {"7a3c5477-7fd8-ba19-a937-f79e8695ee85": {
-                    "hide": "",
-                    "permissionDeny": ""
-                }},
+                "permission_rules": {
+                    "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                    "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {
+                        "hide": "",
+                        "permissionDeny": ""
+                    }
+                },
                 "permission": {
                     "className": "org.joget.apps.userview.lib.DepartmentPermission",
                     "properties": {
@@ -210,7 +240,10 @@
                     "properties": {
                         "cacheAllLinks": "",
                         "customHeader": "IOC Hierarhical Browsing > Sectors",
-                        "permission_rules": {"7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}},
+                        "permission_rules": {
+                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                            "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}
+                        },
                         "keyName": "",
                         "customFooter": "",
                         "label": "<i class=\"fas fa-boxes\"><\/i> IOC Hierarchical Browsing",
@@ -232,7 +265,10 @@
                     "properties": {
                         "cacheAllLinks": "",
                         "customHeader": "Standard IOCs",
-                        "permission_rules": {"7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}},
+                        "permission_rules": {
+                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                            "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}
+                        },
                         "keyName": "",
                         "customFooter": "",
                         "label": "<i class=\"fas fa-list-ul\"><\/i> Standard IOCs",
@@ -254,6 +290,10 @@
                     "properties": {
                         "cacheAllLinks": "",
                         "customHeader": "IOC Dashboard > Sectors",
+                        "permission_rules": {
+                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                            "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}
+                        },
                         "keyName": "",
                         "customFooter": "",
                         "label": "<i class=\"fas fa-industry\"><\/i> Sectors",
@@ -275,7 +315,10 @@
                     "properties": {
                         "cacheAllLinks": "",
                         "customHeader": "IOC Dashboard > Products",
-                        "permission_rules": {"7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}},
+                        "permission_rules": {
+                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                            "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}
+                        },
                         "keyName": "",
                         "customFooter": "",
                         "label": "<i class=\"fas fa-boxes\"><\/i> Products",
@@ -297,7 +340,10 @@
                     "properties": {
                         "cacheAllLinks": "",
                         "customHeader": "IOC Dashboard > Raw Material Types",
-                        "permission_rules": {"7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}},
+                        "permission_rules": {
+                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                            "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}
+                        },
                         "keyName": "",
                         "customFooter": "",
                         "label": "<i class=\"fas fa-layer-group\"><\/i> Raw Material Types",
@@ -319,7 +365,10 @@
                     "properties": {
                         "cacheAllLinks": "",
                         "customHeader": "IOC Dashboard > Raw Material Inputs",
-                        "permission_rules": {"7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}},
+                        "permission_rules": {
+                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                            "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}
+                        },
                         "keyName": "",
                         "customFooter": "",
                         "label": "<i class=\"fas fa-dolly\"><\/i> Raw Material Inputs",
@@ -339,7 +388,10 @@
             ],
             "properties": {
                 "hide": "",
-                "permission_rules": {"7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}},
+                "permission_rules": {
+                    "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                    "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}
+                },
                 "permission": {
                     "className": "",
                     "properties": {}
@@ -359,10 +411,13 @@
                         "redirectUrlOnCancel": "",
                         "actionOnCancel": "",
                         "redirectTargetOnCancel": "top",
-                        "permission_rules": {"7a3c5477-7fd8-ba19-a937-f79e8695ee85": {
-                            "permissionHidden": "",
-                            "permissionDeny": ""
-                        }},
+                        "permission_rules": {
+                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                            "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {
+                                "permissionHidden": "",
+                                "permissionDeny": ""
+                            }
+                        },
                         "customFooter": "",
                         "paramName": "",
                         "enableOffline": "",
@@ -395,7 +450,10 @@
                         "redirectUrlOnCancel": "",
                         "actionOnCancel": "",
                         "redirectTargetOnCancel": "top",
-                        "permission_rules": {"7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}},
+                        "permission_rules": {
+                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                            "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}
+                        },
                         "customFooter": "",
                         "paramName": "",
                         "enableOffline": "",
@@ -428,7 +486,10 @@
                         "redirectUrlOnCancel": "",
                         "actionOnCancel": "",
                         "redirectTargetOnCancel": "top",
-                        "permission_rules": {"7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}},
+                        "permission_rules": {
+                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                            "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}
+                        },
                         "customFooter": "",
                         "paramName": "",
                         "enableOffline": "",
@@ -461,7 +522,10 @@
                         "redirectUrlOnCancel": "",
                         "actionOnCancel": "",
                         "redirectTargetOnCancel": "top",
-                        "permission_rules": {"7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}},
+                        "permission_rules": {
+                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                            "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}
+                        },
                         "customFooter": "",
                         "paramName": "",
                         "enableOffline": "",
@@ -490,10 +554,13 @@
             ],
             "properties": {
                 "hide": "yes",
-                "permission_rules": {"7a3c5477-7fd8-ba19-a937-f79e8695ee85": {
-                    "hide": "yes",
-                    "permissionDeny": ""
-                }},
+                "permission_rules": {
+                    "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                    "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {
+                        "hide": "yes",
+                        "permissionDeny": ""
+                    }
+                },
                 "permission": {
                     "className": "",
                     "properties": {}
@@ -511,7 +578,10 @@
                     "properties": {
                         "cacheAllLinks": "",
                         "customHeader": "",
-                        "permission_rules": {"7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}},
+                        "permission_rules": {
+                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                            "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}
+                        },
                         "keyName": "",
                         "customFooter": "",
                         "label": "<i class=\"fas fa-industry\"><\/i> Sectors",
@@ -533,7 +603,10 @@
                     "properties": {
                         "cacheAllLinks": "",
                         "customHeader": "IOC Administration > Products",
-                        "permission_rules": {"7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}},
+                        "permission_rules": {
+                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                            "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}
+                        },
                         "keyName": "",
                         "customFooter": "",
                         "label": "<i class=\"fas fa-boxes\"><\/i> Products",
@@ -555,7 +628,10 @@
                     "properties": {
                         "cacheAllLinks": "",
                         "customHeader": "IOC Administration > Raw Material Types",
-                        "permission_rules": {"7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}},
+                        "permission_rules": {
+                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                            "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}
+                        },
                         "keyName": "",
                         "customFooter": "",
                         "label": "<i class=\"fas fa-layer-group\"><\/i> Raw Material Types",
@@ -577,7 +653,10 @@
                     "properties": {
                         "cacheAllLinks": "",
                         "customHeader": "IOC Administration > Raw Material Inputs",
-                        "permission_rules": {"7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}},
+                        "permission_rules": {
+                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                            "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}
+                        },
                         "keyName": "",
                         "customFooter": "",
                         "label": "<i class=\"fas fa-dolly\"><\/i> Raw Material Inputs",
@@ -597,10 +676,13 @@
             ],
             "properties": {
                 "hide": "",
-                "permission_rules": {"7a3c5477-7fd8-ba19-a937-f79e8695ee85": {
-                    "hide": "",
-                    "permissionDeny": ""
-                }},
+                "permission_rules": {
+                    "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                    "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {
+                        "hide": "",
+                        "permissionDeny": ""
+                    }
+                },
                 "permission": {
                     "className": "org.joget.apps.userview.lib.DepartmentPermission",
                     "properties": {
@@ -625,7 +707,10 @@
                         "redirectUrlOnCancel": "",
                         "actionOnCancel": "",
                         "redirectTargetOnCancel": "window",
-                        "permission_rules": {"7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}},
+                        "permission_rules": {
+                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                            "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}
+                        },
                         "customFooter": "",
                         "paramName": "",
                         "enableOffline": "",
@@ -659,7 +744,10 @@
                         "redirectUrlOnCancel": "",
                         "actionOnCancel": "",
                         "redirectTargetOnCancel": "top",
-                        "permission_rules": {"7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}},
+                        "permission_rules": {
+                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                            "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}
+                        },
                         "customFooter": "",
                         "paramName": "",
                         "enableOffline": "",
@@ -691,7 +779,10 @@
                     "properties": {
                         "cacheAllLinks": "",
                         "customHeader": "IOC Hierarhical Browsing > Raw Material Inputs",
-                        "permission_rules": {"7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}},
+                        "permission_rules": {
+                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                            "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}
+                        },
                         "keyName": "raw_material_type",
                         "customFooter": "",
                         "label": "<i class=\"fas fa-dolly\"><\/i> Raw Material Input",
@@ -711,10 +802,13 @@
             ],
             "properties": {
                 "hide": "yes",
-                "permission_rules": {"7a3c5477-7fd8-ba19-a937-f79e8695ee85": {
-                    "hide": "yes",
-                    "permissionDeny": ""
-                }},
+                "permission_rules": {
+                    "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                    "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {
+                        "hide": "yes",
+                        "permissionDeny": ""
+                    }
+                },
                 "permission": {
                     "className": "",
                     "properties": {}
@@ -734,7 +828,10 @@
                         "redirectUrlOnCancel": "",
                         "actionOnCancel": "",
                         "redirectTargetOnCancel": "top",
-                        "permission_rules": {"7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}},
+                        "permission_rules": {
+                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                            "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}
+                        },
                         "customFooter": "",
                         "paramName": "",
                         "enableOffline": "",
@@ -767,7 +864,10 @@
                         "redirectUrlOnCancel": "",
                         "actionOnCancel": "",
                         "redirectTargetOnCancel": "top",
-                        "permission_rules": {"7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}},
+                        "permission_rules": {
+                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                            "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}
+                        },
                         "customFooter": "",
                         "paramName": "",
                         "enableOffline": "",
@@ -798,6 +898,10 @@
                     "properties": {
                         "runProcessDirectly": "",
                         "fieldPassoverMethod": "append",
+                        "permission_rules": {
+                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                            "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}
+                        },
                         "keyName": "",
                         "label": "Import SIOC",
                         "redirectTarget": "",
@@ -825,6 +929,7 @@
                         "customHeader": "",
                         "style-text-decoration-color": "FFFFFF",
                         "permission_rules": {
+                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
                             "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {},
                             "6916d4e2-1d57-f444-0e0a-94a1597a6727": {},
                             "d95abe4c-6b77-9f6e-d0eb-3d55c15c2fca": {}
@@ -849,7 +954,10 @@
             ],
             "properties": {
                 "hide": "",
-                "permission_rules": {"7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}},
+                "permission_rules": {
+                    "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                    "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}
+                },
                 "permission": {
                     "className": "org.joget.apps.userview.lib.DepartmentPermission",
                     "properties": {
@@ -871,7 +979,10 @@
                     "properties": {
                         "cacheAllLinks": "",
                         "customHeader": "Standard IOCs",
-                        "permission_rules": {"7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}},
+                        "permission_rules": {
+                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                            "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}
+                        },
                         "keyName": "",
                         "customFooter": "",
                         "label": "<i class=\"fas fa-list-ul\"><\/i> Standard IOCs JSON export",
@@ -895,7 +1006,10 @@
                         "redirectUrlOnCancel": "",
                         "actionOnCancel": "",
                         "redirectTargetOnCancel": "top",
-                        "permission_rules": {"7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}},
+                        "permission_rules": {
+                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                            "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}
+                        },
                         "customFooter": "",
                         "paramName": "",
                         "enableOffline": "",
@@ -926,7 +1040,10 @@
                     "properties": {
                         "runProcessDirectly": "Yes",
                         "fieldPassoverMethod": "append",
-                        "permission_rules": {"7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}},
+                        "permission_rules": {
+                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                            "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}
+                        },
                         "keyName": "",
                         "label": "Manage Product Requested",
                         "redirectTarget": "",
@@ -952,6 +1069,10 @@
                         "redirectUrlOnCancel": "",
                         "actionOnCancel": "",
                         "redirectTargetOnCancel": "top",
+                        "permission_rules": {
+                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                            "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}
+                        },
                         "customFooter": "",
                         "paramName": "",
                         "enableOffline": "",
@@ -984,7 +1105,10 @@
                         "redirectUrlOnCancel": "",
                         "actionOnCancel": "",
                         "redirectTargetOnCancel": "top",
-                        "permission_rules": {"7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}},
+                        "permission_rules": {
+                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                            "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}
+                        },
                         "customFooter": "",
                         "paramName": "",
                         "enableOffline": "",
@@ -1015,7 +1139,10 @@
                     "properties": {
                         "runProcessDirectly": "Yes",
                         "fieldPassoverMethod": "append",
-                        "permission_rules": {"7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}},
+                        "permission_rules": {
+                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                            "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}
+                        },
                         "keyName": "",
                         "label": "Add New Raw Material Item Process",
                         "redirectTarget": "",
@@ -1039,6 +1166,10 @@
                     "properties": {
                         "runProcessDirectly": "Yes",
                         "fieldPassoverMethod": "append",
+                        "permission_rules": {
+                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                            "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}
+                        },
                         "keyName": "",
                         "label": "Add New Raw Material Type Process",
                         "redirectTarget": "",
@@ -1065,7 +1196,10 @@
                         "redirectUrlOnCancel": "",
                         "actionOnCancel": "",
                         "redirectTargetOnCancel": "top",
-                        "permission_rules": {"7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}},
+                        "permission_rules": {
+                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                            "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}
+                        },
                         "customFooter": "",
                         "paramName": "",
                         "enableOffline": "",
@@ -1098,7 +1232,10 @@
                         "redirectUrlOnCancel": "",
                         "actionOnCancel": "",
                         "redirectTargetOnCancel": "top",
-                        "permission_rules": {"7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}},
+                        "permission_rules": {
+                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                            "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}
+                        },
                         "customFooter": "",
                         "paramName": "",
                         "enableOffline": "",
@@ -1131,7 +1268,10 @@
                         "redirectUrlOnCancel": "",
                         "actionOnCancel": "",
                         "redirectTargetOnCancel": "top",
-                        "permission_rules": {"7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}},
+                        "permission_rules": {
+                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                            "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}
+                        },
                         "customFooter": "",
                         "paramName": "",
                         "enableOffline": "",
@@ -1164,7 +1304,10 @@
                         "redirectUrlOnCancel": "",
                         "actionOnCancel": "",
                         "redirectTargetOnCancel": "top",
-                        "permission_rules": {"7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}},
+                        "permission_rules": {
+                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                            "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}
+                        },
                         "customFooter": "",
                         "paramName": "",
                         "enableOffline": "",
@@ -1197,7 +1340,10 @@
                         "redirectUrlOnCancel": "",
                         "actionOnCancel": "",
                         "redirectTargetOnCancel": "top",
-                        "permission_rules": {"7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}},
+                        "permission_rules": {
+                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                            "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}
+                        },
                         "customFooter": "",
                         "paramName": "",
                         "enableOffline": "",
@@ -1230,7 +1376,10 @@
                         "redirectUrlOnCancel": "",
                         "actionOnCancel": "",
                         "redirectTargetOnCancel": "top",
-                        "permission_rules": {"7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}},
+                        "permission_rules": {
+                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                            "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}
+                        },
                         "customFooter": "",
                         "paramName": "",
                         "enableOffline": "",
@@ -1259,10 +1408,13 @@
             ],
             "properties": {
                 "hide": "yes",
-                "permission_rules": {"7a3c5477-7fd8-ba19-a937-f79e8695ee85": {
-                    "hide": "yes",
-                    "permissionDeny": ""
-                }},
+                "permission_rules": {
+                    "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                    "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {
+                        "hide": "yes",
+                        "permissionDeny": ""
+                    }
+                },
                 "permission": {
                     "className": "",
                     "properties": {}
@@ -1289,17 +1441,30 @@
         "noPermissionMessage": "",
         "userviewId": "portal",
         "hideThisUserviewInAppCenter": "",
-        "permission_rules": [{
-            "permission_key": "7a3c5477-7fd8-ba19-a937-f79e8695ee85",
-            "permission": {
-                "className": "org.joget.apps.userview.lib.UserPermission",
-                "properties": {
-                    "allowedUsernames": "admin;cat",
-                    "orgId": ""
-                }
+        "permission_rules": [
+            {
+                "permission_key": "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4",
+                "permission": {
+                    "className": "org.joget.apps.userview.lib.DepartmentPermission",
+                    "properties": {
+                        "orgId": "external_users",
+                        "allowedDeptIds": "external_manufacturers"
+                    }
+                },
+                "permission_name": "Manufacturer"
             },
-            "permission_name": "Perfomer"
-        }],
+            {
+                "permission_key": "7a3c5477-7fd8-ba19-a937-f79e8695ee85",
+                "permission": {
+                    "className": "org.joget.apps.userview.lib.DepartmentPermission",
+                    "properties": {
+                        "orgId": "ministry_of_industry",
+                        "allowedDeptIds": "moi_ioc_application_support"
+                    }
+                },
+                "permission_name": "Admin"
+            }
+        ],
         "userview_thumbnail": "#appResource.moi_logo_0.png#",
         "userview_category": "",
         "theme": {
@@ -1437,10 +1602,10 @@
             }
         },
         "permission": {
-            "className": "org.joget.apps.userview.lib.GroupPermission",
+            "className": "org.joget.apps.userview.lib.DepartmentPermission",
             "properties": {
-                "orgId": "",
-                "allowedGroupIds": "app_ioc_developer;app_ioc_moi"
+                "orgId": "ministry_of_industry",
+                "allowedDeptIds": "moi_ioc_application_support;moi_ioc_center_chemical;moi_ioc_center_food_beverage;moi_ioc_center_leather;moi_ioc_center_metal;moi_ioc_center_textile;moi_ioc_national_committee;moi_ioc_reviewer"
             }
         },
         "userviewName": "IOC Portal"
