@@ -1424,6 +1424,47 @@
                         "permissionDeny": "true",
                         "readonlyLabel": ""
                     }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.FormMenu",
+                    "properties": {
+                        "loadDataWithKey": "",
+                        "redirectUrlOnCancel": "",
+                        "actionOnCancel": "",
+                        "redirectTargetOnCancel": "top",
+                        "permission_rules": {
+                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {
+                                "permissionHidden": "true",
+                                "permissionDeny": ""
+                            },
+                            "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}
+                        },
+                        "customFooter": "",
+                        "paramName": "",
+                        "enableOffline": "",
+                        "afterSavedReloadTarget": "true",
+                        "customId": "view_ioc",
+                        "showInPopupDialog": "",
+                        "readonly": "Yes",
+                        "cancelButtonLabel": "",
+                        "actionAfterSaved": "",
+                        "showEditButton": "",
+                        "id": "7E54A66FF1284A560D4C6E963C7AE68B",
+                        "iconIncluded": false,
+                        "redirectUrlAfterComplete": "",
+                        "fieldPassover": "",
+                        "formId": "approveIOC",
+                        "customHeader": "",
+                        "fieldPassoverMethod": "append",
+                        "redirectTargetOnComplete": "",
+                        "keyName": "",
+                        "label": "View IOC",
+                        "userviewCacheDuration": "20",
+                        "messageShowAfterComplete": "",
+                        "submitButtonLabel": "",
+                        "userviewCacheScope": "",
+                        "readonlyLabel": "true"
+                    }
                 }
             ],
             "properties": {
