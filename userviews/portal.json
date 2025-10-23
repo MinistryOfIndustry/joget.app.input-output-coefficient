@@ -970,7 +970,10 @@
             "properties": {
                 "hide": "",
                 "permission_rules": {
-                    "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                    "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {
+                        "hide": "",
+                        "permissionDeny": "true"
+                    },
                     "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}
                 },
                 "permission": {
@@ -1445,7 +1448,10 @@
             "properties": {
                 "hide": "yes",
                 "permission_rules": {
-                    "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                    "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {
+                        "hide": "yes",
+                        "permissionDeny": ""
+                    },
                     "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {
                         "hide": "yes",
                         "permissionDeny": ""
