@@ -169,7 +169,7 @@
                 {
                     "className": "org.joget.marketplace.AutocompleteTextField",
                     "properties": {
-                        "use_ajax": "true",
+                        "use_ajax": "",
                         "validator": {
                             "className": "org.joget.apps.form.lib.DefaultValidator",
                             "properties": {
