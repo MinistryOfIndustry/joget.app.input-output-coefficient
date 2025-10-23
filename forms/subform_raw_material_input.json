@@ -96,8 +96,21 @@
                 {
                     "className": "org.joget.marketplace.AutocompleteTextField",
                     "properties": {
+                        "use_ajax": "true",
+                        "validator": {
+                            "className": "org.joget.apps.form.lib.DefaultValidator",
+                            "properties": {
+                                "type": "",
+                                "message": "",
+                                "mandatory": ""
+                            }
+                        },
+                        "selection_id": "",
+                        "min_search_length": "2",
+                        "label": "HSCODE",
+                        "size": "50",
                         "readonly": "",
-                        "size": "",
+                        "max_search_results": "50",
                         "optionsBinder": {
                             "className": "org.joget.apps.form.lib.FormOptionsBinder",
                             "properties": {
@@ -112,53 +125,10 @@
                             }
                         },
                         "options": [],
-                        "validator": {
-                            "className": "",
-                            "properties": {}
-                        },
-                        "selection_id": "allHsCode",
                         "workflowVariable": "",
-                        "label": "Select HSCODE",
-                        "id": "allHsCode",
+                        "id": "hscode",
                         "value": "",
                         "readonlyLabel": ""
-                    }
-                },
-                {
-                    "className": "org.joget.apps.form.lib.CustomHTML",
-                    "properties": {
-                        "requiredSanitize": "",
-                        "autoPopulate": "",
-                        "label": "",
-                        "id": "field10",
-                        "value": "<script>\n$(document).ready(function() {\n    $(\"[id$='_allHsCode']\").on('autocompleteselect', function(event, ui) {\n\t\tselectorElement = $(this);\n\t\ttargetElement = selectorElement.closest('.subform-column').find(\"[id$='_hscode']\");\n\t\ttargetElementValueOptions = targetElement.val().split(',');\n\t\ttargetElementValueOptions.push(ui.item.value);\n\t\ttargetElementValueOptions = targetElementValueOptions.filter(function(v){return v!==''});\n\t\ttargetElementValueOptions = $.unique(targetElementValueOptions);\n\t\ttargetElement.val(targetElementValueOptions.join(','));\n\t\tselectorElement.val('');\n    });\n});\n<\/script>\n"
-                    }
-                },
-                {
-                    "className": "org.joget.apps.form.lib.TextField",
-                    "properties": {
-                        "requiredSanitize": "",
-                        "maxlength": "",
-                        "validator": {
-                            "className": "org.joget.apps.form.lib.DefaultValidator",
-                            "properties": {
-                                "type": "",
-                                "message": "",
-                                "mandatory": "true"
-                            }
-                        },
-                        "label": "HSCODE",
-                        "disableIncrementDecrementArrow": "",
-                        "readonly": "",
-                        "size": "",
-                        "workflowVariable": "",
-                        "style": "",
-                        "id": "hscode",
-                        "placeholder": "",
-                        "iconIncluded": false,
-                        "value": "",
-                        "readonlyLabel": "",
-                        "storeNumeric": ""
                     }
                 },
                 {
