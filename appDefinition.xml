@@ -723,6 +723,6 @@
          <permissionProperties>{&quot;permission&quot;: { &quot;className&quot;: &quot;org.joget.apps.userview.lib.LoggedInUserPermission&quot;, &quot;properties&quot;: {}}}</permissionProperties>
       </appResource>
    </resourceList>
-   <description>Version 3 IOC Coefficient — 01 Oct 2025, Patrick: refactored to align with the data schema for migration and new plugins (filter, api, autocomplete)</description>
+   <description>Version 3 IOC Coefficient — 01 Oct 2025, Patrick: refactored to align with the data schema for migration and new plugins</description>
    <createdBy>packmutangana@gmail.com</createdBy>
 </appDefinition>
