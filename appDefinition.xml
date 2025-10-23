@@ -632,8 +632,8 @@
                <packageParticipant>
                   <processDefId>newRawMatTypeToExistingProductProcess</processDefId>
                   <participantId>newRawMatItemToExistingProductProcess_2_participant5</participantId>
-                  <type>group</type>
-                  <value>app_ioc_moi</value>
+                  <type>department</type>
+                  <value>moi_ioc_national_committee</value>
                </packageParticipant>
             </entry>
             <entry>
