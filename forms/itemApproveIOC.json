@@ -352,12 +352,18 @@
                         "className": "org.joget.apps.form.lib.SelectBox",
                         "properties": {
                             "controlField": "",
+                            "multiple": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "label": "Status",
                             "readonly": "",
                             "size": "",
                             "optionsBinder": {
                                 "className": "org.joget.apps.form.lib.FormOptionsBinder",
                                 "properties": {
-                                    "addEmptyOption": "true",
+                                    "addEmptyOption": "",
                                     "groupingColumn": "",
                                     "formDefId": "crudSetting",
                                     "labelColumn": "settingLabel",
@@ -367,15 +373,10 @@
                                     "idColumn": "settingId"
                                 }
                             },
-                            "multiple": "",
                             "options": [],
-                            "validator": {
-                                "className": "",
-                                "properties": {}
-                            },
                             "workflowVariable": "",
-                            "label": "Status",
                             "id": "status",
+                            "iconIncluded": false,
                             "value": "",
                             "readonlyLabel": ""
                         }
