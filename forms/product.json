@@ -108,12 +108,25 @@
                 {
                     "className": "org.joget.marketplace.AutocompleteTextField",
                     "properties": {
+                        "use_ajax": "true",
+                        "validator": {
+                            "className": "org.joget.apps.form.lib.DefaultValidator",
+                            "properties": {
+                                "type": "",
+                                "message": "",
+                                "mandatory": ""
+                            }
+                        },
+                        "selection_id": "",
+                        "min_search_length": "2",
+                        "label": "HSCODE",
+                        "size": "50",
                         "readonly": "",
-                        "size": "",
+                        "max_search_results": "50",
                         "optionsBinder": {
                             "className": "org.joget.apps.form.lib.FormOptionsBinder",
                             "properties": {
-                                "addEmptyOption": "",
+                                "addEmptyOption": "true",
                                 "groupingColumn": "",
                                 "formDefId": "formHSCode",
                                 "labelColumn": "hsLabel",
@@ -124,43 +137,10 @@
                             }
                         },
                         "options": [],
-                        "validator": {
-                            "className": "",
-                            "properties": {}
-                        },
-                        "selection_id": "allHsCode",
                         "workflowVariable": "",
-                        "label": "Select HSCODE",
-                        "id": "allHsCode",
+                        "id": "hscode",
                         "value": "",
                         "readonlyLabel": ""
-                    }
-                },
-                {
-                    "className": "org.joget.apps.form.lib.TextField",
-                    "properties": {
-                        "requiredSanitize": "",
-                        "maxlength": "",
-                        "validator": {
-                            "className": "org.joget.apps.form.lib.DefaultValidator",
-                            "properties": {
-                                "type": "",
-                                "message": "",
-                                "mandatory": "true"
-                            }
-                        },
-                        "label": "HSCODE",
-                        "disableIncrementDecrementArrow": "",
-                        "readonly": "",
-                        "size": "",
-                        "workflowVariable": "",
-                        "style": "",
-                        "id": "hscode",
-                        "placeholder": "",
-                        "iconIncluded": false,
-                        "value": "",
-                        "readonlyLabel": "",
-                        "storeNumeric": ""
                     }
                 },
                 {
@@ -281,7 +261,7 @@
                         "autoPopulate": "",
                         "label": "",
                         "id": "field9",
-                        "value": "<script>\n    $(document).ready(function() {\n    // Target your autocomplete field\n    var $field = $(\"input[name='hscode']\");\n\n    // Attach select event\n    $field.autocomplete({\n        select: function(event, ui) {\n            $(\"input[name='title']\").val(ui.item.label.replace(ui.item.value+':', '').trim());\n        }\n    });\n});\n<\/script>\n\n\n<script>\n(function(){\n  // ====== CONFIG: your exact field IDs ======\n  var PICK_ID   = 'allHsCode';     // Autocomplete (visible input)\n  var BUCKET_ID = 'hscode';  // Accumulator (input or textarea)\n\n  var SEP = ',';                // no space\n\n  // --- helpers ---\n  function trim(s){ return String(s||'').trim(); }\n  function log(){ try { console.log('[HS]', ...arguments); } catch(e){} }\n\n  // Find bucket in same row/section (repeater-safe); fallback to global\n  function findBucketNear($scope){\n    var $row = $scope.closest('.form-cell, .subform-cell, .section, form, body');\n    var sel = [\n      '#'+BUCKET_ID, '[name=\"'+BUCKET_ID+'\"]',\n      'textarea#'+BUCKET_ID, 'textarea[name=\"'+BUCKET_ID+'\"]',\n      'input#'+BUCKET_ID, 'input[name=\"'+BUCKET_ID+'\"]'\n    ].join(', ');\n    var $b = $row.find(sel).first();\n    if (!$b.length) $b = $(sel).first();\n    return $b;\n  }\n\n  // Append with NO spaces; dedupe; no leading comma on the first value\n  function appendNoSpace($bucket, val){\n    if (!$bucket.length) { log('bucket not found'); return false; }\n    val = trim(val);\n    if (!val) { log('empty selection'); return false; }\n\n    // normalize existing value → remove spaces around commas\n    var cur = String($bucket.val() || '').replace(/\\s*,\\s*/g, ',').trim();\n    var parts = cur ? cur.split(SEP).filter(Boolean) : [];\n\n    if (parts.indexOf(val) !== -1) { log('duplicate ignored:', val); return false; }\n\n    var next = parts.length === 0 ? val : (cur + SEP + val);\n    $bucket.val(next);\n    log('appended', val, '→', next);\n    return true;\n  }\n\n  // Commit a confirmed selection\n  function commitSelected($source, selectedVal){\n    var $bucket = findBucketNear($source);\n    var ok = appendNoSpace($bucket, selectedVal);\n    if (ok){\n      // clear picker and any hidden mirror\n      $source.val('').trigger('input');\n      $source.closest('.form-cell, .subform-cell, .section')\n             .find('#'+PICK_ID+'[type=\"hidden\"], [name=\"'+PICK_ID+'\"][type=\"hidden\"]')\n             .val('');\n    }\n  }\n\n  // --- selectors (text + common hidden mirrors) ---\n  var PICK_TXT_SEL = '#'+PICK_ID+', input#'+PICK_ID+'[type=\"text\"], [name=\"'+PICK_ID+'\"][type=\"text\"]';\n  var PICK_HID_SEL = '#'+PICK_ID+'[type=\"hidden\"], [name=\"'+PICK_ID+'\"][type=\"hidden\"],'\n                   + '#'+PICK_ID+'_value, [name=\"'+PICK_ID+'_value\"],'\n                   + '#'+PICK_ID+'_id, [name=\"'+PICK_ID+'_id\"]';\n\n  // 1) jQuery UI Autocomplete select → use the item value/ID (not typed text)\n  $(document).on('autocompleteselect', PICK_TXT_SEL, function(e, ui){\n    var val = ui && ui.item ? (ui.item.value || ui.item.id || ui.item.key || ui.item.code || ui.item.label || '') : '';\n    val = trim(val);\n    if (!val){ log('autocompleteselect had no value'); return; }\n    commitSelected($(this), val);\n  });\n\n  // 2) Hidden mirror change (some configs write the selected ID there)\n  $(document).on('change', PICK_HID_SEL, function(){\n    var val = trim($(this).val());\n    if (!val) return;\n    var $txt = $(this).closest('.form-cell, .subform-cell, .section').find(PICK_TXT_SEL).first();\n    commitSelected($txt.length ? $txt : $(this), val);\n  });\n\n  // IMPORTANT: No blur/Enter handlers here\u2014prevents adding just-typed text.\n\n  // One-time cleanup: strip spaces around commas if any pre-filled value exists\n  $(function(){\n    var $b = findBucketNear($('body'));\n    if ($b.length){\n      var cleaned = String($b.val() || '').replace(/\\s*,\\s*/g, ',').trim();\n      if ($b.val() !== cleaned){ $b.val(cleaned); log('normalized existing bucket →', cleaned); }\n    }\n    log('ready. pick inputs:', $(PICK_TXT_SEL).length, 'hidden mirrors:', $(PICK_HID_SEL).length, 'bucket:', $('#'+BUCKET_ID+', [name=\"'+BUCKET_ID+'\"]').length);\n  });\n})();\n<\/script>\n"
+                        "value": "<script>\n    $(document).ready(function() {\n    // Target your autocomplete field\n    var $field = $(\"input[name='hscode']\");\n\n    // Attach select event\n    $field.autocomplete({\n        select: function(event, ui) {\n            $(\"input[name='title']\").val(ui.item.label.replace(ui.item.value+':', '').trim());\n        }\n    });\n});\n<\/script>\n"
                     }
                 }
             ],
