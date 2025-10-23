@@ -1404,40 +1404,6 @@
                         "userviewCacheScope": "",
                         "readonlyLabel": ""
                     }
-                },
-                {
-                    "className": "org.joget.apps.userview.lib.FormMenu",
-                    "properties": {
-                        "loadDataWithKey": "",
-                        "redirectUrlOnCancel": "",
-                        "actionOnCancel": "",
-                        "redirectTargetOnCancel": "top",
-                        "customFooter": "",
-                        "paramName": "",
-                        "enableOffline": "",
-                        "afterSavedReloadTarget": "true",
-                        "customId": "view_ioc",
-                        "showInPopupDialog": "",
-                        "readonly": "Yes",
-                        "cancelButtonLabel": "",
-                        "actionAfterSaved": "",
-                        "showEditButton": "",
-                        "id": "88FEFCA46A214EC1CE7AAFD809FD3098",
-                        "iconIncluded": false,
-                        "redirectUrlAfterComplete": "",
-                        "fieldPassover": "",
-                        "formId": "form_ioc",
-                        "customHeader": "",
-                        "fieldPassoverMethod": "append",
-                        "redirectTargetOnComplete": "",
-                        "keyName": "",
-                        "label": "View IOC",
-                        "userviewCacheDuration": "20",
-                        "messageShowAfterComplete": "",
-                        "submitButtonLabel": "",
-                        "userviewCacheScope": "",
-                        "readonlyLabel": "true"
-                    }
                 }
             ],
             "properties": {
