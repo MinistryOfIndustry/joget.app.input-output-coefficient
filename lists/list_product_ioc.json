@@ -184,7 +184,7 @@
             "type": {
                 "className": "org.joget.plugin.TypeAheadMultiSelectSearch",
                 "properties": {
-                    "selectAll": "",
+                    "selectAll": "true",
                     "controlField": "",
                     "optionsBinder": {
                         "className": "org.joget.apps.form.lib.FormOptionsBinder",
