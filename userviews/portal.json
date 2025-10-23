@@ -1439,7 +1439,10 @@
                                 "permissionHidden": "true",
                                 "permissionDeny": ""
                             },
-                            "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}
+                            "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {
+                                "permissionHidden": "true",
+                                "permissionDeny": ""
+                            }
                         },
                         "customFooter": "",
                         "paramName": "",
@@ -1457,6 +1460,7 @@
                         "fieldPassover": "",
                         "formId": "approveIOC",
                         "customHeader": "",
+                        "permissionHidden": "true",
                         "fieldPassoverMethod": "append",
                         "redirectTargetOnComplete": "",
                         "keyName": "",
@@ -1465,6 +1469,7 @@
                         "messageShowAfterComplete": "",
                         "submitButtonLabel": "",
                         "userviewCacheScope": "",
+                        "permissionDeny": "",
                         "readonlyLabel": "true"
                     }
                 },
@@ -1475,7 +1480,16 @@
                         "redirectUrlOnCancel": "",
                         "actionOnCancel": "",
                         "redirectTargetOnCancel": "top",
-                        "permission_rules": {"09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {}},
+                        "permission_rules": {
+                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {
+                                "permissionHidden": "true",
+                                "permissionDeny": ""
+                            },
+                            "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {
+                                "permissionHidden": "true",
+                                "permissionDeny": ""
+                            }
+                        },
                         "customFooter": "",
                         "paramName": "",
                         "enableOffline": "",
@@ -1491,6 +1505,7 @@
                         "fieldPassover": "",
                         "formId": "form_ioc",
                         "customHeader": "",
+                        "permissionHidden": "true",
                         "fieldPassoverMethod": "append",
                         "redirectTargetOnComplete": "",
                         "keyName": "",
@@ -1499,6 +1514,7 @@
                         "messageShowAfterComplete": "",
                         "submitButtonLabel": "",
                         "userviewCacheScope": "",
+                        "permissionDeny": "",
                         "readonlyLabel": "true"
                     }
                 }
