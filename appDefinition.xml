@@ -659,7 +659,7 @@
                   <processDefId>sioc_process</processDefId>
                   <participantId>manufacturer</participantId>
                   <type>group</type>
-                  <value>app_accountCreation_Approver;app_ioc_developer;app_ioc_moi</value>
+                  <value>app_ioc_developer;app_ioc_moi</value>
                </packageParticipant>
             </entry>
             <entry>
