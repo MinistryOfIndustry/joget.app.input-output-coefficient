@@ -43,7 +43,7 @@
         <Participant Id="newRawMatItemToExistingProductProcess_2_requestor" Name="Participant">
             <ParticipantType Type="ROLE"/>
         </Participant>
-        <Participant Id="newRawMatItemToExistingProductProcess_2_participant2" Name="MOI Reviewr">
+        <Participant Id="newRawMatItemToExistingProductProcess_2_participant2" Name="MOI Reviewer">
             <ParticipantType Type="ROLE"/>
         </Participant>
         <Participant Id="newRawMatItemToExistingProductProcess_2_participant3" Name="Center HOD">
