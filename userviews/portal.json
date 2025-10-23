@@ -216,7 +216,10 @@
             "properties": {
                 "hide": "",
                 "permission_rules": {
-                    "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                    "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {
+                        "hide": "",
+                        "permissionDeny": "true"
+                    },
                     "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {
                         "hide": "",
                         "permissionDeny": ""
@@ -680,10 +683,7 @@
             "properties": {
                 "hide": "",
                 "permission_rules": {
-                    "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {
-                        "hide": "",
-                        "permissionDeny": "true"
-                    },
+                    "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
                     "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {
                         "hide": "",
                         "permissionDeny": ""
@@ -961,10 +961,7 @@
             "properties": {
                 "hide": "",
                 "permission_rules": {
-                    "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {
-                        "hide": "",
-                        "permissionDeny": "true"
-                    },
+                    "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
                     "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}
                 },
                 "permission": {
@@ -1016,7 +1013,10 @@
                         "actionOnCancel": "",
                         "redirectTargetOnCancel": "top",
                         "permission_rules": {
-                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {
+                                "permissionHidden": "",
+                                "permissionDeny": "true"
+                            },
                             "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}
                         },
                         "customFooter": "",
@@ -1206,7 +1206,10 @@
                         "actionOnCancel": "",
                         "redirectTargetOnCancel": "top",
                         "permission_rules": {
-                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {
+                                "permissionHidden": "",
+                                "permissionDeny": "true"
+                            },
                             "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}
                         },
                         "customFooter": "",
@@ -1242,7 +1245,10 @@
                         "actionOnCancel": "",
                         "redirectTargetOnCancel": "top",
                         "permission_rules": {
-                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {
+                                "permissionHidden": "",
+                                "permissionDeny": "true"
+                            },
                             "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}
                         },
                         "customFooter": "",
@@ -1278,7 +1284,10 @@
                         "actionOnCancel": "",
                         "redirectTargetOnCancel": "top",
                         "permission_rules": {
-                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {
+                                "permissionHidden": "",
+                                "permissionDeny": "true"
+                            },
                             "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}
                         },
                         "customFooter": "",
@@ -1314,7 +1323,10 @@
                         "actionOnCancel": "",
                         "redirectTargetOnCancel": "top",
                         "permission_rules": {
-                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {
+                                "permissionHidden": "",
+                                "permissionDeny": "true"
+                            },
                             "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}
                         },
                         "customFooter": "",
@@ -1350,7 +1362,10 @@
                         "actionOnCancel": "",
                         "redirectTargetOnCancel": "top",
                         "permission_rules": {
-                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {
+                                "permissionHidden": "",
+                                "permissionDeny": "true"
+                            },
                             "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}
                         },
                         "customFooter": "",
@@ -1386,7 +1401,10 @@
                         "actionOnCancel": "",
                         "redirectTargetOnCancel": "top",
                         "permission_rules": {
-                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
+                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {
+                                "permissionHidden": "",
+                                "permissionDeny": "true"
+                            },
                             "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {}
                         },
                         "customFooter": "",
