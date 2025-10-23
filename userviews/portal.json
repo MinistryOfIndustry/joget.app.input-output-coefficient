@@ -141,7 +141,7 @@
                 {
                     "className": "org.joget.apps.userview.lib.RunProcess",
                     "properties": {
-                        "permissionHidden": "true",
+                        "permissionHidden": "",
                         "runProcessDirectly": "Yes",
                         "fieldPassoverMethod": "append",
                         "permission_rules": {
@@ -986,6 +986,7 @@
                 "comment": "",
                 "label": "<i class=\"zmdi zmdi-settings\"><\/i> Configuration",
                 "id": "category-E99584774F2D4D5FC75847A0D29262DB",
+                "permissionDeny": "true",
                 "iconIncluded": true
             }
         },
@@ -1045,6 +1046,7 @@
                         "fieldPassover": "",
                         "formId": "formHSCode",
                         "customHeader": "",
+                        "permissionHidden": "",
                         "fieldPassoverMethod": "append",
                         "redirectTargetOnComplete": "",
                         "keyName": "",
@@ -1053,6 +1055,7 @@
                         "messageShowAfterComplete": "",
                         "submitButtonLabel": "",
                         "userviewCacheScope": "",
+                        "permissionDeny": "true",
                         "readonlyLabel": ""
                     }
                 },
@@ -1238,6 +1241,7 @@
                         "fieldPassover": "",
                         "formId": "crudSetting",
                         "customHeader": "",
+                        "permissionHidden": "",
                         "fieldPassoverMethod": "append",
                         "redirectTargetOnComplete": "",
                         "keyName": "",
@@ -1246,6 +1250,7 @@
                         "messageShowAfterComplete": "",
                         "submitButtonLabel": "",
                         "userviewCacheScope": "",
+                        "permissionDeny": "true",
                         "readonlyLabel": "true"
                     }
                 },
@@ -1277,6 +1282,7 @@
                         "fieldPassover": "",
                         "formId": "add_sector",
                         "customHeader": "",
+                        "permissionHidden": "",
                         "fieldPassoverMethod": "append",
                         "redirectTargetOnComplete": "",
                         "keyName": "sector",
@@ -1285,6 +1291,7 @@
                         "messageShowAfterComplete": "",
                         "submitButtonLabel": "",
                         "userviewCacheScope": "",
+                        "permissionDeny": "true",
                         "readonlyLabel": ""
                     }
                 },
@@ -1316,6 +1323,7 @@
                         "fieldPassover": "",
                         "formId": "product",
                         "customHeader": "",
+                        "permissionHidden": "",
                         "fieldPassoverMethod": "append",
                         "redirectTargetOnComplete": "",
                         "keyName": "",
@@ -1324,6 +1332,7 @@
                         "messageShowAfterComplete": "",
                         "submitButtonLabel": "",
                         "userviewCacheScope": "",
+                        "permissionDeny": "true",
                         "readonlyLabel": ""
                     }
                 },
@@ -1355,6 +1364,7 @@
                         "fieldPassover": "",
                         "formId": "add_raw_material",
                         "customHeader": "",
+                        "permissionHidden": "",
                         "fieldPassoverMethod": "append",
                         "redirectTargetOnComplete": "",
                         "keyName": "",
@@ -1363,6 +1373,7 @@
                         "messageShowAfterComplete": "",
                         "submitButtonLabel": "",
                         "userviewCacheScope": "",
+                        "permissionDeny": "true",
                         "readonlyLabel": ""
                     }
                 },
@@ -1433,6 +1444,7 @@
                         "fieldPassover": "",
                         "formId": "raw_material",
                         "customHeader": "",
+                        "permissionHidden": "",
                         "fieldPassoverMethod": "append",
                         "redirectTargetOnComplete": "",
                         "keyName": "",
@@ -1441,6 +1453,7 @@
                         "messageShowAfterComplete": "",
                         "submitButtonLabel": "",
                         "userviewCacheScope": "",
+                        "permissionDeny": "true",
                         "readonlyLabel": ""
                     }
                 }
