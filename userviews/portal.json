@@ -137,38 +137,6 @@
                         "rowCount": "true",
                         "id": "2247BD269C764D7C4A3FDF9A19F4EBCA"
                     }
-                },
-                {
-                    "className": "org.joget.apps.userview.lib.RunProcess",
-                    "properties": {
-                        "permissionHidden": "",
-                        "runProcessDirectly": "Yes",
-                        "fieldPassoverMethod": "append",
-                        "permission_rules": {
-                            "09c9c8b6-cfab-43d3-fc36-d3b56ba4fcd4": {},
-                            "7a3c5477-7fd8-ba19-a937-f79e8695ee85": {
-                                "permissionHidden": "true",
-                                "permissionDeny": ""
-                            }
-                        },
-                        "keyName": "",
-                        "label": "<i class=\"fas fa-book\"><\/i> Request New Raw Material Input",
-                        "redirectTarget": "",
-                        "enableOffline": "",
-                        "afterSavedReloadTarget": "true",
-                        "customId": "request_new_raw_material_input_menu",
-                        "userviewCacheDuration": "20",
-                        "messageShowAfterComplete": "",
-                        "showInPopupDialog": "",
-                        "userviewCacheScope": "",
-                        "actionAfterSaved": "",
-                        "runProcessSubmitLabel": "",
-                        "id": "3E6A5B7BABE44B9EC1C2F8B975E7ECC1",
-                        "permissionDeny": "",
-                        "processDefId": "newRawMaterialInputProcess",
-                        "redirectUrlAfterComplete": "home",
-                        "fieldPassover": "home"
-                    }
                 }
             ],
             "properties": {
