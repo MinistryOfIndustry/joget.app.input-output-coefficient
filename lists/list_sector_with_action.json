@@ -8,6 +8,29 @@
     "columns": [
         {
             "filterable": true,
+            "hidden": "true",
+            "include_export": "",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "ID",
+            "sortable": "false",
+            "datalist_type": "column",
+            "name": "id",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_3",
+            "alignment": ""
+        },
+        {
+            "filterable": true,
             "hidden": "false",
             "renderHtml": "",
             "format": {
