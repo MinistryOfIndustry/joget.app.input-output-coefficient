@@ -263,25 +263,64 @@
         },
         {
             "elements": [{
-                "elements": [{
-                    "className": "org.joget.apps.form.lib.TextArea",
-                    "properties": {
-                        "requiredSanitize": "",
-                        "readonly": "",
-                        "validator": {
-                            "className": "",
-                            "properties": {}
-                        },
-                        "workflowVariable": "",
-                        "label": "Center Comments",
-                        "id": "center_comments",
-                        "placeholder": "",
-                        "rows": "5",
-                        "cols": "20",
-                        "value": "",
-                        "readonlyLabel": ""
+                "elements": [
+                    {
+                        "className": "org.joget.apps.form.lib.SelectBox",
+                        "properties": {
+                            "controlField": "",
+                            "multiple": "",
+                            "validator": {
+                                "className": "org.joget.apps.form.lib.DefaultValidator",
+                                "properties": {
+                                    "type": "",
+                                    "message": "",
+                                    "mandatory": "true"
+                                }
+                            },
+                            "label": "Sector",
+                            "readonly": "",
+                            "size": "",
+                            "optionsBinder": {
+                                "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                                "properties": {
+                                    "addEmptyOption": "true",
+                                    "groupingColumn": "",
+                                    "formDefId": "add_sector",
+                                    "labelColumn": "title",
+                                    "extraCondition": "",
+                                    "cacheInterval": "",
+                                    "emptyLabel": "",
+                                    "idColumn": "id"
+                                }
+                            },
+                            "options": [],
+                            "workflowVariable": "",
+                            "id": "sector",
+                            "iconIncluded": false,
+                            "value": "",
+                            "readonlyLabel": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextArea",
+                        "properties": {
+                            "requiredSanitize": "",
+                            "readonly": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "workflowVariable": "",
+                            "label": "Center Comments",
+                            "id": "center_comments",
+                            "placeholder": "",
+                            "rows": "5",
+                            "cols": "20",
+                            "value": "",
+                            "readonlyLabel": ""
+                        }
                     }
-                }],
+                ],
                 "className": "org.joget.apps.form.model.Column",
                 "properties": {"width": "100%"}
             }],
