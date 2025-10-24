@@ -302,6 +302,16 @@
                         }
                     },
                     {
+                        "className": "org.joget.apps.form.lib.CustomHTML",
+                        "properties": {
+                            "requiredSanitize": "",
+                            "autoPopulate": "",
+                            "label": "",
+                            "id": "sector_copy_wrapper",
+                            "value": "<a href=\"#\" id=\"copy_sector\">Copy Sector from request<\/a>\n<script>\n    $(document).ready(function() {\n\t\t$(\"#copy_sector\").click(function(e){\n\t\t\te.preventDefault();\n\t\t\t$('select[name=\"sector\"] option[value=\"' + $('#requested_sector').val() + '\"]').prop('selected', true);\n\t\t});\n});\n<\/script>"
+                        }
+                    },
+                    {
                         "className": "org.joget.apps.form.lib.TextArea",
                         "properties": {
                             "requiredSanitize": "",
