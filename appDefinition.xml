@@ -470,6 +470,15 @@
                </packageActivityPlugin>
             </entry>
             <entry>
+               <string>sioc_process::decision_2</string>
+               <packageActivityPlugin>
+                  <processDefId>sioc_process</processDefId>
+                  <activityDefId>decision_2</activityDefId>
+                  <pluginName>org.joget.apps.app.lib.RulesDecisionPlugin</pluginName>
+                  <pluginProperties>{&quot;rules&quot;:{&quot;ifrules&quot;:[{&quot;andOr&quot;:&quot;and&quot;,&quot;revert&quot;:false,&quot;conditions&quot;:[{&quot;variable&quot;:&quot;status&quot;,&quot;revert&quot;:false,&quot;operation&quot;:&quot;==&quot;,&quot;value&quot;:&quot;Review by NC&quot;}],&quot;actions&quot;:[{&quot;name&quot;:null,&quot;type&quot;:&quot;transition&quot;,&quot;value&quot;:&quot;&quot;}]}],&quot;else&quot;:[{&quot;name&quot;:null,&quot;type&quot;:&quot;transition&quot;,&quot;value&quot;:&quot;&quot;}]}}</pluginProperties>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
                <string>newRawMatItemToExistingProductProcess::getProductApi</string>
                <packageActivityPlugin>
                   <processDefId>newRawMatItemToExistingProductProcess</processDefId>
