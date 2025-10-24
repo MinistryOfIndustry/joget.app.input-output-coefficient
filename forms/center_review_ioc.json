@@ -379,10 +379,7 @@
         "id": "center_review_ioc",
         "postProcessor": {
             "className": "org.joget.tutorial.WorkflowVariableUpdateTool",
-            "properties": {"workflowVarMapping": [{
-                "variable": "requested_sector",
-                "changeValueTo": "#variable.sector#"
-            }]}
+            "properties": {"workflowVarMapping": []}
         },
         "storeBinder": {
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
