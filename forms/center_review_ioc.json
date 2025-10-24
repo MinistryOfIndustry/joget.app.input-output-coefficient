@@ -371,15 +371,18 @@
         },
         "name": "Request New Product Process->Center Review",
         "description": "",
-        "postProcessorRunOn": "create",
+        "postProcessorRunOn": "both",
         "permission": {
             "className": "",
             "properties": {}
         },
         "id": "center_review_ioc",
         "postProcessor": {
-            "className": "",
-            "properties": {}
+            "className": "org.joget.tutorial.WorkflowVariableUpdateTool",
+            "properties": {"workflowVarMapping": [{
+                "variable": "requested_sector",
+                "changeValueTo": "#variable.sector#"
+            }]}
         },
         "storeBinder": {
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
