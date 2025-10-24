@@ -1,0 +1,60 @@
+<appDefinition>
+   <appId>inputOutputCoefficientPoC</appId>
+   <id>inputOutputCoefficientPoC</id>
+   <version></version>
+   <name>Digital Input Output Coefficient</name>
+   <packageDefinitionList/>
+   <formDefinitionList/>
+   <userviewDefinitionList/>
+   <datalistDefinitionList/>
+   <builderDefinitionList/>
+   <pluginDefaultPropertiesList>
+      <pluginDefaultProperties>
+         <id>org.joget.marketplace.SecureApiPlugin</id>
+         <appId>inputOutputCoefficientPoC</appId>
+         <appVersion>3</appVersion>
+         <pluginName>Secure API Plugin</pluginName>
+         <pluginDescription>API plugin with path-based access control</pluginDescription>
+         <pluginProperties>{&quot;tokenAppId&quot;:&quot;AccCreation&quot;,&quot;tokenFormId&quot;:&quot;apiTokenForm&quot;,&quot;tokenColumnName&quot;:&quot;c_token&quot;,&quot;userIdColumnName&quot;:&quot;username&quot;,&quot;debugMode&quot;:&quot;false&quot;,&quot;endpointJSON&quot;:&quot;[{\&quot;datalistId\&quot;:\&quot;api_sectors\&quot;,\&quot;groupId\&quot;:\&quot;app_ioc_api_access\&quot;},\n{\&quot;datalistId\&quot;: \&quot;api_raw_material_type\&quot;,\&quot;groupId\&quot;:\&quot;app_ioc_api_access\&quot;} , {\&quot;datalistId\&quot;: \&quot;api_raw_material_input\&quot;,\&quot;groupId\&quot;:\&quot;app_ioc_api_access\&quot;},\n{\&quot;datalistId\&quot;: \&quot;api_query_sector\&quot;,\&quot;groupId\&quot;:\&quot;app_ioc_api_access\&quot;}]&quot;,&quot;endpointJSONFilter&quot;:&quot;&quot;}</pluginProperties>
+      </pluginDefaultProperties>
+   </pluginDefaultPropertiesList>
+   <environmentVariableList>
+      <environmentVariable>
+         <id>currentAppUrl</id>
+         <appId>inputOutputCoefficientPoC</appId>
+         <appVersion>3</appVersion>
+         <value>#request.scheme#://#request.serverName#:#request.serverPort##request.contextPath#/web</value>
+      </environmentVariable>
+      <environmentVariable>
+         <id>loginAuth</id>
+         <appId>inputOutputCoefficientPoC</appId>
+         <appVersion>3</appVersion>
+         <value>Basic cGFja211dGFuZ2FuYUBnbWFpbC5jb206SmVzdXM3QDEyMw==</value>
+      </environmentVariable>
+      <environmentVariable>
+         <id>SECTOR_DEFAULT_DEPARTMENT</id>
+         <appId>inputOutputCoefficientPoC</appId>
+         <appVersion>3</appVersion>
+         <value>moi_ioc_center_leather</value>
+         <remarks>If no sector can be mapped at IOC request, the Center activities are assigned to this default department </remarks>
+      </environmentVariable>
+      <environmentVariable>
+         <id>SECTOR_DEFAULT_GROUP</id>
+         <appId>inputOutputCoefficientPoC</appId>
+         <appVersion>3</appVersion>
+         <value>app_ioc_developer</value>
+         <remarks>If no sector can be mapped at IOC request, the Center activities are assigned to this default group</remarks>
+      </environmentVariable>
+      <environmentVariable>
+         <id>SECTOR_TO_DEPARTMENT_MAPPING</id>
+         <appId>inputOutputCoefficientPoC</appId>
+         <appVersion>3</appVersion>
+         <value>{&quot;A&quot;:&quot;moi_ioc_center_leather&quot;,&quot;B&quot;:&quot;moi_ioc_center_textile&quot;,&quot;C&quot;:&quot;moi_ioc_center_food_beverage&quot;,&quot;D&quot;:&quot;moi_ioc_center_metal&quot;,&quot;E&quot;:&quot;moi_ioc_center_metal&quot;}</value>
+         <remarks>Mapping of departments (Centers) for each Sector </remarks>
+      </environmentVariable>
+   </environmentVariableList>
+   <messageList/>
+   <resourceList/>
+   <description>Version 3 IOC Coefficient — 01 Oct 2025, Patrick: refactored to align with the data schema for migration</description>
+   <createdBy>packmutangana@gmail.com</createdBy>
+</appDefinition>
