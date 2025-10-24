@@ -549,8 +549,8 @@
                <packageParticipant>
                   <processDefId>sioc_process</processDefId>
                   <participantId>national_committee</participantId>
-                  <type>group</type>
-                  <value>app_ioc_moi</value>
+                  <type>department</type>
+                  <value>moi_ioc_national_committee</value>
                </packageParticipant>
             </entry>
             <entry>
@@ -659,7 +659,7 @@
                   <processDefId>sioc_process</processDefId>
                   <participantId>manufacturer</participantId>
                   <type>group</type>
-                  <value>app_accountCreation_Approver;app_ioc_developer;app_ioc_moi;appNmdmGovernmentAdmin;appNmdmGovernmentOperator;app_ra_admin;app_ra_editor</value>
+                  <value>app_ioc_developer;app_ioc_moi;app_ra_admin;app_ra_editor</value>
                </packageParticipant>
             </entry>
             <entry>
@@ -667,8 +667,8 @@
                <packageParticipant>
                   <processDefId>sioc_process</processDefId>
                   <participantId>moi</participantId>
-                  <type>group</type>
-                  <value>app_ioc_moi</value>
+                  <type>department</type>
+                  <value>moi_ioc_reviewer</value>
                </packageParticipant>
             </entry>
          </packageParticipantMap>
