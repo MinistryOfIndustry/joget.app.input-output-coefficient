@@ -360,7 +360,7 @@
                         <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
                     </ExtendedAttributes>
                 </Transition>
-                <Transition From="decision_2" Id="transition19" Name="Requested sector changed by HOD" To="center_review">
+                <Transition From="decision_2" Id="transition19" Name="Sector changed by HOD" To="center_review">
                     <Condition Type="CONDITION">requested_sector === 'test'</Condition>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
