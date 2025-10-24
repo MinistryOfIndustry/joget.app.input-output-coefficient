@@ -294,7 +294,7 @@
                                 }
                             },
                             "options": [],
-                            "workflowVariable": "",
+                            "workflowVariable": "sector",
                             "id": "sector",
                             "iconIncluded": false,
                             "value": "",
