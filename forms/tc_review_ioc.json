@@ -304,52 +304,6 @@
                         }
                     },
                     {
-                        "className": "org.joget.apps.form.lib.SelectBox",
-                        "properties": {
-                            "controlField": "",
-                            "readonly": "",
-                            "size": "",
-                            "optionsBinder": {
-                                "className": "org.joget.apps.form.lib.FormOptionsBinder",
-                                "properties": {
-                                    "addEmptyOption": "true",
-                                    "groupingColumn": "",
-                                    "formDefId": "add_sector",
-                                    "labelColumn": "title",
-                                    "extraCondition": "",
-                                    "cacheInterval": "",
-                                    "emptyLabel": "",
-                                    "idColumn": "id"
-                                }
-                            },
-                            "multiple": "",
-                            "options": [],
-                            "validator": {
-                                "className": "org.joget.apps.form.lib.DefaultValidator",
-                                "properties": {
-                                    "type": "",
-                                    "message": "",
-                                    "mandatory": "true"
-                                }
-                            },
-                            "workflowVariable": "",
-                            "label": "Sector",
-                            "id": "sector",
-                            "value": "",
-                            "readonlyLabel": ""
-                        }
-                    },
-                    {
-                        "className": "org.joget.apps.form.lib.CustomHTML",
-                        "properties": {
-                            "requiredSanitize": "",
-                            "autoPopulate": "",
-                            "label": "",
-                            "id": "sector_copy_wrapper",
-                            "value": "<a href=\"#\" id=\"copy_sector\">Copy Sector from request<\/a>\r\n<script>\r\n    $(document).ready(function() {\r\n\t\t$(\"#copy_sector\").click(function(e){\r\n\t\t\te.preventDefault();\r\n\t\t\t$('select[name=\"sector\"] option[value=\"' + $('#requested_sector').val() + '\"]').prop('selected', true);\r\n\t\t});\r\n});\r\n<\/script>"
-                        }
-                    },
-                    {
                         "className": "org.joget.SubformRepeater",
                         "properties": {
                             "addMode": "enable",
