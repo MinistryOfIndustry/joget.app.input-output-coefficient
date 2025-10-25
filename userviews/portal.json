@@ -1597,7 +1597,7 @@
                 "dx8-dark-sidebar-navLinkIcon": "#FFFFFF",
                 "dx8-dark-header-navBadge": "#000000",
                 "mobileViewDisabled": "",
-                "horizontal_menu": "",
+                "horizontal_menu": "horizontal_inline",
                 "profile": "",
                 "homeAttractBanner": "",
                 "dx8-dark-sidebar-headerFontColor": "#37517E",
