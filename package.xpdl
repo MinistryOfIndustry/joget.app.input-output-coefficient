@@ -1,0 +1,1109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Package xmlns="http://www.wfmc.org/2002/XPDL1.0" xmlns:xpdl="http://www.wfmc.org/2002/XPDL1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Id="inputOutputCoefficientPoC" Name="PoC for the Input Output Coefficient" xsi:schemaLocation="http://www.wfmc.org/2002/XPDL1.0 http://wfmc.org/standards/docs/TC-1025_schema_10_xpdl.xsd">
+    <PackageHeader>
+        <XPDLVersion>1.0</XPDLVersion>
+        <Vendor/>
+        <Created/>
+    </PackageHeader>
+    <Script Type="text/javascript"/>
+    <Participants>
+        <Participant Id="manufacturer" Name="Manufacturer">
+            <ParticipantType Type="ROLE"/>
+        </Participant>
+        <Participant Id="moi" Name="MOI Reviewer">
+            <ParticipantType Type="ROLE"/>
+        </Participant>
+        <Participant Id="center" Name="Center HOD">
+            <ParticipantType Type="ROLE"/>
+        </Participant>
+        <Participant Id="technical_committee" Name="Center Technical Committee">
+            <ParticipantType Type="ROLE"/>
+        </Participant>
+        <Participant Id="national_committee" Name="National Committee">
+            <ParticipantType Type="ROLE"/>
+        </Participant>
+        <Participant Id="process2_participant6" Name="Participant">
+            <ParticipantType Type="ROLE"/>
+        </Participant>
+        <Participant Id="requestor" Name="Participant">
+            <ParticipantType Type="ROLE"/>
+        </Participant>
+        <Participant Id="newRawMatItemToExistingProductProcess_participant2" Name="MOI Reviewer">
+            <ParticipantType Type="ROLE"/>
+        </Participant>
+        <Participant Id="newRawMatItemToExistingProductProcess_participant3" Name="Center HOD">
+            <ParticipantType Type="ROLE"/>
+        </Participant>
+        <Participant Id="newRawMatItemToExistingProductProcess_participant4" Name="Center Technical Committee">
+            <ParticipantType Type="ROLE"/>
+        </Participant>
+        <Participant Id="newRawMatItemToExistingProductProcess_participant5" Name="National Committee">
+            <ParticipantType Type="ROLE"/>
+        </Participant>
+        <Participant Id="newRawMatItemToExistingProductProcess_2_requestor" Name="Participant">
+            <ParticipantType Type="ROLE"/>
+        </Participant>
+        <Participant Id="newRawMatItemToExistingProductProcess_2_participant2" Name="MOI Reviewer">
+            <ParticipantType Type="ROLE"/>
+        </Participant>
+        <Participant Id="newRawMatItemToExistingProductProcess_2_participant3" Name="Center HOD">
+            <ParticipantType Type="ROLE"/>
+        </Participant>
+        <Participant Id="newRawMatItemToExistingProductProcess_2_participant4" Name="Center Technical Committee">
+            <ParticipantType Type="ROLE"/>
+        </Participant>
+        <Participant Id="newRawMatItemToExistingProductProcess_2_participant5" Name="National Committee">
+            <ParticipantType Type="ROLE"/>
+        </Participant>
+        <Participant Id="productMovementProcess_2_process2_participant6" Name="Participant">
+            <ParticipantType Type="ROLE"/>
+        </Participant>
+    </Participants>
+    <Applications>
+        <Application Id="default_application"/>
+    </Applications>
+    <WorkflowProcesses>
+        <WorkflowProcess Id="sioc_process" Name="Request new PRODUCT Process">
+            <ProcessHeader DurationUnit="h"/>
+            <DataFields>
+                <DataField Id="status" IsArray="FALSE">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
+                <DataField Id="requested_sector" IsArray="FALSE">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
+                <DataField Id="center_sector" IsArray="FALSE">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
+            </DataFields>
+            <Activities>
+                <Activity Id="moi_review" Name="MOI Review">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>moi</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="moi"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="120,67"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="center_review" Name="Center Review">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>center</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Join Type="XOR"/>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="center"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="360,328"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="tc_review_add_rm_inputs" Name="TC Review and Add RM Inputs">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>technical_committee</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="technical_committee"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="100,701"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="center_approval" Name="Center Approval">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>center</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Join Type="XOR"/>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="center"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="600,308"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="decision" Name="Decision">
+                    <Route/>
+                    <Performer>center</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Split Type="XOR">
+                                <TransitionRefs>
+                                    <TransitionRef Id="transition5"/>
+                                    <TransitionRef Id="transition7"/>
+                                </TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="center"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1000,268"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="tc_rework" Name="TC Rework">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>technical_committee</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Join Type="XOR"/>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="technical_committee"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="720,681"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="nc_approval" Name="NC Approval">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>national_committee</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="national_committee"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1000,909"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="nc_decision" Name="NC Decision">
+                    <Route/>
+                    <Performer>national_committee</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Split Type="XOR">
+                                <TransitionRefs>
+                                    <TransitionRef Id="transition21"/>
+                                    <TransitionRef Id="transition11"/>
+                                </TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="national_committee"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1200,1029"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="confirmation_email" Name="Confirmation Email">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>national_committee</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="national_committee"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1600,1029"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="route2">
+                    <Route/>
+                    <Performer>moi</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Split Type="XOR">
+                                <TransitionRefs>
+                                    <TransitionRef Id="transition15"/>
+                                    <TransitionRef Id="transition16"/>
+                                </TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="moi"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="300,67"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="rejectionEmail" Name="Rejection Email">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>moi</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="moi"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="560,67"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="save" Name="Save to database">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>national_committee</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="national_committee"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1420,1029"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="decision_2" Name="Decision">
+                    <Route/>
+                    <Performer>center</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Split Type="XOR">
+                                <TransitionRefs>
+                                    <TransitionRef Id="transition19"/>
+                                    <TransitionRef Id="transition20"/>
+                                </TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="center"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="100,488"/>
+                    </ExtendedAttributes>
+                </Activity>
+            </Activities>
+            <Transitions>
+                <Transition From="tc_review_add_rm_inputs" Id="transition3" To="center_approval">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="center_approval" Id="transition4" To="decision">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="decision" Id="transition5" Name="Rejected" To="tc_rework">
+                    <Condition Type="CONDITION">status === 'Rework by TC'</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                        <ExtendedAttribute Name="PBUILDER_TRANSITION_CONDITIONS" Value="[{&quot;join&quot;:&quot;&amp;&amp;&quot;,&quot;variable&quot;:&quot;status&quot;,&quot;operator&quot;:&quot;===&quot;,&quot;value&quot;:&quot;Rework by TC&quot;}]"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="decision" Id="transition7" Name="Approved" To="nc_approval">
+                    <Condition Type="OTHERWISE"/>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="tc_rework" Id="transition8" To="center_approval">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="nc_approval" Id="transition9" To="nc_decision">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="nc_decision" Id="transition11" Name="Approved" To="save">
+                    <Condition Type="CONDITION">status === 'Public'</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="PBUILDER_TRANSITION_CONDITIONS" Value="[{&quot;join&quot;:&quot;&amp;&amp;&quot;,&quot;variable&quot;:&quot;status&quot;,&quot;operator&quot;:&quot;===&quot;,&quot;value&quot;:&quot;Public&quot;}]"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="moi_review" Id="transition14" To="route2">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="route2" Id="transition15" To="center_review">
+                    <Condition Type="OTHERWISE"/>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="route2" Id="transition16" To="rejectionEmail">
+                    <Condition Type="CONDITION">status === 'Rejected by MOI'</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="PBUILDER_TRANSITION_CONDITIONS" Value="[{&quot;join&quot;:&quot;&amp;&amp;&quot;,&quot;variable&quot;:&quot;status&quot;,&quot;operator&quot;:&quot;===&quot;,&quot;value&quot;:&quot;Rejected by MOI&quot;}]"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="save" Id="transition17" To="confirmation_email">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="center_review" Id="transition18" To="decision_2">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="decision_2" Id="transition19" Name="Sector changed by HOD" To="center_review">
+                    <Condition Type="CONDITION">center_sector !==requested_sector</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="decision_2" Id="transition20" Name="OTHERWISE" To="tc_review_add_rm_inputs">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="nc_decision" Id="transition21" Name="Rejected [OTHERWISE]" To="tc_rework">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+            </Transitions>
+            <ExtendedAttributes>
+                <ExtendedAttribute Name="JaWE_GRAPH_WORKFLOW_PARTICIPANT_ORDER" Value="manufacturer;moi;center;technical_committee;national_committee"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_START_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=manufacturer,CONNECTING_ACTIVITY_ID=moi_review,X_OFFSET=180,Y_OFFSET=-171,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=START_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=moi,CONNECTING_ACTIVITY_ID=rejectionEmail,X_OFFSET=840,Y_OFFSET=67,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=national_committee,CONNECTING_ACTIVITY_ID=confirmation_email,X_OFFSET=1780,Y_OFFSET=1029,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+            </ExtendedAttributes>
+        </WorkflowProcess>
+        <WorkflowProcess Id="productMovementProcess" Name="Product Movement Process">
+            <ProcessHeader DurationUnit="h"/>
+            <DataFields>
+                <DataField Id="status" IsArray="FALSE">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
+            </DataFields>
+            <Activities>
+                <Activity Id="movingRequestedProduct" Name="Requested Product Movement">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>process2_participant6</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="process2_participant6"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="260,314"/>
+                    </ExtendedAttributes>
+                </Activity>
+            </Activities>
+            <ExtendedAttributes>
+                <ExtendedAttribute Name="JaWE_GRAPH_WORKFLOW_PARTICIPANT_ORDER" Value="process2_participant6"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_START_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=process2_participant6,CONNECTING_ACTIVITY_ID=movingRequestedProduct,X_OFFSET=80,Y_OFFSET=254,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=START_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=process2_participant6,CONNECTING_ACTIVITY_ID=movingRequestedProduct,X_OFFSET=500,Y_OFFSET=374,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+            </ExtendedAttributes>
+        </WorkflowProcess>
+        <WorkflowProcess Id="newRawMatItemToExistingProductProcess" Name="Request new ITEM to existing TYPE Process">
+            <ProcessHeader DurationUnit="h"/>
+            <DataFields>
+                <DataField Id="status" IsArray="FALSE">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
+                <DataField Id="productId" IsArray="FALSE">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
+                <DataField Id="rawMaterialTypeId" IsArray="FALSE">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
+                <DataField Id="title" IsArray="FALSE">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
+                <DataField Id="required_quantity" IsArray="FALSE">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
+                <DataField Id="uom" IsArray="FALSE">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
+                <DataField Id="waste_percentage" IsArray="FALSE">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
+                <DataField Id="input_output_coefficient" IsArray="FALSE">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
+                <DataField Id="merge_inputs_title" IsArray="FALSE">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
+            </DataFields>
+            <Activities>
+                <Activity Id="getProductApi" Name="Get Product">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>requestor</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="requestor"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="260,-148.5"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="raw_material_type_info" Name="Raw Material Type Info">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>requestor</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="requestor"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="440,-68.5"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="moi_review" Name="MOI Review">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>newRawMatItemToExistingProductProcess_participant2</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="newRawMatItemToExistingProductProcess_participant2"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="140,139.5"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="route1">
+                    <Route/>
+                    <Performer>newRawMatItemToExistingProductProcess_participant2</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Split Type="XOR">
+                                <TransitionRefs>
+                                    <TransitionRef Id="transition10"/>
+                                    <TransitionRef Id="transition22"/>
+                                </TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="newRawMatItemToExistingProductProcess_participant2"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="420,159.5"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="center_review" Name="Center Review">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>newRawMatItemToExistingProductProcess_participant3</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="newRawMatItemToExistingProductProcess_participant3"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="220,367.5"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="rejection_email" Name="Rejection Email">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>newRawMatItemToExistingProductProcess_participant2</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="newRawMatItemToExistingProductProcess_participant2"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="920,159.5"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="tcReviewAndRmInputs" Name="TC Review and Add RM Inputs">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>newRawMatItemToExistingProductProcess_participant4</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="newRawMatItemToExistingProductProcess_participant4"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="220,600.5"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="itemNCApproval" Name="NC Approval">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>newRawMatItemToExistingProductProcess_participant5</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="newRawMatItemToExistingProductProcess_participant5"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="960,868.5"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="centerApproval" Name="Center Approval">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>newRawMatItemToExistingProductProcess_participant3</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Join Type="XOR"/>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="newRawMatItemToExistingProductProcess_participant3"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="600,387.5"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="Decision" Name="decision">
+                    <Route/>
+                    <Performer>newRawMatItemToExistingProductProcess_participant3</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Split Type="XOR">
+                                <TransitionRefs>
+                                    <TransitionRef Id="transition13"/>
+                                    <TransitionRef Id="transition15"/>
+                                </TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="newRawMatItemToExistingProductProcess_participant3"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="960,407.5"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="itemTCRewark" Name="TC Rework">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>newRawMatItemToExistingProductProcess_participant4</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Join Type="XOR"/>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="newRawMatItemToExistingProductProcess_participant4"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="600,660.5"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="NC_Decision" Name="NC Decision">
+                    <Route/>
+                    <Performer>newRawMatItemToExistingProductProcess_participant5</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Split Type="XOR">
+                                <TransitionRefs>
+                                    <TransitionRef Id="transition19"/>
+                                    <TransitionRef Id="transition17"/>
+                                </TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="newRawMatItemToExistingProductProcess_participant5"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1160,948.5"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="tool2" Name="Save to database">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>newRawMatItemToExistingProductProcess_participant5</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="newRawMatItemToExistingProductProcess_participant5"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1380,948.5"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="tool3" Name="Confirmation Email">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>newRawMatItemToExistingProductProcess_participant5</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="newRawMatItemToExistingProductProcess_participant5"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1560,948.5"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="stringfyTheProduct" Name="Stringfy the product">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>newRawMatItemToExistingProductProcess_participant2</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="newRawMatItemToExistingProductProcess_participant2"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="680,139.5"/>
+                    </ExtendedAttributes>
+                </Activity>
+            </Activities>
+            <Transitions>
+                <Transition From="getProductApi" Id="transition1" To="raw_material_type_info">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="moi_review" Id="transition4" To="route1">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="center_review" Id="transition9" To="tcReviewAndRmInputs">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="route1" Id="transition10" To="center_review">
+                    <Condition Type="OTHERWISE"/>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="tcReviewAndRmInputs" Id="transition11" To="centerApproval">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="centerApproval" Id="transition12" To="Decision">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="Decision" Id="transition13" Name="Rejected" To="itemTCRewark">
+                    <Condition Type="CONDITION">status === 'Rework by TC'</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                        <ExtendedAttribute Name="PBUILDER_TRANSITION_CONDITIONS" Value="[{&quot;join&quot;:&quot;&amp;&amp;&quot;,&quot;variable&quot;:&quot;status&quot;,&quot;operator&quot;:&quot;===&quot;,&quot;value&quot;:&quot;Rework by TC&quot;}]"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="itemTCRewark" Id="transition14" To="centerApproval">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="Decision" Id="transition15" Name="Approved" To="itemNCApproval">
+                    <Condition Type="OTHERWISE"/>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="itemNCApproval" Id="transition16" To="NC_Decision">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="NC_Decision" Id="transition17" To="tool2">
+                    <Condition Type="CONDITION">status === 'Public'</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="PBUILDER_TRANSITION_CONDITIONS" Value="[{&quot;join&quot;:&quot;&amp;&amp;&quot;,&quot;variable&quot;:&quot;status&quot;,&quot;operator&quot;:&quot;===&quot;,&quot;value&quot;:&quot;Public&quot;}]"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="tool2" Id="transition18" To="tool3">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="raw_material_type_info" Id="transition21" To="moi_review">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="route1" Id="transition22" To="stringfyTheProduct">
+                    <Condition Type="CONDITION">status === 'Rejected by MOI'</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="PBUILDER_TRANSITION_CONDITIONS" Value="[{&quot;join&quot;:&quot;&amp;&amp;&quot;,&quot;variable&quot;:&quot;status&quot;,&quot;operator&quot;:&quot;===&quot;,&quot;value&quot;:&quot;Rejected by MOI&quot;}]"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="stringfyTheProduct" Id="transition23" To="rejection_email">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="NC_Decision" Id="transition19" Name="Rejected [OTHERWISE]" To="itemTCRewark">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+            </Transitions>
+            <ExtendedAttributes>
+                <ExtendedAttribute Name="JaWE_GRAPH_WORKFLOW_PARTICIPANT_ORDER" Value="requestor;newRawMatItemToExistingProductProcess_participant2;newRawMatItemToExistingProductProcess_participant3;newRawMatItemToExistingProductProcess_participant4;newRawMatItemToExistingProductProcess_participant5"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_START_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=requestor,CONNECTING_ACTIVITY_ID=getProductApi,X_OFFSET=80,Y_OFFSET=-148.5,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=START_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=newRawMatItemToExistingProductProcess_participant2,CONNECTING_ACTIVITY_ID=rejection_email,X_OFFSET=1220,Y_OFFSET=179.5,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=newRawMatItemToExistingProductProcess_participant5,CONNECTING_ACTIVITY_ID=tool3,X_OFFSET=1740,Y_OFFSET=948.5,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+            </ExtendedAttributes>
+        </WorkflowProcess>
+        <WorkflowProcess Id="newRawMatTypeToExistingProductProcess" Name="Request new TYPE for existing PRODUCT Process">
+            <ProcessHeader DurationUnit="h"/>
+            <DataFields>
+                <DataField Id="status" IsArray="FALSE">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
+                <DataField Id="productId" IsArray="FALSE">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
+                <DataField Id="rawMaterialTypeId" IsArray="FALSE">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
+                <DataField Id="title" IsArray="FALSE">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
+                <DataField Id="required_quantity" IsArray="FALSE">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
+                <DataField Id="uom" IsArray="FALSE">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
+                <DataField Id="waste_percentage" IsArray="FALSE">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
+                <DataField Id="input_output_coefficient" IsArray="FALSE">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
+                <DataField Id="merge_inputs_title" IsArray="FALSE">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
+            </DataFields>
+            <Activities>
+                <Activity Id="getProductApi" Name="Get Product">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>newRawMatItemToExistingProductProcess_2_requestor</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="newRawMatItemToExistingProductProcess_2_requestor"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="260,-156"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="raw_material_type_info" Name="Raw Material Type Info">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>newRawMatItemToExistingProductProcess_2_requestor</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="newRawMatItemToExistingProductProcess_2_requestor"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="440,-76"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="moi_review" Name="MOI Review">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>newRawMatItemToExistingProductProcess_2_participant2</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="newRawMatItemToExistingProductProcess_2_participant2"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="140,132"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="route1">
+                    <Route/>
+                    <Performer>newRawMatItemToExistingProductProcess_2_participant2</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Split Type="XOR">
+                                <TransitionRefs>
+                                    <TransitionRef Id="transition10"/>
+                                    <TransitionRef Id="transition22"/>
+                                </TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="newRawMatItemToExistingProductProcess_2_participant2"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="420,152"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="center_review" Name="Center Review">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>newRawMatItemToExistingProductProcess_2_participant3</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="newRawMatItemToExistingProductProcess_2_participant3"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="220,360"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="rejection_email" Name="Rejection Email">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>newRawMatItemToExistingProductProcess_2_participant2</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="newRawMatItemToExistingProductProcess_2_participant2"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="920,152"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="tcReviewAndRmInputs" Name="TC Review and Add RM Inputs">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>newRawMatItemToExistingProductProcess_2_participant4</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="newRawMatItemToExistingProductProcess_2_participant4"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="220,628"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="itemNCApproval" Name="NC Approval">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>newRawMatItemToExistingProductProcess_2_participant5</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Join Type="XOR"/>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="newRawMatItemToExistingProductProcess_2_participant5"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="900,896"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="centerApproval" Name="Center Approval">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>newRawMatItemToExistingProductProcess_2_participant3</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Join Type="XOR"/>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="newRawMatItemToExistingProductProcess_2_participant3"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="600,380"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="Decision" Name="decision">
+                    <Route/>
+                    <Performer>newRawMatItemToExistingProductProcess_2_participant3</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Split Type="XOR">
+                                <TransitionRefs>
+                                    <TransitionRef Id="transition13"/>
+                                    <TransitionRef Id="transition15"/>
+                                </TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="newRawMatItemToExistingProductProcess_2_participant3"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="960,400"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="typeTCRewarkP" Name="TC Rework">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>newRawMatItemToExistingProductProcess_2_participant4</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="newRawMatItemToExistingProductProcess_2_participant4"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="600,688"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="NC_Decision" Name="NC Decision">
+                    <Route/>
+                    <Performer>newRawMatItemToExistingProductProcess_2_participant5</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Split Type="XOR">
+                                <TransitionRefs>
+                                    <TransitionRef Id="transition17"/>
+                                    <TransitionRef Id="transition19"/>
+                                </TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="newRawMatItemToExistingProductProcess_2_participant5"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1100,916"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="tool2" Name="Save to database">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>newRawMatItemToExistingProductProcess_2_participant5</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="newRawMatItemToExistingProductProcess_2_participant5"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1280,916"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="center_rewark_pro" Name="Center Rework">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>newRawMatItemToExistingProductProcess_2_participant3</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="newRawMatItemToExistingProductProcess_2_participant3"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1080,420"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="tool3" Name="Confirmation Email">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>newRawMatItemToExistingProductProcess_2_participant5</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="newRawMatItemToExistingProductProcess_2_participant5"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1460,916"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="stringfyTheProduct" Name="Stringfy the product">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>newRawMatItemToExistingProductProcess_2_participant2</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="newRawMatItemToExistingProductProcess_2_participant2"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="680,132"/>
+                    </ExtendedAttributes>
+                </Activity>
+            </Activities>
+            <Transitions>
+                <Transition From="getProductApi" Id="transition1" To="raw_material_type_info">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="moi_review" Id="transition4" To="route1">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="center_review" Id="transition9" To="tcReviewAndRmInputs">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="route1" Id="transition10" To="center_review">
+                    <Condition Type="OTHERWISE"/>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="tcReviewAndRmInputs" Id="transition11" To="centerApproval">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="centerApproval" Id="transition12" To="Decision">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="Decision" Id="transition13" Name="Rejected" To="typeTCRewarkP">
+                    <Condition Type="CONDITION">status === 'Rework by TC'</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                        <ExtendedAttribute Name="PBUILDER_TRANSITION_CONDITIONS" Value="[{&quot;join&quot;:&quot;&amp;&amp;&quot;,&quot;variable&quot;:&quot;status&quot;,&quot;operator&quot;:&quot;===&quot;,&quot;value&quot;:&quot;Rework by TC&quot;}]"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="typeTCRewarkP" Id="transition14" To="centerApproval">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="Decision" Id="transition15" Name="Approved" To="itemNCApproval">
+                    <Condition Type="OTHERWISE"/>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="itemNCApproval" Id="transition16" To="NC_Decision">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="NC_Decision" Id="transition17" To="tool2">
+                    <Condition Type="CONDITION">status === 'Public'</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="PBUILDER_TRANSITION_CONDITIONS" Value="[{&quot;join&quot;:&quot;&amp;&amp;&quot;,&quot;variable&quot;:&quot;status&quot;,&quot;operator&quot;:&quot;===&quot;,&quot;value&quot;:&quot;Public&quot;}]"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="NC_Decision" Id="transition19" To="center_rewark_pro">
+                    <Condition Type="OTHERWISE"/>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="center_rewark_pro" Id="transition20" To="itemNCApproval">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="tool2" Id="transition18" To="tool3">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="raw_material_type_info" Id="transition21" To="moi_review">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="route1" Id="transition22" To="stringfyTheProduct">
+                    <Condition Type="CONDITION">status === 'Rejected by MOI'</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="PBUILDER_TRANSITION_CONDITIONS" Value="[{&quot;join&quot;:&quot;&amp;&amp;&quot;,&quot;variable&quot;:&quot;status&quot;,&quot;operator&quot;:&quot;===&quot;,&quot;value&quot;:&quot;Rejected by MOI&quot;}]"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="stringfyTheProduct" Id="transition23" To="rejection_email">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+            </Transitions>
+            <ExtendedAttributes>
+                <ExtendedAttribute Name="JaWE_GRAPH_WORKFLOW_PARTICIPANT_ORDER" Value="newRawMatItemToExistingProductProcess_2_requestor;newRawMatItemToExistingProductProcess_2_participant2;newRawMatItemToExistingProductProcess_2_participant3;newRawMatItemToExistingProductProcess_2_participant4;newRawMatItemToExistingProductProcess_2_participant5"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_START_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=newRawMatItemToExistingProductProcess_2_requestor,CONNECTING_ACTIVITY_ID=getProductApi,X_OFFSET=80,Y_OFFSET=-156,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=START_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=newRawMatItemToExistingProductProcess_2_participant2,CONNECTING_ACTIVITY_ID=rejection_email,X_OFFSET=1180,Y_OFFSET=172,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=newRawMatItemToExistingProductProcess_2_participant5,CONNECTING_ACTIVITY_ID=tool3,X_OFFSET=1640,Y_OFFSET=936,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+            </ExtendedAttributes>
+        </WorkflowProcess>
+        <WorkflowProcess Id="importSIOC" Name="Import SIOC">
+            <ProcessHeader DurationUnit="h"/>
+            <Activities>
+                <Activity Id="importSioc" Name="Import SIOC">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>productMovementProcess_2_process2_participant6</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="productMovementProcess_2_process2_participant6"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="260,314"/>
+                    </ExtendedAttributes>
+                </Activity>
+            </Activities>
+            <ExtendedAttributes>
+                <ExtendedAttribute Name="JaWE_GRAPH_WORKFLOW_PARTICIPANT_ORDER" Value="productMovementProcess_2_process2_participant6"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_START_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=productMovementProcess_2_process2_participant6,CONNECTING_ACTIVITY_ID=importSioc,X_OFFSET=80,Y_OFFSET=254,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=START_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=productMovementProcess_2_process2_participant6,CONNECTING_ACTIVITY_ID=importSioc,X_OFFSET=500,Y_OFFSET=374,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+            </ExtendedAttributes>
+        </WorkflowProcess>
+    </WorkflowProcesses>
+</Package>

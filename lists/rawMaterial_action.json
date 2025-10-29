@@ -1,0 +1,200 @@
+{
+    "template": {
+        "className": "",
+        "properties": {}
+    },
+    "considerFilterWhenGetTotal": "",
+    "useSession": "",
+    "responsiveMode": "",
+    "rowActions": [{
+        "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
+        "id": "rowAction_0",
+        "properties": {
+            "hrefColumn": "id;product",
+            "hrefParam": "id;product",
+            "rules": [],
+            "label": "+ RMI",
+            "href": "addNewRawMaterialItemMenu",
+            "confirmation": "",
+            "link-css-display-type": "btn btn-sm btn-success",
+            "datalist_type": "row_action",
+            "target": "_self",
+            "header_label": "Request New Material Input"
+        }
+    }],
+    "columns": [
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Code",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "raw_material_type_code",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_0",
+            "alignment": ""
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "title",
+            "id": "column_1",
+            "label": "Title",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "org.joget.apps.datalist.lib.DefaultFormatter",
+                "properties": {
+                    "size": "",
+                    "color": "#AAAAAA",
+                    "field": "title",
+                    "formDefId": "add_sector",
+                    "formatting": ""
+                }
+            },
+            "label": "Sector",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "sector",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_2",
+            "alignment": ""
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "org.joget.apps.datalist.lib.DefaultFormatter",
+                "properties": {
+                    "size": "",
+                    "color": "#AAAAAA",
+                    "field": "title",
+                    "formDefId": "product",
+                    "formatting": ""
+                }
+            },
+            "label": "Product",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "product",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_3",
+            "alignment": ""
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "org.joget.marketplace.UserviewKeyDatalistFormatter",
+                "properties": {
+                    "backgroundColorForLink": "FFFFFF",
+                    "fontColorForLink": "#27ae60",
+                    "menuItem": "manage_raw_input",
+                    "userView": "portal",
+                    "labelForHyperlink": "Raw Material Inputs »"
+                }
+            },
+            "label": "Explore Raw Material Inputs",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "id",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_4",
+            "alignment": ""
+        }
+    ],
+    "draggabletable": "",
+    "cardCollapsible": "",
+    "pageSize": "50",
+    "orderBy": "title",
+    "description": "",
+    "filters": [{
+        "hidden": "",
+        "name": "title",
+        "id": "filter_0",
+        "label": "Title",
+        "type": {
+            "className": "org.joget.plugin.TypeAheadMultiSelectSearch",
+            "properties": {
+                "selectAll": "",
+                "controlField": "",
+                "optionsBinder": {
+                    "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                    "properties": {
+                        "addEmptyOption": "",
+                        "groupingColumn": "",
+                        "formDefId": "add_raw_material",
+                        "labelColumn": "title",
+                        "extraCondition": "",
+                        "cacheInterval": "",
+                        "emptyLabel": "",
+                        "idColumn": "id"
+                    }
+                },
+                "defaultValue": "",
+                "options": [],
+                "searchFilter": "true"
+            }
+        },
+        "datalist_type": "filter",
+        "filterParamName": "d-310140-fn_title"
+    }],
+    "showDataWhenFilterSet": "",
+    "pageSizeSelectorOptions": "20,50,100",
+    "hidePageSize": "",
+    "disableResponsive": "",
+    "cardCollapseByDefault": "",
+    "name": "List - Raw Material Type with Action",
+    "rowActionsMode": "",
+    "showhidecolumns": "",
+    "id": "rawMaterial_action",
+    "binder": {
+        "className": "org.joget.apps.datalist.lib.FormRowDataListBinder",
+        "properties": {
+            "formDefId": "add_raw_material",
+            "extraCondition": "",
+            "cacheRowCount": ""
+        }
+    },
+    "actions": [],
+    "order": "2"
+}
