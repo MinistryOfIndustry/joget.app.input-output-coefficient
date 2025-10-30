@@ -1,0 +1,39 @@
+{
+    "elements": [
+        {
+            "className": "org.joget.apps.userview.lib.FormMenu",
+            "properties": {
+                "loadDataWithKey": "",
+                "redirectUrlOnCancel": "",
+                "actionOnCancel": "",
+                "redirectTargetOnCancel": "top",
+                "customFooter": "",
+                "paramName": "",
+                "enableOffline": "",
+                "afterSavedReloadTarget": "true",
+                "customId": "",
+                "showInPopupDialog": "",
+                "readonly": "",
+                "cancelButtonLabel": "",
+                "actionAfterSaved": "reload",
+                "id": "1CF72426196C46929C33A2C3A6442BA1",
+                "redirectUrlAfterComplete": "",
+                "fieldPassover": "",
+                "formId": "add_sector",
+                "customHeader": "",
+                "fieldPassoverMethod": "append",
+                "redirectTargetOnComplete": "",
+                "keyName": "",
+                "label": "Sectors",
+                "userviewCacheDuration": "20",
+                "messageShowAfterComplete": "",
+                "submitButtonLabel": "",
+                "userviewCacheScope": "",
+                "readonlyLabel": "true"
+            }
+        },
+        {"className": "menu-component"}
+    ],
+    "className": "org.joget.apps.userview.model.UserviewPage",
+    "properties": {"id": "up-3DD6822C83E84136EDEDFA861F145CA8"}
+}

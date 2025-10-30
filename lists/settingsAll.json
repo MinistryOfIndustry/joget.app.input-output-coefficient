@@ -1,0 +1,222 @@
+{
+    "template": {
+        "className": "",
+        "properties": {}
+    },
+    "considerFilterWhenGetTotal": "",
+    "responsiveMode": "",
+    "rowActions": [],
+    "columns": [
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "permission_rules": {"5886cd19-1023-30bf-4a16-f9ce738b0af5": {}},
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Setting Label",
+            "sortable": "true",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "settingLabel",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
+                "properties": {
+                    "hrefColumn": "id",
+                    "hrefParam": "id",
+                    "href": "crudSettingMenu?embed=true",
+                    "confirmation": "",
+                    "target": "popup"
+                }
+            },
+            "style": "",
+            "id": "column_0",
+            "alignment": ""
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "permission_rules": {"5886cd19-1023-30bf-4a16-f9ce738b0af5": {}},
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Setting Domain",
+            "sortable": "true",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "settingDomain",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_1",
+            "alignment": ""
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "permission_rules": {"5886cd19-1023-30bf-4a16-f9ce738b0af5": {}},
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Setting ID",
+            "sortable": "true",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "settingId",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_4",
+            "alignment": ""
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "permission_rules": {"5886cd19-1023-30bf-4a16-f9ce738b0af5": {}},
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Modified By",
+            "sortable": "true",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "modifiedBy",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_2",
+            "alignment": ""
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "permission_rules": {"5886cd19-1023-30bf-4a16-f9ce738b0af5": {}},
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Date Modified",
+            "sortable": "true",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "dateModified",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_3",
+            "alignment": ""
+        }
+    ],
+    "permission_rules": [{
+        "permission_key": "5886cd19-1023-30bf-4a16-f9ce738b0af5",
+        "permission": {
+            "className": "org.joget.apps.userview.lib.GroupPermission",
+            "properties": {
+                "orgId": "",
+                "allowedGroupIds": "app_ioc_moi"
+            }
+        },
+        "permission_name": "Administrator"
+    }],
+    "cardCollapsible": "",
+    "pageSize": "0",
+    "orderBy": "settingDomain",
+    "description": "",
+    "showDataWhenFilterSet": "",
+    "disableResponsive": "",
+    "cardCollapseByDefault": "",
+    "id": "settingsAll",
+    "binder": {
+        "className": "org.joget.apps.datalist.lib.FormRowDataListBinder",
+        "properties": {
+            "formDefId": "crudSetting",
+            "extraCondition": ""
+        }
+    },
+    "order": "2",
+    "useSession": "",
+    "draggabletable": "",
+    "filters": [
+        {
+            "hidden": "",
+            "permission_rules": {"5886cd19-1023-30bf-4a16-f9ce738b0af5": {}},
+            "name": "settingDomain",
+            "id": "filter_0",
+            "label": "Domain",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {
+                    "defaultValue": "",
+                    "filterSelection": "",
+                    "searchFields": ""
+                }
+            },
+            "datalist_type": "filter",
+            "filterParamName": "d-8093856-fn_settingDomain"
+        },
+        {
+            "hidden": "",
+            "permission_rules": {"5886cd19-1023-30bf-4a16-f9ce738b0af5": {}},
+            "name": "settingLabel",
+            "id": "filter_1",
+            "label": "Label",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {
+                    "defaultValue": "",
+                    "filterSelection": "",
+                    "searchFields": ""
+                }
+            },
+            "datalist_type": "filter",
+            "filterParamName": "d-8093856-fn_settingLabel"
+        }
+    ],
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "hidePageSize": "",
+    "name": "Settings All",
+    "rowActionsMode": "",
+    "showhidecolumns": "",
+    "actions": [{
+        "className": "org.joget.apps.datalist.lib.FormRowDeleteDataListAction",
+        "id": "action_0",
+        "properties": {
+            "deleteFiles": "true",
+            "deleteGridData": "true",
+            "formDefId": "crudSetting",
+            "permission_rules": {"5886cd19-1023-30bf-4a16-f9ce738b0af5": {}},
+            "deleteSubformData": "true",
+            "label": "Delete",
+            "confirmation": "",
+            "datalist_type": "action",
+            "abortRelatedRunningProcesses": "true"
+        }
+    }]
+}
