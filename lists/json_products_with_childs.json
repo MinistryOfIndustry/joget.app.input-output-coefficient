@@ -1,0 +1,174 @@
+{
+    "template": {
+        "className": "",
+        "properties": {}
+    },
+    "rowActions": [],
+    "columns": [
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Sector",
+            "sortable": "true",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "sector_name",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_8",
+            "alignment": ""
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Product",
+            "sortable": "true",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "product_title",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_7",
+            "alignment": ""
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "HS Code",
+            "sortable": "true",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "product_hscode",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_12",
+            "alignment": ""
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Standard Quantity",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "product_standard_qty",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_14",
+            "alignment": ""
+        },
+        {
+            "filterable": true,
+            "hidden": "true",
+            "include_export": "",
+            "renderHtml": "",
+            "format": {
+                "className": "org.joget.BeanShellFormatter",
+                "properties": {"script": "import org.json.JSONArray;\r\nimport org.json.JSONObject;\r\nimport java.text.DecimalFormat;\r\nimport org.joget.apps.datalist.service.DataListService;\r\nimport org.joget.apps.app.service.AppUtil;\r\n\r\nDataListService dataListService = (DataListService) AppUtil.getApplicationContext().getBean(\"dataListService\");\r\n\r\nString jsonStr = value;\r\n\r\ntry {\r\n    jsonStr = jsonStr.trim();\r\n    if (jsonStr.startsWith(\"**\")) {\r\n        jsonStr = jsonStr.substring(2);\r\n    }\r\n    if (jsonStr.endsWith(\"**\")) {\r\n        jsonStr = jsonStr.substring(0, jsonStr.length() - 2);\r\n    }\r\n    \r\n    JSONArray jsonArray = new JSONArray(jsonStr);\r\n\tJSONArray result = new JSONArray();\r\n    \r\n    \r\n    DecimalFormat df = new DecimalFormat(\"#,##0.##\");\r\n    \r\n    for (int i = 0; i < jsonArray.length(); i++) {\r\n        JSONObject product = jsonArray.getJSONObject(i);\r\n\t\tJSONObject productObj = new JSONObject();\r\n\r\n        \r\n        productObj.put(\"product_description\", product.optString(\"product_description\", \"\"));\r\n        productObj.put(\"product_code\", product.optString(\"product_code\", \"\"));\r\n        productObj.put(\"uom\", product.optString(\"product_uom\", \"\"));\r\n        productObj.put(\"hscode\", product.optString(\"product_hscode\", \"\"));\r\n        productObj.put(\"notes\", product.optString(\"product_other_notes\", \"\"));\r\n        \r\n        // Format number safely\r\n        String qty = product.optString(\"product_standard_quantity\", \"\");\r\n        try {\r\n            double num = Double.parseDouble(qty);\r\n            productObj.put(\"standard_quantity\", df.format(num));\r\n        } catch (Exception e) {\r\n            productObj.put(\"standard_quantity\", qty);\r\n        }\r\n        \r\n        // Handle raw materials\r\n        JSONArray rawMaterialsArr = new JSONArray();\r\n        String rawMaterialTypeStr = product.optString(\"raw_material_type\", \"\");\r\n        if (!rawMaterialTypeStr.isEmpty()) {\r\n            try {\r\n                JSONArray rawMaterials = new JSONArray(rawMaterialTypeStr);\r\n                for (int j = 0; j < rawMaterials.length(); j++) {\r\n                    JSONObject rm = rawMaterials.getJSONObject(j);\r\n                    JSONObject rmObj = new JSONObject();\r\n                    \r\n                    rmObj.put(\"description\", rm.optString(\"raw_material_type_description\", \"\"));\r\n                    rmObj.put(\"uom\", rm.optString(\"uom\", \"\"));\r\n                    rmObj.put(\"quantity\", rm.optString(\"quantity\", \"\"));\r\n                    rmObj.put(\"waste_percentage\", rm.optString(\"waste_percentage\", \"\"));\r\n                    rmObj.put(\"ioc\", rm.optString(\"input_output_coefficient\", \"\"));\r\n                    rmObj.put(\"category\", rm.optString(\"raw_material_type_code\", \"\"));\r\n                    \r\n                    // Handle nested inputs\r\n                    String rmInputStr = rm.optString(\"raw_material_input\", \"\");\r\n                    if (!rmInputStr.isEmpty()) {\r\n                        try {\r\n                            JSONArray inputs = new JSONArray(rmInputStr);\r\n                            rmObj.put(\"inputs\", inputs);\r\n                        } catch (Exception e) {\r\n                            rmObj.put(\"inputs\", new JSONArray());\r\n                        }\r\n                    }\r\n                    \r\n                    rawMaterialsArr.put(rmObj);\r\n                }\r\n            } catch (Exception e) {\r\n                // skip malformed raw materials\r\n            }\r\n        }\r\n        \r\n        productObj.put(\"raw_materials\", rawMaterialsArr);\r\n        result.put(productObj);\r\n    }\r\n    \r\n    if (result.length() == 0) {\r\n        return \"{}\"; // or \"[]\" if you prefer\r\n    }\r\n    \r\n    return result.toString(); // pretty print with indentation\r\n    \r\n} catch (Exception e) {\r\n    return \"{ \\\"error\\\": \\\"Unable to parse product data - \" + e.getMessage() + \"\\\" }\";\r\n}"}
+            },
+            "label": "IOC Details",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "add_products",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_10",
+            "alignment": ""
+        }
+    ],
+    "pageSize": "0",
+    "orderBy": "",
+    "description": "",
+    "filters": [
+        {
+            "hidden": "",
+            "name": "product_title",
+            "id": "filter_7",
+            "label": "Search by Product",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {
+                    "defaultValue": "",
+                    "filterSelection": "",
+                    "searchFields": ""
+                }
+            },
+            "datalist_type": "filter",
+            "filterParamName": "d-2848426-fn_product_title"
+        },
+        {
+            "hidden": "",
+            "name": "sector_name",
+            "id": "filter_6",
+            "label": "Search by sector",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {
+                    "defaultValue": "",
+                    "filterSelection": "",
+                    "searchFields": ""
+                }
+            },
+            "datalist_type": "filter",
+            "filterParamName": "d-2848426-fn_sector_name"
+        }
+    ],
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "name": "Json Products with childs",
+    "id": "json_products_with_childs",
+    "binder": {
+        "className": "org.joget.marketplace.SqlDataListBinder",
+        "properties": {
+            "primary_key": "o.id",
+            "sql": "SELECT\n  o.id AS id,                                        -- keep as PK (not searchable)\n  ANY_VALUE(CAST(o.id AS CHAR(36)))        AS id_text,        -- searchable string\n  ANY_VALUE(o.c_title)                     AS product_title,\n  ANY_VALUE(CAST(o.c_sector AS CHAR(36)))  AS sector_id_text, -- searchable string\n  ANY_VALUE(os.c_title)                    AS sector_name,\n  ANY_VALUE(o.c_standard_quantity)         AS product_standard_qty,\n  ANY_VALUE(o.c_hscode)                    AS product_hscode,\n  ANY_VALUE(\n    JSON_ARRAY(\n      JSON_OBJECT(\n        'product_description',        o.c_title,\n        'product_code',               o.c_product_code,\n        'product_hscode',             o.c_hscode,\n        'product_uom',                o.c_uom,\n        'product_standard_quantity',  o.c_standard_quantity,\n        'raw_material_type',          COALESCE(rmt.types_json, JSON_ARRAY())\n      )\n    )\n  ) AS add_products\nFROM app_fd_eth_ioc_products o\nJOIN app_fd_eth_ioc_sector os ON os.id = o.c_sector\nLEFT JOIN (\n  SELECT\n    i.c_product,\n    JSON_ARRAYAGG(\n      JSON_OBJECT(\n        'raw_material_type_description',  i.c_title,\n        'raw_material_type_code',         i.c_raw_material_type_code,\n        'quantity',                       i.c_quantity,\n        'uom',                            i.c_uom,\n        'waste_percentage',               i.c_waste_percentage,\n        'input_output_coefficient',       i.c_input_output_coefficient,\n        'raw_material_input',             COALESCE(rii.items_json, JSON_ARRAY())\n      )\n    ) AS types_json\n  FROM app_fd_eth_ioc_raw_mat_type i\n  LEFT JOIN (\n    SELECT\n      ii.c_raw_material_type,\n      JSON_ARRAYAGG(\n        JSON_OBJECT(\n          'input_description',  ii.c_title,\n          'input_code',         ii.c_input_code,\n          'hscode',             ii.c_hscode\n        )\n      ) AS items_json\n    FROM app_fd_eth_ioc_raw_mat_item ii\n    GROUP BY ii.c_raw_material_type\n  ) rii ON rii.c_raw_material_type = i.id\n  GROUP BY i.c_product\n) rmt ON rmt.c_product = o.id\nGROUP BY o.id"
+        }
+    },
+    "actions": [],
+    "order": ""
+}

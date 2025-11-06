@@ -1,0 +1,153 @@
+{
+    "template": {
+        "className": "",
+        "properties": {}
+    },
+    "considerFilterWhenGetTotal": "",
+    "useSession": "",
+    "responsiveMode": "",
+    "rowActions": [
+        {
+            "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
+            "id": "rowAction_0",
+            "properties": {
+                "hrefColumn": "id",
+                "hrefParam": "id",
+                "rules": [],
+                "label": "<i class=\"fas fa-eye\"><\/i> ",
+                "href": "view_ioc",
+                "confirmation": "",
+                "link-css-display-type": "btn btn-sm btn-warning",
+                "datalist_type": "row_action",
+                "target": "_self",
+                "header_label": ""
+            }
+        },
+        {
+            "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
+            "id": "rowAction_1",
+            "properties": {
+                "hrefColumn": "id",
+                "hrefParam": "id",
+                "rules": [{
+                    "field": "status",
+                    "join": "AND",
+                    "value": "",
+                    "operator": "="
+                }],
+                "label": "<i class=\"fas fa-pencil-alt\"><\/i> ",
+                "href": "crudIOC",
+                "confirmation": "",
+                "link-css-display-type": "btn btn-sm btn-dark",
+                "datalist_type": "row_action",
+                "target": "_self",
+                "header_label": ""
+            }
+        }
+    ],
+    "columns": [
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "dateModified",
+            "id": "column_1",
+            "label": "Date Modified",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "dateCreated",
+            "id": "column_0",
+            "label": "Date Created",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "manufacturer_name",
+            "id": "column_2",
+            "label": "Manufacturer Name",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "requested__product",
+            "id": "column_3",
+            "label": "Product",
+            "sortable": "false",
+            "datalist_type": "column"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "requested_hscode",
+            "id": "column_4",
+            "label": "HSCODE",
+            "sortable": "false",
+            "datalist_type": "column"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "org.joget.BeanShellFormatter",
+                "properties": {"script": "// Import necessary classes if needed\nimport org.joget.apps.datalist.service.DataListService;\nimport org.joget.apps.app.service.AppUtil;\n\n// Get the status value from the current row\n// Assuming \"status\" is the column id that contains the status value\nString status = (value != null) ? value.toString().toLowerCase() : null;\nString displayStatus = value.toString();\n\n// Format based on status\nString formattedValue = \"\";\n\nif (\"Review by NC\".equalsIgnoreCase(status)) {\n    formattedValue = \"<font style=\\\"background-color:#27ae60;color:white;border-radius:6px;padding:4px 12px;font-weight:600;display:inline-flex;align-items:center;\\\"> <i class=\\\"fas fa-question-circle\\\" style=\\\"margin-right:6px;\\\"><\/i>\" + displayStatus + \"<\/font>\";\n} else if (\"Approved by MOI\".equalsIgnoreCase(status)) {\n    formattedValue = \"<font style=\\\"background-color:#27ae60;color:white;border-radius:6px;padding:4px 12px;font-weight:600;display:inline-flex;align-items:center;\\\"> <i class=\\\"fas fa-check-circle\\\" style=\\\"margin-right:6px;\\\"><\/i>\" + displayStatus + \"<\/font>\";\n} else if (\"Reviewed by Center Approval\".equalsIgnoreCase(status)) {\n    formattedValue = \"<font style=\\\"background-color:#27ae60;color:white;border-radius:6px;padding:4px 12px;font-weight:600;display:inline-flex;align-items:center;\\\"> <i class=\\\"fas fa-check-circle\\\" style=\\\"margin-right:6px;\\\"><\/i>\" + displayStatus + \"<\/font>\";\n} else if (\"Public\".equalsIgnoreCase(status)) {\n    formattedValue = \"<font style=\\\"background-color:#27ae60;color:white;border-radius:6px;padding:4px 12px;font-weight:600;display:inline-flex;align-items:center;\\\"> <i class=\\\"fas fa-check-circle\\\" style=\\\"margin-right:6px;\\\"><\/i>\" + displayStatus + \"<\/font>\";\n} else if (\"Rejected by Center Approval\".equalsIgnoreCase(status)) {\n    formattedValue = \"<font style=\\\"background-color:#e74c3c;color:white;border-radius:6px;padding:4px 12px;font-weight:600;display:inline-flex;align-items:center;\\\"> <i class=\\\"fas fa-times-circle\\\" style=\\\"margin-right:6px;\\\"><\/i> \" +displayStatus+ \" <\/font>\";\n}  else if (\"Under Review Center\".equalsIgnoreCase(status)) {\n     formattedValue = \"<font style=\\\"background-color:#27ae60;color:white;border-radius:6px;padding:4px 12px;font-weight:600;display:inline-flex;align-items:center;\\\"> <i class=\\\"fas fa-check-circle\\\" style=\\\"margin-right:6px;\\\"><\/i>\" + displayStatus + \"<\/font>\";\n} else if (\"Rejected by MOI\".equalsIgnoreCase(status)) {\n    formattedValue = \"<font style=\\\"background-color:#e74c3c;color:white;border-radius:6px;padding:4px 12px;font-weight:600;display:inline-flex;align-items:center;\\\"> <i class=\\\"fas fa-times-circle\\\" style=\\\"margin-right:6px;\\\"><\/i> \" +displayStatus+ \" <\/font>\";\n} else if (\"Rework by TC\".equalsIgnoreCase(status)) {\n    formattedValue = \"<font style=\\\"background-color:#e74c3c;color:white;border-radius:6px;padding:4px 12px;font-weight:600;display:inline-flex;align-items:center;\\\"> <i class=\\\"fas fa-times-circle\\\" style=\\\"margin-right:6px;\\\"><\/i> \" +displayStatus+ \" <\/font>\";\n} else if (\"rejected\".equalsIgnoreCase(status)) {\n    formattedValue = \"<font style=\\\"background-color:#e74c3c;color:white;border-radius:6px;padding:4px 12px;font-weight:600;display:inline-flex;align-items:center;\\\"> <i class=\\\"fas fa-times-circle\\\" style=\\\"margin-right:6px;\\\"><\/i>Rejected<\/font>\";\n} else if (\"Reject by NC\".equalsIgnoreCase(status)) {\n    formattedValue = \"<font style=\\\"background-color:#e74c3c;color:white;border-radius:6px;padding:4px 12px;font-weight:600;display:inline-flex;align-items:center;\\\"> <i class=\\\"fas fa-times-circle\\\" style=\\\"margin-right:6px;\\\"><\/i> \" +displayStatus+ \" <\/font>\";\n}  else if (status == null || status.isEmpty()) {\n    formattedValue = \"<font style=\\\"background-color:#95a5a6;color:white;border-radius:6px;padding:4px 12px;font-weight:600;display:inline-flex;align-items:center;\\\"> <i class=\\\"fas fa-hourglass-half\\\" style=\\\"margin-right:6px;\\\"><\/i>Pending<\/font>\";\n} else {\n    // Default formatting for any other status\n    formattedValue = value.toString();\n}\n\nreturn formattedValue;\n"}
+            },
+            "label": "Status",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "status",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_5",
+            "alignment": ""
+        }
+    ],
+    "draggabletable": "",
+    "cardCollapsible": "",
+    "pageSize": "0",
+    "orderBy": "",
+    "description": "",
+    "filters": [],
+    "showDataWhenFilterSet": "",
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "hidePageSize": "",
+    "disableResponsive": "",
+    "cardCollapseByDefault": "",
+    "name": "List -  Product IOC request Approval Flows (IOC User)",
+    "rowActionsMode": "",
+    "showhidecolumns": "",
+    "id": "list_product_request_flows",
+    "binder": {
+        "className": "org.joget.apps.datalist.lib.FormRowDataListBinder",
+        "properties": {
+            "formDefId": "form_ioc",
+            "extraCondition": "(\n  ('#currentUser.department#' not IN ('moi_ioc_center_chemical', 'moi_ioc_center_food_beverage', 'moi_ioc_center_leather', 'moi_ioc_center_metal', 'moi_ioc_center_textile'))\n   OR\n    ('#currentUser.department#' = 'moi_ioc_center_chemical' AND c_sector= 'b24ee2ab-8bca-4100-bb6b-f7ff58bf2793')\n   OR\n    ('#currentUser.department#' = 'moi_ioc_center_food_beverage' AND c_sector= 'e05a1def0-5be4-446d-8b67-adfe0dbc0f9a')\n   OR\n    ('#currentUser.department#' = 'moi_ioc_center_leather' AND c_sector= 'b84feedf-fc43-4001-87a2-7b0a0443533f')\n   OR\n    ('#currentUser.department#' = 'moi_ioc_center_metal' AND c_sector= '17226834-8d93-4db2-8de6-c1e1fb564956')\n   OR\n    ('#currentUser.department#' = 'moi_ioc_center_textile' AND c_sector= '57daebaf-d139-4533-901a-c999bd03b520')\n)",
+            "cacheRowCount": ""
+        }
+    },
+    "actions": [{
+        "className": "org.joget.apps.datalist.lib.FormRowDeleteDataListAction",
+        "id": "action_0",
+        "properties": {
+            "deleteFiles": "true",
+            "deleteGridData": "true",
+            "formDefId": "form_ioc",
+            "deleteSubformData": "true",
+            "label": "Delete",
+            "confirmation": "",
+            "datalist_type": "action",
+            "abortRelatedRunningProcesses": "true"
+        }
+    }],
+    "order": ""
+}
