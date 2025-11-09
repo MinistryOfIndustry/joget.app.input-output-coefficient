@@ -131,7 +131,7 @@
         "className": "org.joget.apps.datalist.lib.FormRowDataListBinder",
         "properties": {
             "formDefId": "form_ioc",
-            "extraCondition": "(\n  ('#currentUser.department#' not IN ('moi_ioc_center_chemical', 'moi_ioc_center_food_beverage', 'moi_ioc_center_leather', 'moi_ioc_center_metal', 'moi_ioc_center_textile'))\n   OR\n    ('#currentUser.department#' = 'moi_ioc_center_chemical' AND c_sector= 'b24ee2ab-8bca-4100-bb6b-f7ff58bf2793')\n   OR\n    ('#currentUser.department#' = 'moi_ioc_center_food_beverage' AND c_sector= 'e05a1def0-5be4-446d-8b67-adfe0dbc0f9a')\n   OR\n    ('#currentUser.department#' = 'moi_ioc_center_leather' AND c_sector= 'b84feedf-fc43-4001-87a2-7b0a0443533f')\n   OR\n    ('#currentUser.department#' = 'moi_ioc_center_metal' AND c_sector= '17226834-8d93-4db2-8de6-c1e1fb564956')\n   OR\n    ('#currentUser.department#' = 'moi_ioc_center_textile' AND c_sector= '57daebaf-d139-4533-901a-c999bd03b520')\n)",
+            "extraCondition": "",
             "cacheRowCount": ""
         }
     },
